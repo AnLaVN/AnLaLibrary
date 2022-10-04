@@ -17,4 +17,4 @@
 * [Vietnamese](https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/): Javadoc.
 
 ## 3. Version:
-* [Releases 1.9.18](https://github.com/AnLaVN/AnLaLibrary/releases/tag/v1.9.18)
+* [All Version](https://github.com/AnLaVN/AnLaLibrary/tags)
