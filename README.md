@@ -5,7 +5,6 @@
   </a>
 </p>
 ![QQ](https://user-images.githubusercontent.com/90229487/193866183-451ebfc8-b0f7-4679-9442-653cc0f0be12.png)
-<br>
 <p align="center">
   <a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/"><strong>Java Doc English</strong></a>
   ·
