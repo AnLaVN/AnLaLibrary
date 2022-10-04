@@ -14,4 +14,4 @@ They include:
 
 Supported language:
 * English: Javadoc, Variable.
-* Vietnamese: Javadoc, Variable.
+* Vietnamese: Javadoc.
