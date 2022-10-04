@@ -4,6 +4,10 @@
     <img src="https://img.shields.io/github/license/exadel-inc/CompreFace" alt="GitHub license" />
   </a>
 </p>
+<p align="center">
+  <a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/"><strong>Java Doc English</strong></a>
+  <a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/"><strong>Java Doc Tiếng Việt</strong></a>
+</p>
 
 ## Overview / Tổng quan
 ### English
