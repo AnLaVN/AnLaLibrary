@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.AnLa.Cloud"},{"l":"com.AnLa.HASH"},{"l":"com.AnLa.JDBC"},{"l":"com.AnLa.SMTP"},{"l":"com.AnLa.UI"}];updateSearchResults();
