@@ -1,15 +1,14 @@
 <h1 align="center">A Super, Ultra, Ultimate Library Java Application :)))</h1>
 <p align="center">
+  <img src="https://user-images.githubusercontent.com/90229487/193866183-451ebfc8-b0f7-4679-9442-653cc0f0be12.png" height = "500px">
+  <br>
+  <a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/"><strong>Java Doc English</strong></a>
+  &nbsp;<b>·</b>&nbsp;
+  <a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/"><strong>Java Doc Tiếng Việt</strong></a>
+  <br><br>
   <a href="https://www.apache.org/licenses/LICENSE-2.0">
     <img src="https://img.shields.io/github/license/exadel-inc/CompreFace" alt="GitHub license" />
   </a>
-</p>
-![QQ](https://user-images.githubusercontent.com/90229487/193866183-451ebfc8-b0f7-4679-9442-653cc0f0be12.png)
-<p align="center">
-  <a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/"><strong>Java Doc English</strong></a>
-  ·
-  <a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/"><strong>Java Doc Tiếng Việt</strong></a>
-  <br>
 </p>
 
 ## Overview / Tổng quan
