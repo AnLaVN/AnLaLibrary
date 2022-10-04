@@ -25,12 +25,34 @@
 >
 > Thư viện cung cấp các phương thức để bạn có thể làm việc cơ bản trong Java như: Kết nối Database, hỗ trợ các Thành phần Swing, Băm mật mã học, dịch vụ gửi email SMTP, tải lên và tải về tệp từ Đám mây. 
 
-## 1. Supported Library: 
-* Cloud: Cloudinary.
-* Hash: AES, SHA256.
-* JDBC: MSSQL, MYSQL.
-* SMTP: text/html.
-* UI: AvatarPanel, ImgPanel, ScrollBar, Mode.
+## Features / Tính năng
+### Cloud: 
+> 1. Cloudinary -  Supports data transfer to the Cloudinary.
+
+### Hash: 
+> 1. AES - Supports cryptographic hashing AES.
+> 2. SHA256 - Supports cryptographic hashing SHA256.
+
+### JDBC: 
+> 1. MSSQL - Support connecting to MSSQL.
+> 2. MYSQL - Support connecting to MYSQL.
+
+### SMTP: 
+> 1.  Text/HTML - Support sending text/html message.
+
+### UI: 
+> 1. AvatarPanel - Support creating rounded avatars in Java Swing.
+> 2. ImgPanel - Support creating resizable images in Java Swing.
+> 3. ScrollBar - Support creating elegant Scrollbar in Java Swing.
+> 4. Mode - Support change mode (Dark and Light only) in Java Swing.
+
+### Java Doc:
+
+> 1. English - Supports JavaDoc and Variable in English languages.
+> 2. Vietnamese - Supports JavaDoc in Vietnamese languages.
+
+
+
 
 ## 2. Supported language:
 * [English](https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/): Javadoc, Variable.
