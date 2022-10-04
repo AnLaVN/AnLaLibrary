@@ -41,15 +41,11 @@
   * Mode
   * ScrollBar
 * Java Doc:
-  * English
-  * Vietnamese
+  * [English](https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/)
+  * [Vietnamese](https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/)
 
 
 
-
-## 2. Supported language:
-* [English](https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/): Javadoc, Variable.
-* [Vietnamese](https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/): Javadoc.
 
 ## 3. Version:
 * [All Version](https://github.com/AnLaVN/AnLaLibrary/tags)
