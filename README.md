@@ -13,5 +13,5 @@ They include:
 * UI: AvatarPanel, ImgPanel, ScrollBar, Mode.
 
 Supported language:
-* English: Javadoc, Variable.
-* Vietnamese: Javadoc.
+* [English](https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/): Javadoc, Variable.
+* [Vietnamese](https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/): Javadoc.
