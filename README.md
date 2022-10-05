@@ -19,7 +19,7 @@
 >
 > The library provides methods for you to do basic work in Java such as: Database Connection, Swing Components support, Cryptographic Hashing, SMTP email service, file upload and download from the Cloud.
 ### Tiếng Việt
-> AL-Library là một dự án cá nhân và miễn phí. Về cơ bản, nó là một thư viên bao hàm nhiều thư viện khác giúp việc sử dụng dễ dàng hơn.
+> AL-Library là một dự án cá nhân và miễn phí. Về cơ bản, nó là một thư viện bao hàm nhiều thư viện khác giúp việc sử dụng dễ dàng hơn.
 >
 > Mã nguồn được cung cấp chỉ nhằm mục đích học tập. Bạn chỉ có quyền xem, mọi việc chỉnh sửa, thay đổi, phân phối, sao chép,... đều KHÔNG ĐƯỢC CHO PHÉP.
 >
