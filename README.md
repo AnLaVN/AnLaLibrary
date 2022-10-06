@@ -45,7 +45,5 @@
   * [Vietnamese](https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/)
 
 
-
-
-## 3. Version:
+## Version:
 * [All Version](https://github.com/AnLaVN/AnLaLibrary/tags)
