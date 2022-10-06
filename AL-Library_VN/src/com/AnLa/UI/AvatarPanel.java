@@ -9,6 +9,10 @@ import javax.imageio.ImageIO;
 
 public class AvatarPanel extends javax.swing.JPanel{
     private BufferedImage image;
+
+    /**Sử dụng phương thức này để đặt Hình ảnh cho Panel.
+     * @param filePath là Chuỗi đường dẫn của tệp ảnh trong thư mục source.<br>Ví dụ: "src/Your/Packages/yourImages.png"
+     */
     public void setPic(String filePath) {
         try { 
             File file = new File(filePath.replaceAll("\\\\", "/"));
@@ -21,6 +25,7 @@ public class AvatarPanel extends javax.swing.JPanel{
         repaint();    
     }
     public AvatarPanel(){}
+    
     @Override protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;

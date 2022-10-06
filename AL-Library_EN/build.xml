@@ -71,10 +71,10 @@
 
     -->
     <target name="-post-jar" description="bundle sources and javadoc in a jar" depends="javadoc">
-        <jar compress="${jar.compress}" basedir="${src.dir}" jarfile="${dist.dir}/AnLaLibrary_EN-sources.jar"/>
-        <jar compress="${jar.compress}" basedir="${dist.javadoc.dir}" jarfile="${dist.dir}/AnLaLibrary_EN-javadoc.jar"/>
+        <jar compress="${jar.compress}" basedir="${src.dir}" jarfile="${dist.dir}/sources.jar"/>
+        <jar compress="${jar.compress}" basedir="${dist.javadoc.dir}" jarfile="${dist.dir}/javadoc.jar"/>
         
-        <property name="store.jar.name" value="AnLaLibrary_EN"/>
+        <property name="store.jar.name" value="AL-Library_EN"/>
         <property name="store.dir" value="dist"/>
         <property name="store.jar" value="${store.dir}/${store.jar.name}.jar"/>
         <echo message="Packaging ${application.title} into a single JAR at ${store.jar}"/>
@@ -90,6 +90,8 @@
                         excludes="META-INF/*.SF, META-INF/*.DSA, META-INF/*.RSA"/>
         </zip>
         <delete file="${store.dir}/temp_final.jar"/>
-        
+        <delete file="${dist.dir}/sources.jar"/>
+        <delete file="${dist.dir}/javadoc.jar"/>
+        <delete dir="dist/lib"/>
     </target>
 </project>
