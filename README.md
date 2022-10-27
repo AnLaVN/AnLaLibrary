@@ -26,13 +26,15 @@
 > Thư viện cung cấp các phương thức để bạn có thể làm việc cơ bản trong Java như: Kết nối Database, hỗ trợ các Thành phần Swing, Băm mật mã học, dịch vụ gửi email SMTP, tải lên và tải về tệp từ Đám mây. 
 
 ## Features / Tính năng
-* Cloudinary
 * Hash
   * AES
   * SHA256
 * JDBC
   * MSSQL
   * MYSQL
+* NET
+  * Cloud
+  * Network
 * SMTP
   * Text/HTML
 * UI: 
