@@ -1,6 +1,5 @@
 package com.AnLa.Example;
 
-
 // Make By Bình An || AnLaVN || KatoVN
 
 import com.AnLa.JDBC.SQL;

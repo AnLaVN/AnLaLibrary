@@ -7,9 +7,13 @@ import java.util.*;
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
 
+/**The AES class supports encryption and decryption a String, using a security key.
+ * @author Admin
+ */
 public class AES {
 
-    /**Use this method to encrypt a original string with security key. Can't be decrypt by online tool.
+    
+    /**Use this method to encryption a original string with security key. Can't be decryption by online tool.
      * @param strToEncrypt is a string need encrypt.<br>
      * @param myKey is a security key.<br>
      * @return a AES hash code of original string.
@@ -31,7 +35,8 @@ public class AES {
         return null;
     }
 
-    /**Use this method to decrypt a AES hash code with security key. Only decrypt by this method.
+    
+    /**Use this method to decryption a AES hash code with security key. Only decryption by this method.
      * @param strToDecrypt a AES hash code.<br>
      * @param myKey is a security key.<br>
      * @return a original String.

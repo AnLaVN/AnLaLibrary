@@ -5,9 +5,14 @@ import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+
+/**The SHA256 class only supports encryption a String, decryption it is impossible.
+ * @author Admin
+ */
 public class SHA256 {
     
-    /**Use this method to encrypt a original string.
+    
+    /**Use this method to encryption a original string.
      * @param strToEncrypt is a string need encrypt.<br>
      * @return a SHA256 hash code of original string.
      */

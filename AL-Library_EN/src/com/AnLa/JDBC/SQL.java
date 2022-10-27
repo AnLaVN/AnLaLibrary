@@ -3,6 +3,9 @@ package com.AnLa.JDBC;
 
 import java.sql.*;
 
+/**The SQL class supports to connect, execute mySQL and SQL server.
+ * @author Admin
+ */
 public class SQL{
     private String URL = null, USERNAME = null, PASSWORD = null;
     private Connection CON = null;
@@ -13,6 +16,7 @@ public class SQL{
      * @see SQL#setSQL(java.lang.String, java.lang.String, java.lang.String) 
      */
     public SQL() {}
+    
     
     /**Create a SQL connect with full information.
      * @param DB_url is Database URL to connect.<br>
@@ -25,6 +29,7 @@ public class SQL{
         this.PASSWORD = DB_password;
     }
     
+    
     /**Use this method to setup the SQL connect information. Support MSSQL and MYSQL.
      * @param DB_url is Database URL to connect.<br>
      * @param DB_username is Database Username.<br>
@@ -36,6 +41,7 @@ public class SQL{
         this.USERNAME = DB_username;
         this.PASSWORD = DB_password;
     }
+    
 
     /**Use this method to check the connection of SQL is null.
      * @return <code>true</code> if SQL connection is null, <code>false</code> in the opposite.
@@ -43,6 +49,7 @@ public class SQL{
     public boolean isConnectNull(){ 
         return CON == null; 
     }
+    
     
     /**Use this method to connect your Database.
      * @see SQL#setSQL(java.lang.String, java.lang.String, java.lang.String) 
@@ -78,6 +85,18 @@ public class SQL{
         }
     }
     
+    
+    /**Use this method to execute a String SQL Query statement.
+     * @param Query is a String SQL Query statement.
+     */
+    public void Execute(String Query){
+        try {   setQuery(Query).execute();  }
+        catch (SQLException ex) {
+            System.out.println("\n!!! Error trying to execute query. !!!");
+        }
+    }
+    
+    
     /**Use this method to get a Result Set of Prepared Statement SQL.
      * @param ps is a Prepared Statement SQL.<br>
      * @return a Result Set after execute the Query.
@@ -89,6 +108,7 @@ public class SQL{
             throw new RuntimeException(e);
         }
     }
+    
     
     /**Use this method to get a Result Set of a String SQL Query statement.
      * @param Query is a String SQL Query statement.<br>

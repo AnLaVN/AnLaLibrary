@@ -7,7 +7,11 @@ import java.util.*;
 import javax.crypto.*;
 import javax.crypto.spec.SecretKeySpec;
 
+/**Lớp AES hỗ trợ mã hóa và giải mã một Chuỗi, sử dụng khóa bảo mật.
+ * @author Admin
+ */
 public class AES {
+    
 
     /**Sử dụng phương thức này để mã hóa một chuỗi gốc bằng khóa bảo mật. Không thể giải mã bằng công cụ online.
      * @param strToEncrypt là một chuỗi cần mã hóa.<br>
@@ -30,6 +34,7 @@ public class AES {
         }
         return null;
     }
+    
 
     /**Sử dụng phương thức này để giải mã mã băm AES bằng khóa bảo mật. Chỉ có thể giải mã bằng phương thức này.
      * @param strToDecrypt mã băm AES.<br>

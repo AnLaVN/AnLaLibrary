@@ -5,9 +5,14 @@ import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+
+/**Lớp SHA256 chỉ hỗ trợ mã hóa một Chuỗi, giải mã nó là bất khả thi.
+ * @author Admin
+ */
 public class SHA256 {
 
-    /** Sử dụng phương thức này để mã hóa một chuỗi gốc.
+    
+    /**Sử dụng phương thức này để mã hóa một chuỗi gốc.
      * @param strToEncrypt là một chuỗi cần mã hóa. <br>
      * @return mã băm SHA256 của chuỗi gốc.
      */

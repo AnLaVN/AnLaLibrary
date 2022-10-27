@@ -6,10 +6,13 @@ import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-
+/**The SendMail class supports create a Gmail SMTP to send email.
+ * @author Admin
+ */
 public class SendMail {
     private String HostEmail = null, HostEPass = null;
-    private String Content = "<h1>Email content.</h1>", Title = "Email title";
+    private String Content = "<h1>Email content.</h1>", Title = "Email title.";
+    
 
     /**Create a host SMTP.
      * @see SendMail#setHost(java.lang.String, java.lang.String) <br>
@@ -25,6 +28,7 @@ public class SendMail {
         this.HostEmail = Email;
         this.HostEPass = Pass;
     }
+    
     
     /**Use this method to setup a host SMTP.
      * @param Email is your email address.<br>
@@ -72,4 +76,5 @@ public class SendMail {
             Transport.send(msg);
         } catch (MessagingException ex) {   System.out.println(ex); }
     }
+    
 }
