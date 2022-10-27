@@ -44,7 +44,7 @@
   * ScrollBar
 * Java Doc:
   * [English](https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/)
-  * [Vietnamese](https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/)
+  * [Tiếng Việt](https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/)
 
 
 ## Download / Tải xuống
