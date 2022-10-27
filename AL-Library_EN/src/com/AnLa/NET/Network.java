@@ -18,7 +18,7 @@ public class Network {
      */
     public static HashMap<String, String> myWLAN(){
         HashMap<String, String> arr = new HashMap<>();
-        String line;
+        String line = null;
         try {
             ProcessBuilder builder = new ProcessBuilder("cmd.exe", "/c", "netsh wlan show interfaces");
             builder.redirectErrorStream(true);
@@ -33,7 +33,7 @@ public class Network {
                 String val = line.substring(index+2).trim();
                 arr.put(key, val);
             }
-        } catch (IOException ex) {System.out.println(ex);}
+        } catch (IOException ex) {System.out.println(line);System.out.println(ex);}
         return arr;
     }
     
