@@ -17,13 +17,13 @@
 >
 > The source code provided is for learning purposes only. You only have the right to view, any editing, altering, distribution, copying, ... are NOT ALLOWED.
 >
-> The library provides methods for you to do basic work in Java such as: Database Connection, Swing Components support, Cryptographic Hashing, SMTP email service, file upload and download from the Cloud.
+> The library provides methods for you to do basic work in Java such as: Database Connection, Swing Components support, Cryptographic Hashing, SMTP email service, file upload and download from the Cloud... and more...
 ### Tiếng Việt
 > AL-Library là một dự án cá nhân và miễn phí. Về cơ bản, nó là một thư viện bao hàm nhiều thư viện khác giúp việc sử dụng dễ dàng hơn.
 >
 > Mã nguồn được cung cấp chỉ nhằm mục đích học tập. Bạn chỉ có quyền xem, mọi việc chỉnh sửa, thay đổi, phân phối, sao chép,... đều KHÔNG ĐƯỢC CHO PHÉP.
 >
-> Thư viện cung cấp các phương thức để bạn có thể làm việc cơ bản trong Java như: Kết nối Database, hỗ trợ các Thành phần Swing, Băm mật mã học, dịch vụ gửi email SMTP, tải lên và tải về tệp từ Đám mây. 
+> Thư viện cung cấp các phương thức để bạn có thể làm việc cơ bản trong Java như: Kết nối Database, hỗ trợ các Thành phần Swing, Băm mật mã học, dịch vụ gửi email SMTP, tải lên và tải về tệp từ Đám mây... và hơn thế nữa...
 
 ## Features / Tính năng
 * Hash
