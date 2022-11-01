@@ -38,9 +38,9 @@
 * SMTP
   * Text/HTML
 * UI: 
-  * AvatarPanel
-  * ChatBox
-  * ImgPanel
+  * AvatarPanel (Add to Palette from JAR)
+  * ChatBox     (Add to Palette from JAR)
+  * ImgPanel    (Add to Palette from JAR)
   * Mode
   * ScrollBar
 * Java Doc:
