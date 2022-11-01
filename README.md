@@ -49,4 +49,4 @@
 
 
 ## Download / Tải xuống
-* [Releases Version](https://github.com/AnLaVN/AnLaLibrary/tags)
+* [Releases Version](https://github.com/AnLaVN/AnLaLibrary/releases)
