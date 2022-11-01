@@ -39,6 +39,7 @@
   * Text/HTML
 * UI: 
   * AvatarPanel
+  * ChatBox
   * ImgPanel
   * Mode
   * ScrollBar
