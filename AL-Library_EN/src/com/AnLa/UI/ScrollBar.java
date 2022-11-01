@@ -5,8 +5,14 @@ import java.awt.*;
 import javax.swing.*;
 import javax.swing.plaf.basic.BasicScrollBarUI;
 
+
+/**The ScrollBar class supports export modern scroll bar. 
+ * @author Admin
+ */
 public class ScrollBar extends JScrollBar {
 
+    /**Create a modern Scroll Bar.
+     */
     public ScrollBar() {
         setUI(new ModernScrollBarUI());
         setPreferredSize(new Dimension(8, 8));
@@ -46,5 +52,4 @@ public class ScrollBar extends JScrollBar {
             @Override public void paint(Graphics grphcs) {}
         }
     }
-    
 }

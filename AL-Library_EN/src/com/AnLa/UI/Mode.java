@@ -5,6 +5,10 @@ import java.awt.Color;
 import javax.swing.*;
 import static javax.swing.JOptionPane.*;
 
+
+/**The Mode class supports change mode from light to dark, component from nimbus to windows look and feel.
+ * @author Admin
+ */
 public class Mode {
     private static boolean MODE = false;
     private static final LookAndFeel PRE_LF = UIManager.getLookAndFeel();
@@ -12,14 +16,14 @@ public class Mode {
     private static Color TextDarkMode = Color.decode("#F0F0F0"), TextLightMode = Color.decode("#2C3338");
     private static Color BackDarkMode = Color.decode("#363B41"), BackLightMode = Color.decode("#FFFFFF");
 
-    
+
+
     /**Use this method to set Mode for UI.
      * @param MODE <code>true</code> is Dark Mode, <code>false</code> is Light Mode.<br>
      */
     public static void setMode(boolean MODE) {  
         Mode.MODE = MODE;   
     }
-    
     
     /**Use this method to custom Color of Text in 2 case Dark and Light.
      * @param TextDarkMode is Color of Text if The Mode is Dark, should be light color.<br>
@@ -30,7 +34,6 @@ public class Mode {
         Mode.TextLightMode = TextLightMode;
     }
     
-    
     /**Use this method to custom Color of Background in 2 case Dark and Light.
      * @param BackDarkMode is Color of Background if The Mode is Dark, should be dark color.<br>
      * @param BackLightMode is Color of Background if The Mode is Light, should be light color.<br>
@@ -40,11 +43,10 @@ public class Mode {
         Mode.BackLightMode = BackLightMode;
     }
     
-    
     /**Use this method to change Mode for a Component.
      * @param Component is a variable Component need change Mode.<br>
      */
-    public static void setModeUI(JComponent Component){
+    public static void setModeComponent(JComponent Component){
         JComponent j = null;
         if(Component instanceof JPanel       pan) {j = pan;}
         if(Component instanceof JLabel       lbl) {j = lbl;}
@@ -62,6 +64,8 @@ public class Mode {
         }
     }
 
+    
+    
     /**Use this method to change File Chooser into Windows Look and Feel.
      * @return a <code>JFileChooser</code> was change Look and Feel.<br>
      */
@@ -76,7 +80,6 @@ public class Mode {
         return chooser;
     }
 
-    
     /**Use this method to change Check Box into Windows Look and Feel.
      * @return a <code>JCheckBox</code> was change Look and Feel.<br>
      */
@@ -91,7 +94,6 @@ public class Mode {
         return checkbox;
     }
     
-    
     /**Use this method to change Combo Box into Windows Look and Feel.
      * @return a <code>JComboBox</code> was change Look and Feel.<br>
      */
@@ -105,6 +107,7 @@ public class Mode {
             System.out.println("\n!!! Error trying to change Look and Feel of Combo Box. !!!");}
         return combobox;
     }
+    
     
     
     /**Use this method to brings up a dialog displaying a message.
@@ -142,6 +145,7 @@ public class Mode {
         } catch (IllegalAccessException | UnsupportedLookAndFeelException | InstantiationException | ClassNotFoundException e) {
             System.out.println("\n!!! Error trying to change Look and Feel of MessageDialog. !!!");}
     }
+    
     
     
     /**Use this method to brings up a Confirm dialog with the options "Yes, No and Cancel".
@@ -200,6 +204,7 @@ public class Mode {
             System.out.println("\n!!! Error trying to change Look and Feel of ConfirmDialog. !!!");
             throw new RuntimeException(e);}
     }
+    
     
     
     /**Use this method to brings up a Input dialog, shows a question <code>message</code>.

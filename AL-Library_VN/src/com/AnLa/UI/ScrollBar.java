@@ -5,8 +5,14 @@ import java.awt.*;
 import javax.swing.*;
 import javax.swing.plaf.basic.BasicScrollBarUI;
 
+
+/**Lớp ScrollBar hỗ trợ xuất thanh cuộn hiện đại.
+ * @author Admin
+ */
 public class ScrollBar extends JScrollBar {
 
+    /**Tạo một Thanh cuộn hiện đại.
+     */
     public ScrollBar() {
         setUI(new ModernScrollBarUI());
         setPreferredSize(new Dimension(8, 8));
@@ -46,5 +52,4 @@ public class ScrollBar extends JScrollBar {
             @Override public void paint(Graphics grphcs) {}
         }
     }
-    
 }

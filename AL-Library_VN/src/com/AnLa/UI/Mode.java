@@ -5,6 +5,10 @@ import java.awt.Color;
 import javax.swing.*;
 import static javax.swing.JOptionPane.*;
 
+
+/**Lớp Mode hỗ trợ thay đổi chế độ từ sáng sang tối, component từ nimbus sang giao diện windows.
+ * @author Admin
+ */
 public class Mode {
     private static boolean MODE = false;
     private static final LookAndFeel PRE_LF = UIManager.getLookAndFeel();
@@ -13,13 +17,13 @@ public class Mode {
     private static Color BackDarkMode = Color.decode("#363B41"), BackLightMode = Color.decode("#FFFFFF");
 
     
+    
     /**Sử dụng phương thức này để đặt Chế độ cho UI.
      * @param MODE <code>true</code> là Chế độ Tối, <code>false</code> là Chế độ Sáng.
      */
     public static void setMode(boolean MODE) {  
         Mode.MODE = MODE;   
     }
-    
     
     /**Sử dụng phương thức này để tùy chỉnh Màu của Văn Bản trong 2 trường hợp Chế Độ Tối và Sáng.
      * @param TextDarkMode là Màu của Văn Bản nếu Chế Độ là Tối, nên là màu sáng.<br>
@@ -30,7 +34,6 @@ public class Mode {
         Mode.TextLightMode = TextLightMode;
     }
     
-    
     /**Sử dụng phương thức này để tùy chỉnh Màu của Nền trong 2 trường hợp Chế Độ Tối và Sáng.
      * @param BackDarkMode là Màu của Nền nếu Chế Độ là Tối, nên là màu tối.<br>
      * @param BackLightMode là Màu của Nền nếu Chế Độ là Sáng, nên là màu sáng.<br>
@@ -40,11 +43,10 @@ public class Mode {
         Mode.BackLightMode = BackLightMode;
     }
     
-    
     /**Sử dụng phương thức này để thay đổi Chế độ cho một Component.
      * @param Component là biến Component cần thay đổi Chế Độ.<br>
      */
-    public static void setModeUI(JComponent Component){
+    public static void setModeComponent(JComponent Component){
         JComponent j = null;
         if(Component instanceof JPanel       pan) {j = pan;}
         if(Component instanceof JLabel       lbl) {j = lbl;}
@@ -62,6 +64,8 @@ public class Mode {
         }
     }
     
+    
+    
     /**Sử dụng phương thức này để thay đổi Trình Chọn Tệp thành Giao diện của Windows.
      * @return một <code>JFileChooser</code> đã thay đổi Giao diện.<br>
      */
@@ -76,7 +80,6 @@ public class Mode {
         return chooser;
     }
 
-    
     /**Sử dụng phương thức này để thay đổi Hộp Kiểm thành Giao diện của Windows.
      * @return một <code>JCheckBox</code> đã thay đổi Giao diện.<br>
      */
@@ -91,7 +94,6 @@ public class Mode {
         return checkbox;
     }
     
-    
     /**Sử dụng phương thức này để thay đổi Combo Box thành Giao diện của Windows.
      * @return một <code>JComboBox</code> đã thay đổi Giao diện.<br>
      */
@@ -105,6 +107,7 @@ public class Mode {
             System.out.println("\n!!! Error trying to change Look and Feel of Combo Box. !!!");}
         return combobox;
     }
+    
     
     
     /**Sử dụng phương thức này để hiển thị một hộp thoại thông báo.
@@ -142,6 +145,7 @@ public class Mode {
         } catch (IllegalAccessException | UnsupportedLookAndFeelException | InstantiationException | ClassNotFoundException e) {
             System.out.println("\n!!! Error trying to change Look and Feel of MessageDialog. !!!");}
     }
+    
     
     
     /**Sử dụng phương thức này để hiển thị hộp thoại Xác Nhận với các tùy chọn "Yes, No and Cancel".
@@ -200,6 +204,7 @@ public class Mode {
             System.out.println("\n!!! Error trying to change Look and Feel of ConfirmDialog. !!!");
             throw new RuntimeException(e);}
     }
+    
     
     
     /**Sử dụng phương thức này để hiển thị hộp thoại Nhập, hiển thị câu hỏi. <code>message</code>.

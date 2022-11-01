@@ -87,7 +87,7 @@
                       <Component id="av" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="im" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="10" max="32767" attributes="0"/>
+                      <EmptySpace pref="12" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -157,7 +157,7 @@
                 </DimensionLayout>
               </Layout>
             </Container>
-            <Container class="com.AnLa.UI.ImgPanel" name="im">
+            <Container class="com.AnLa.UI.ImagePanel" name="im">
 
               <Layout>
                 <DimensionLayout dim="0">

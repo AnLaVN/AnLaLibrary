@@ -25,5 +25,6 @@ public class ExampleCloundinary {
         
         //Way 2
         clound.FileDeleteByID("myFile");
+        
     }
 }

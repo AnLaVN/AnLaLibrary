@@ -7,8 +7,14 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import javax.imageio.ImageIO;
 
+
+/**The AvatarPanel class supports display a cropped avatar picture.
+ * @author Admin
+ */
 public class AvatarPanel extends javax.swing.JPanel{
     private BufferedImage image;
+    
+    public AvatarPanel(){}
     
     /**Use this method to set Picture for Panel.
      * @param filePath is a String path of picture file inside source folder.<br>Example: "src/Your/Packages/yourImages.png"
@@ -24,7 +30,6 @@ public class AvatarPanel extends javax.swing.JPanel{
         catch (IOException ex) {  System.out.println(ex); }
         repaint();    
     }
-    public AvatarPanel(){}
     
     @Override protected void paintComponent(Graphics g) {
         super.paintComponent(g);

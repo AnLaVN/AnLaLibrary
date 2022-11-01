@@ -28,7 +28,7 @@ public class ExampleUI extends javax.swing.JFrame {
         btnWConfrim = new javax.swing.JButton();
         btnWInput = new javax.swing.JButton();
         av = new com.AnLa.UI.AvatarPanel();
-        im = new com.AnLa.UI.ImgPanel();
+        im = new com.AnLa.UI.ImagePanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -137,7 +137,7 @@ public class ExampleUI extends javax.swing.JFrame {
                 .addComponent(av, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(im, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(12, Short.MAX_VALUE))
         );
 
         scpPan.setViewportView(panBackground);
@@ -212,7 +212,7 @@ public class ExampleUI extends javax.swing.JFrame {
     private javax.swing.JButton btnWFileChooser;
     private javax.swing.JButton btnWInput;
     private javax.swing.JButton btnWMessage;
-    private com.AnLa.UI.ImgPanel im;
+    private com.AnLa.UI.ImagePanel im;
     private javax.swing.JPanel panBackground;
     private javax.swing.JRadioButton rdoDM;
     private javax.swing.JRadioButton rdoLM;
@@ -220,17 +220,17 @@ public class ExampleUI extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
     
     private void setModeApp(){
-        Mode.setModeUI(panBackground);
-        Mode.setModeUI(scpPan.getVerticalScrollBar());
+        Mode.setModeComponent(panBackground);
+        Mode.setModeComponent(scpPan.getVerticalScrollBar());
         
-        Mode.setModeUI(rdoDM);
-        Mode.setModeUI(rdoLM);
-        Mode.setModeUI(btnWFileChooser);
-        Mode.setModeUI(btnWMessage);
-        Mode.setModeUI(btnWConfrim);
-        Mode.setModeUI(btnWInput);
+        Mode.setModeComponent(rdoDM);
+        Mode.setModeComponent(rdoLM);
+        Mode.setModeComponent(btnWFileChooser);
+        Mode.setModeComponent(btnWMessage);
+        Mode.setModeComponent(btnWConfrim);
+        Mode.setModeComponent(btnWInput);
         
-        Mode.setModeUI(av);
-        Mode.setModeUI(im);
+        Mode.setModeComponent(av);
+        Mode.setModeComponent(im);
     }
 }

@@ -2,22 +2,22 @@ package com.AnLa.UI;
 // Make By Bình An || AnLaVN || KatoVN
 
 import java.awt.*;
-import java.awt.geom.Ellipse2D;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import javax.imageio.ImageIO;
 
 
-/**Lớp AvatarPanel hỗ trợ hiển thị một hình ảnh đại diện được cắt tròn.
+/**The ImagePanel class supports display a image resizable.
  * @author Admin
  */
-public class AvatarPanel extends javax.swing.JPanel{
+public class ImagePanel extends javax.swing.JPanel {
     private BufferedImage image;
-    
-    public AvatarPanel(){}
 
-    /**Sử dụng phương thức này để đặt Hình ảnh cho Panel.
-     * @param filePath là Chuỗi đường dẫn của tệp ảnh trong thư mục source.<br>Ví dụ: "src/Your/Packages/yourImages.png"
+    public ImagePanel(){}    
+    
+    /**Use this method to set Picture for Panel.
+     * @param filePath is a String path of picture file inside source folder.<br>
+     * Example: "src/Your/Packages/yourImages.png"
      */
     public void setPic(String filePath) {
         try { 
@@ -33,11 +33,6 @@ public class AvatarPanel extends javax.swing.JPanel{
     
     @Override protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        Graphics2D g2 = (Graphics2D) g;
-        g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        int circleDiameter = Math.min(getWidth(),getHeight());
-        Ellipse2D.Double circle = new Ellipse2D.Double(0,0,circleDiameter,circleDiameter);
-        g2.setClip(circle);
         g.drawImage(image, 0, 0, getWidth(), getHeight(), this);
     }
     @Override public void setCursor(Cursor cursor)      {   super.setCursor(cursor);}
