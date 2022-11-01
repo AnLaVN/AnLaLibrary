@@ -19,6 +19,7 @@ public class ExampleUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        brp = new javax.swing.ButtonGroup();
         scpPan = new javax.swing.JScrollPane();
         panBackground = new javax.swing.JPanel();
         rdoDM = new javax.swing.JRadioButton();
@@ -35,6 +36,7 @@ public class ExampleUI extends javax.swing.JFrame {
         scpPan.setHorizontalScrollBar(null);
         scpPan.setVerticalScrollBar(new ScrollBar());
 
+        brp.add(rdoDM);
         rdoDM.setSelected(true);
         rdoDM.setText("Dark Mode");
         rdoDM.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -43,6 +45,7 @@ public class ExampleUI extends javax.swing.JFrame {
             }
         });
 
+        brp.add(rdoLM);
         rdoLM.setText("Light Mode");
         rdoLM.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -208,6 +211,7 @@ public class ExampleUI extends javax.swing.JFrame {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.AnLa.UI.AvatarPanel av;
+    private javax.swing.ButtonGroup brp;
     private javax.swing.JButton btnWConfrim;
     private javax.swing.JButton btnWFileChooser;
     private javax.swing.JButton btnWInput;
