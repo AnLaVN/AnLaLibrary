@@ -70,10 +70,10 @@
     nbproject/build-impl.xml file. 
 
     -->
+    
     <target name="-post-jar" description="bundle sources and javadoc in a jar" depends="javadoc">
         <jar compress="${jar.compress}" basedir="${src.dir}" jarfile="${dist.dir}/sources.jar"/>
         <jar compress="${jar.compress}" basedir="${dist.javadoc.dir}" jarfile="${dist.dir}/javadoc.jar"/>
-        
         <property name="store.jar.name" value="AL-Library_EN"/>
         <property name="store.dir" value="dist"/>
         <property name="store.jar" value="${store.dir}/${store.jar.name}.jar"/>

@@ -1,7 +1,7 @@
 package com.AnLa.UI;
 // Make By Bình An || AnLaVN || KatoVN
 
-import java.awt.Color;
+import java.awt.*;
 import javax.swing.*;
 import static javax.swing.JOptionPane.*;
 
@@ -114,7 +114,7 @@ public class Mode {
      * @param parentComponent <code>Frame</code> trong đó hộp thoại được hiển thị, nếu null hoặc không có <code>Frame</code>, một <code>Frame</code> mặc định sẽ được sử dụng.<br>
      * @param message <code>Object</code> để hiển thị.<br>
      */
-    public static void WMessage(JComponent parentComponent, Object message){
+    public static void WMessage(Component parentComponent, Object message){
         WMessage(parentComponent, message, "Message Dialog", INFORMATION_MESSAGE);
     }
     
@@ -125,7 +125,7 @@ public class Mode {
      * @param messageType loại thông báo sẽ được hiển thị:<br>
      * <code>ERROR_MESSAGE</code>, <code>INFORMATION_MESSAGE</code>, <code>WARNING_MESSAGE</code>,<code> QUESTION_MESSAGE</code>, hoặc <code>PLAIN_MESSAGE</code>.<br>
      */
-    public static void WMessage(JComponent parentComponent, Object message, String title, int messageType){
+    public static void WMessage(Component parentComponent, Object message, String title, int messageType){
         WMessage(parentComponent, message, title, messageType, null);
     }
     
@@ -137,7 +137,7 @@ public class Mode {
      * <code>ERROR_MESSAGE</code>, <code>INFORMATION_MESSAGE</code>, <code>WARNING_MESSAGE</code>,<code> QUESTION_MESSAGE</code>, hoặc <code>PLAIN_MESSAGE</code>.<br>
      * @param icon - một biểu tượng để hiển thị trong hộp thoại giúp người dùng xác định loại thông báo đang được hiển thị.
      */
-    public static void WMessage(JComponent parentComponent, Object message, String title, int messageType, Icon icon){
+    public static void WMessage(Component parentComponent, Object message, String title, int messageType, Icon icon){
         try {
             UIManager.setLookAndFeel(SYS_LF);
             JOptionPane.showMessageDialog(parentComponent, message, title, messageType, icon);
@@ -153,7 +153,7 @@ public class Mode {
      * @param message <code>Object</code> để hiển thị.<br>
      * @return một số nguyên cho biết tùy chọn được người dùng chọn.
      */
-    public static int WConfirm(JComponent parentComponent, Object message){
+    public static int WConfirm(Component parentComponent, Object message){
         return WConfirm(parentComponent, message, "Confirm Dialog", YES_NO_CANCEL_OPTION);
     }
     
@@ -165,7 +165,7 @@ public class Mode {
      * YES_NO_OPTION, YES_NO_CANCEL_OPTION hoặc OK_CANCEL_OPTION.<br>
      * @return một số nguyên cho biết tùy chọn được người dùng chọn.
      */
-    public static int WConfirm(JComponent parentComponent, Object message, String title, int optionType){
+    public static int WConfirm(Component parentComponent, Object message, String title, int optionType){
         return WConfirm(parentComponent, message, title, optionType, QUESTION_MESSAGE);
     }
     
@@ -179,7 +179,7 @@ public class Mode {
      * ERROR_MESSAGE, INFORMATION_MESSAGE, WARNING_MESSAGE, QUESTION_MESSAGE hoặc PLAIN_MESSAGE.<br>
      * @return một số nguyên cho biết tùy chọn được người dùng chọn.
      */
-    public static int WConfirm(JComponent parentComponent, Object message, String title, int optionType, int messageType){
+    public static int WConfirm(Component parentComponent, Object message, String title, int optionType, int messageType){
         return WConfirm(parentComponent, message, title, optionType, messageType, null);
     }
 
@@ -194,7 +194,7 @@ public class Mode {
      * @param icon biểu tượng để hiển thị trong hộp thoại.<br>
      * @return một số nguyên cho biết tùy chọn được người dùng chọn.
      */
-    public static int WConfirm(JComponent parentComponent, Object message, String title, int optionType, int messageType, Icon icon)   {
+    public static int WConfirm(Component parentComponent, Object message, String title, int optionType, int messageType, Icon icon)   {
         try {
             UIManager.setLookAndFeel(SYS_LF);
             int ConfirmDialog = JOptionPane.showConfirmDialog(parentComponent, message, title, optionType, messageType, icon);
@@ -220,7 +220,7 @@ public class Mode {
      * @param message <code>Object</code> để hiển thị. <br>
      * @return thông tin đầu vào của người dùng.
      */
-    public static String WInput(JComponent parentComponent, Object message){
+    public static String WInput(Component parentComponent, Object message){
         return WInput(parentComponent, message,"Input Dialog" , QUESTION_MESSAGE);
     }
     
@@ -232,7 +232,7 @@ public class Mode {
      * <code>ERROR_MESSAGE</code>, <code>INFORMATION_MESSAGE</code>, <code>WARNING_MESSAGE</code>, <code>QUESTION_MESSAGE</code> hoặc <code>PLAIN_MESSAGE</code>.<br>
      * @return thông tin đầu vào của người dùng.
      */
-    public static String WInput(JComponent parentComponent, Object message, String title, int messageType){
+    public static String WInput(Component parentComponent, Object message, String title, int messageType){
         try {
             UIManager.setLookAndFeel(SYS_LF);
             String InputDialog = JOptionPane.showInputDialog(parentComponent, message, title, messageType);

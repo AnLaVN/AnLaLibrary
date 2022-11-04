@@ -1,7 +1,7 @@
 package com.AnLa.UI;
 // Make By Bình An || AnLaVN || KatoVN
 
-import java.awt.Color;
+import java.awt.*;
 import javax.swing.*;
 import static javax.swing.JOptionPane.*;
 
@@ -114,7 +114,7 @@ public class Mode {
      * @param parentComponent the <code>Frame</code> in which the dialog is displayed, if null, or has no <code>Frame</code>, a default <code>Frame</code> is used.<br>
      * @param message the <code>Object</code> to display.<br>
      */
-    public static void WMessage(JComponent parentComponent, Object message){
+    public static void WMessage(Component parentComponent, Object message){
         WMessage(parentComponent, message, "Message Dialog", INFORMATION_MESSAGE);
     }
     
@@ -125,7 +125,7 @@ public class Mode {
      * @param messageType the type of message to be displayed:<br>
      * <code>ERROR_MESSAGE</code>, <code>INFORMATION_MESSAGE</code>, <code>WARNING_MESSAGE</code>,<code> QUESTION_MESSAGE</code>, or <code>PLAIN_MESSAGE</code>.<br>
      */
-    public static void WMessage(JComponent parentComponent, Object message, String title, int messageType){
+    public static void WMessage(Component parentComponent, Object message, String title, int messageType){
         WMessage(parentComponent, message, title, messageType, null);
     }
     
@@ -137,7 +137,7 @@ public class Mode {
      * <code>ERROR_MESSAGE</code>, <code>INFORMATION_MESSAGE</code>, <code>WARNING_MESSAGE</code>,<code> QUESTION_MESSAGE</code>, or <code>PLAIN_MESSAGE</code>.<br>
      * @param icon an icon to display in the dialog that helps the user identify the kind of message that is being displayed.<br>
      */
-    public static void WMessage(JComponent parentComponent, Object message, String title, int messageType, Icon icon){
+    public static void WMessage(Component parentComponent, Object message, String title, int messageType, Icon icon){
         try {
             UIManager.setLookAndFeel(SYS_LF);
             JOptionPane.showMessageDialog(parentComponent, message, title, messageType, icon);
@@ -153,7 +153,7 @@ public class Mode {
      * @param message the <code>Object</code> to display.<br>
      * @return an integer indicating the option selected by the user.
      */
-    public static int WConfirm(JComponent parentComponent, Object message){
+    public static int WConfirm(Component parentComponent, Object message){
         return WConfirm(parentComponent, message, "Confirm Dialog", YES_NO_CANCEL_OPTION);
     }
     
@@ -165,7 +165,7 @@ public class Mode {
      * <code>YES_NO_OPTION</code>, <code>YES_NO_CANCEL_OPTION</code>, or <code>OK_CANCEL_OPTION</code>.<br>
      * @return an integer indicating the option selected by the user.
      */
-    public static int WConfirm(JComponent parentComponent, Object message, String title, int optionType){
+    public static int WConfirm(Component parentComponent, Object message, String title, int optionType){
         return WConfirm(parentComponent, message, title, optionType, QUESTION_MESSAGE);
     }
     
@@ -179,7 +179,7 @@ public class Mode {
      * <code>ERROR_MESSAGE</code>, <code>INFORMATION_MESSAGE</code>, <code>WARNING_MESSAGE</code>, <code>QUESTION_MESSAGE</code>, or <code>PLAIN_MESSAGE</code>.<br>
      * @return an integer indicating the option selected by the user.
      */
-    public static int WConfirm(JComponent parentComponent, Object message, String title, int optionType, int messageType){
+    public static int WConfirm(Component parentComponent, Object message, String title, int optionType, int messageType){
         return WConfirm(parentComponent, message, title, optionType, messageType, null);
     }
 
@@ -194,7 +194,7 @@ public class Mode {
      * @param icon the icon to display in the dialog.<br>
      * @return an integer indicating the option selected by the user.
      */
-    public static int WConfirm(JComponent parentComponent, Object message, String title, int optionType, int messageType, Icon icon)   {
+    public static int WConfirm(Component parentComponent, Object message, String title, int optionType, int messageType, Icon icon)   {
         try {
             UIManager.setLookAndFeel(SYS_LF);
             int ConfirmDialog = JOptionPane.showConfirmDialog(parentComponent, message, title, optionType, messageType, icon);
@@ -220,7 +220,7 @@ public class Mode {
      * @param message the <code>Object</code> to display.<br>
      * @return a user's input.
      */
-    public static String WInput(JComponent parentComponent, Object message){
+    public static String WInput(Component parentComponent, Object message){
         return WInput(parentComponent, message,"Input Dialog" , QUESTION_MESSAGE);
     }
     
@@ -232,7 +232,7 @@ public class Mode {
      * <code>ERROR_MESSAGE</code>, <code>INFORMATION_MESSAGE</code>, <code>WARNING_MESSAGE</code>, <code>QUESTION_MESSAGE</code>, or <code>PLAIN_MESSAGE</code>.<br>
      * @return a user's input.
      */
-    public static String WInput(JComponent parentComponent, Object message, String title, int messageType){
+    public static String WInput(Component parentComponent, Object message, String title, int messageType){
         try {
             UIManager.setLookAndFeel(SYS_LF);
             String InputDialog = JOptionPane.showInputDialog(parentComponent, message, title, messageType);
