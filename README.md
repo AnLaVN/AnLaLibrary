@@ -33,6 +33,7 @@
   *Raw
 * Hash
   * AES
+  * MD5
   * SHA256
 * JDBC
   * MSSQL
