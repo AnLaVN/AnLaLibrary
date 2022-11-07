@@ -1,6 +1,7 @@
 package com.AnLa.HASH;
 // Make By Bình An || AnLaVN || KatoVN
 
+import com.AnLa.FILE.Log;
 import java.io.UnsupportedEncodingException;
 import java.security.*;
 import java.util.*;
@@ -11,7 +12,6 @@ import javax.crypto.spec.SecretKeySpec;
  * @author Admin
  */
 public class AES {
-    
 
     /**Sử dụng phương thức này để mã hóa một chuỗi gốc bằng khóa bảo mật. Không thể giải mã bằng công cụ online.
      * @param strToEncrypt là một chuỗi cần mã hóa.<br>
@@ -30,7 +30,7 @@ public class AES {
             cipher.init(Cipher.ENCRYPT_MODE, secretKey);
             return Base64.getEncoder().encodeToString(cipher.doFinal(strToEncrypt.getBytes("UTF-8")));
         } catch (UnsupportedEncodingException | InvalidKeyException | NoSuchAlgorithmException | BadPaddingException | IllegalBlockSizeException | NoSuchPaddingException e) { 
-            e.toString(); 
+            Log.add(e.toString()); 
         }
         return null;
     }
@@ -53,7 +53,7 @@ public class AES {
             cipher.init(Cipher.DECRYPT_MODE, secretKey);
             return new String(cipher.doFinal(Base64.getDecoder().decode(strToDecrypt)));
         } catch (UnsupportedEncodingException | InvalidKeyException | NoSuchAlgorithmException | BadPaddingException | IllegalBlockSizeException | NoSuchPaddingException e) {
-            e.toString();
+            Log.add(e.toString());
         }
         return null;
     }

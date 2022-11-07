@@ -1,6 +1,7 @@
 package com.AnLa.HASH;
 // Make By Bình An || AnLaVN || KatoVN
 
+import com.AnLa.FILE.Log;
 import java.io.UnsupportedEncodingException;
 import java.security.*;
 import java.util.*;
@@ -12,7 +13,6 @@ import javax.crypto.spec.SecretKeySpec;
  */
 public class AES {
 
-    
     /**Use this method to encryption a original string with security key. Can't be decryption by online tool.
      * @param strToEncrypt is a string need encrypt.<br>
      * @param myKey is a security key.<br>
@@ -30,7 +30,7 @@ public class AES {
             cipher.init(Cipher.ENCRYPT_MODE, secretKey);
             return Base64.getEncoder().encodeToString(cipher.doFinal(strToEncrypt.getBytes("UTF-8")));
         } catch (UnsupportedEncodingException | InvalidKeyException | NoSuchAlgorithmException | BadPaddingException | IllegalBlockSizeException | NoSuchPaddingException e) { 
-            e.toString(); 
+            Log.add(e.toString()); 
         }
         return null;
     }
@@ -53,7 +53,7 @@ public class AES {
             cipher.init(Cipher.DECRYPT_MODE, secretKey);
             return new String(cipher.doFinal(Base64.getDecoder().decode(strToDecrypt)));
         } catch (UnsupportedEncodingException | InvalidKeyException | NoSuchAlgorithmException | BadPaddingException | IllegalBlockSizeException | NoSuchPaddingException e) {
-            e.toString();
+            Log.add(e.toString());
         }
         return null;
     }

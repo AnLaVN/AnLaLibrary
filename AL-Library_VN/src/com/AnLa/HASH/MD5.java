@@ -1,9 +1,9 @@
 package com.AnLa.HASH;
 
+import com.AnLa.FILE.Log;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-
 
 /**Lớp MD5 chỉ hỗ trợ mã hóa một Chuỗi, giải mã nó là bất khả thi.
  * @author Admin
@@ -24,7 +24,7 @@ public class MD5 {
                 hashtext = "0" + hashtext;
             }return hashtext;
         }catch (NoSuchAlgorithmException e) {
-            e.toString();
+            Log.add(e.toString());
         }return null;
     }
 }

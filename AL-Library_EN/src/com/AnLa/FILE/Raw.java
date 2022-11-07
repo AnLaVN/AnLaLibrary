@@ -41,7 +41,7 @@ public class Raw {
         try {
             fos = new FileOutputStream(filePath);
             dos = new DataOutputStream(fos);
-        } catch (FileNotFoundException ex) {System.out.println("\n!!! Error try to open file \"" + filePath +"\". !!!");}
+        } catch (FileNotFoundException ex) {Log.add("!!! Error try to open file \"" + filePath +"\". !!!");}
     }
 
     /**Use this method to close the file if you don't want write or read to there anymore.
@@ -51,7 +51,7 @@ public class Raw {
             dos.flush();
             dos.close();
             fos.close();
-        } catch (IOException ex){System.out.println("\n!!! Error try to close file \"" + filePath +"\". !!!");}
+        } catch (IOException ex){Log.add("!!! Error try to close file \"" + filePath +"\". !!!");}
     }
     
     /**Use this method to write string Data to file.
@@ -60,7 +60,7 @@ public class Raw {
     public void writeData(String Data){
         try {
             dos.write(Data.getBytes());
-        } catch (IOException ex){System.out.println("\n!!! Error try to write raw data to file \"" + filePath +"\". !!!");}
+        } catch (IOException ex){Log.add("!!! Error try to write raw data to file \"" + filePath +"\". !!!");}
     }
     
     /**Use this method to read string data from file.
@@ -74,7 +74,7 @@ public class Raw {
             data = new String(dis.readAllBytes());
             dis.close();
             fis.close();
-        }catch(IOException ex){System.out.println("\n!!! Error try to read raw data from file \"" + filePath +"\". !!!");ex.printStackTrace();}
+        }catch(IOException ex){Log.add("!!! Error try to read raw data from file \"" + filePath +"\". !!!");}
         return data;
     }
 }

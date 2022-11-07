@@ -1,6 +1,7 @@
 package com.AnLa.JDBC;
 // Make By Bình An || AnLaVN || KatoVN
 
+import com.AnLa.FILE.Log;
 import java.sql.*;
 
 /**Lớp SQL hỗ trợ kết nối, thực thi mySQL và SQL Server.
@@ -15,8 +16,7 @@ public class SQL{
     /**Tạo kết nối SQL mặc định.
      * @see SQL#setSQL(java.lang.String, java.lang.String, java.lang.String) 
      */
-    public SQL() {}
-    
+    public SQL() {}    
     
     /**Tạo kết nối SQL với đầy đủ thông tin.
      * @param DB_url là URL Database để kết nối.<br>
@@ -62,12 +62,12 @@ public class SQL{
             switch (SQLType) {
                 case "sqlserver" -> Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                 case "mysql"     -> Class.forName("com.mysql.cj.jdbc.Driver");
-                default          ->{System.out.println("\n!!! Error Syntax !!! SQL does not exist."); s = false;}
+                default          ->{Log.add("!!! Error Syntax !!! SQL does not exist."); s = false;}
             }//Check SQL information
             if(isSQL() && s){   CON = DriverManager.getConnection(URL, USERNAME, PASSWORD); }
-            else{   System.out.println("\t!!! Error !!! SQL is not set up, please use setSQL method."); }
+            else{   Log.add("!!! Error !!! SQL is not set up, please use setSQL method."); }
         }catch(ClassNotFoundException | SQLException e){
-            System.out.println("\t!!! Error trying to connect Database. !!!");
+            Log.add("!!! Error trying to connect Database. !!!");
             throw new RuntimeException(e);
         }
     }
@@ -80,7 +80,7 @@ public class SQL{
     public PreparedStatement setQuery(String Query){
         try{    return CON.prepareStatement(Query); }
         catch(SQLException e){
-            System.out.println("\n!!! Error trying to set query. !!!");
+            Log.add("!!! Error trying to set query. !!!");
             throw new RuntimeException(e);
         }
     }
@@ -92,7 +92,7 @@ public class SQL{
     public void Execute(String Query){
         try {   setQuery(Query).execute();  }
         catch (SQLException ex) {
-            System.out.println("\n!!! Error trying to execute query. !!!");
+            Log.add("!!! Error trying to execute query. !!!");
         }
     }
     
@@ -104,7 +104,7 @@ public class SQL{
     public ResultSet Execute(PreparedStatement ps){
         try{    return ps.executeQuery();   }
         catch(SQLException e){
-            System.out.println("\n!!! Error trying to execute query. !!!");
+            Log.add("!!! Error trying to execute query. !!!");
             throw new RuntimeException(e);
         }
     }

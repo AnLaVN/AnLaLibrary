@@ -1,6 +1,7 @@
 package com.AnLa.NET;
 // Make By Bình An || AnLaVN || KatoVN
 
+import com.AnLa.FILE.Log;
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
 import java.io.File;
@@ -19,7 +20,6 @@ public class Cloud {
       *@see Cloud#Cloud(java.lang.String, java.lang.String, java.lang.String) 
      */
     public Cloud() {}
-
     
     /**Tạo một Cloudinary với đầy đủ thông tin.
      * @param Clound_Name là tên Cloud của bạn.<br>
@@ -37,7 +37,7 @@ public class Cloud {
     
     private void checkClound(){
         if(MyCloud == null){    
-            System.out.println("!!! Your Clound is null, please use setCloundinary method. !!!"); 
+            Log.add("!!! Your Clound is null, please use setCloundinary method. !!!"); 
             throw new RuntimeException();
         }
     }
@@ -79,7 +79,7 @@ public class Cloud {
             Map uploadResult = MyCloud.uploader().upload(new File(filePath), ObjectUtils.asMap("resource_type", "auto", "use_filename", true, "folder", CloundPath));
             return (String) uploadResult.get("url");
         }catch (IOException e) {
-            System.out.println("\n!!! Error trying to upload Image to Cloundinary. !!!");
+            Log.add("!!! Error trying to upload Image to Cloundinary. !!!");
             throw new RuntimeException(e);
         }
     }
@@ -92,9 +92,9 @@ public class Cloud {
     public void FileDeleteByURL(String url){
         String publicID = url.substring(url.lastIndexOf("/", url.indexOf("d/v")+14)+1, url.lastIndexOf("."));
         if(url.contains("/image/upload/")){
-            System.out.println("Cloundinary Public ID: "+publicID);
+            Log.add("Cloundinary Public ID: "+publicID);
             FileDeleteByID(publicID);}
-        else{System.out.println("!!! This method only support \"image\" Resource Type. !!!");}
+        else{Log.add("!!! This method only support \"image\" Resource Type. !!!");}
     }
     
     
@@ -105,6 +105,6 @@ public class Cloud {
     public void FileDeleteByID(String publicID){
         checkClound();
         try{    MyCloud.uploader().destroy(publicID, ObjectUtils.emptyMap());   }
-        catch(IOException e){  System.out.println("\n!!! Error trying to delete File on Cloundinary. !!!");}
+        catch(IOException e){  Log.add("!!! Error trying to delete File on Cloundinary. !!!");}
     }
 }

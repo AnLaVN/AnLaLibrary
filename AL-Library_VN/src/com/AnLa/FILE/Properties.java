@@ -34,7 +34,7 @@ public class Properties {
             FileInputStream fis = new FileInputStream(filePath);
             Lang = new PropertyResourceBundle(fis);
             fis.close();
-        }catch(IOException e){System.out.println("\n!!! Error trying to open properties file \"" + filePath +"\". !!!");}
+        }catch(IOException e){Log.add("!!! Error trying to open properties file \"" + filePath +"\". !!!");}
     }
     
     /**Sử dụng phương thức này để nhận một chuỗi giá trị từ khóa đã cho.

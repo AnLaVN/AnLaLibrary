@@ -29,7 +29,7 @@ public class ObjectData {
             oos.writeObject(Data);
             oos.flush();    oos.close();
             fos.flush();    fos.close();
-        }catch(IOException e){System.out.println("\n!!! Error try to write object data to file \"" + filePath +"\". !!!");}
+        }catch(IOException e){Log.add("!!! Error try to write object data to file \"" + filePath +"\". !!!");}
     }
     
     
@@ -49,7 +49,7 @@ public class ObjectData {
             ois.close();    fis.close();
             return Data;
         }catch(IOException | ClassNotFoundException e){
-            System.out.println("\n!!! Error try to read object data from file \"" + filePath +"\". !!!");
+            Log.add("!!! Error try to read object data from file \"" + filePath +"\". !!!");
             throw new RuntimeException(e);}
     }
 }

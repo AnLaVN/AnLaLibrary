@@ -1,6 +1,7 @@
 package com.AnLa.HASH;
 // Make By Bình An || AnLaVN || KatoVN
 
+import com.AnLa.FILE.Log;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -28,8 +29,7 @@ public class SHA256 {
             }
             return hexString.toString();
         } catch (UnsupportedEncodingException | NoSuchAlgorithmException ex) {
-            ex.toString();
+            Log.add(ex.toString());
         } return null;
     }
-    
 }

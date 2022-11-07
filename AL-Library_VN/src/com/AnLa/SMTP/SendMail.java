@@ -1,6 +1,7 @@
 package com.AnLa.SMTP;
 // Make By Bình An || AnLaVN || KatoVN
 
+import com.AnLa.FILE.Log;
 import java.util.Properties;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
@@ -74,7 +75,6 @@ public class SendMail {
             msg.setSubject(Title);
             msg.setContent(Content, "text/html");
             Transport.send(msg);
-        } catch (MessagingException ex) {   System.out.println(ex); }
+        } catch (MessagingException ex) {Log.add("!!! Error try to send mail to " + ToEmail + "."); Log.add(ex.toString());}
     }
-    
 }

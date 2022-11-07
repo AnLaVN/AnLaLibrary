@@ -1,9 +1,9 @@
 package com.AnLa.HASH;
 
+import com.AnLa.FILE.Log;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-
 
 /**The MD5 class only supports encryption a String, decryption it is impossible.
  * @author Admin
@@ -24,7 +24,7 @@ public class MD5 {
                 hashtext = "0" + hashtext;
             }return hashtext;
         }catch (NoSuchAlgorithmException e) {
-            e.toString();
+            Log.add(e.toString());
         }return null;
     }
 }

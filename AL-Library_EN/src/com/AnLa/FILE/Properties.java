@@ -34,7 +34,7 @@ public class Properties {
             FileInputStream fis = new FileInputStream(filePath);
             Lang = new PropertyResourceBundle(fis);
             fis.close();
-        }catch(IOException e){System.out.println("\n!!! Error trying to open properties file \"" + filePath +"\". !!!");}
+        }catch(IOException e){Log.add("!!! Error trying to open properties file \"" + filePath +"\". !!!");}
     }
     
     /**Use this method to get a string value from given key.
