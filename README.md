@@ -410,14 +410,14 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 
 
 
-# 4. About Module / Giới thiệu về mô-đun
+# 4. About Module / Giới thiệu về Module
 
 ## 4.1 Overview / Tổng quan
 ### Tiếng Việt
-> Module là cách mà tôi giúp cho thư viện không bị quá tải dung lượng cũng như đảm bảo tính toàn vẹn dữ liệu khi mà có quá nhiều thứ bị nhồi nhét vào một file .jar sẽ dẫn đến lỗi không mong muốn. Chính vì vậy nếu bạn đang có ý định sử dụng một vài thư viện yêu cầu module, hãy làm theo hướng dẫn ở mục tiếp theo.
+> Module là cách mà tôi giúp cho thư viện không bị quá tải dung lượng cũng như đảm bảo tính toàn vẹn dữ liệu khi mà có quá nhiều thứ bị nhồi nhét vào một file .jar sẽ dẫn đến lỗi không mong muốn. Mỗi Module chứa đầy đủ các thành phần khác nhau như các thư viện liên kết động, tệp thực thi, thư mục tạm... giúp cho thư viện hoạt động chính xác nhất và giảm thiểu tối đa dữ liệu không cần thiết. Nếu bạn không dùng tới các chức năng yêu cầu Module, bạn chỉ cần tải file .jar với dung lượng nhỏ hơn nhiều, việc này là cực kỳ có ý nghĩa. Khi bạn cần dùng thư viện có yêu cầu Module, như FaceDetection, bạn chỉ cần tải Module của nó về dự án. Điều này mặc dù đi ngược lại với tôn chỉ của dự án AL-Library là "Đơn giản - Tinh gọn", nhưng nó giúp cho thư viện đủ nhẹ để có thể dễ dàng truyền bá đi xa. Tôi hy vọng điều này là chấp nhận được, chính vì vậy nếu bạn đang có ý định sử dụng một vài thư viện yêu cầu module, hãy làm theo hướng dẫn ở mục tiếp theo.
 
 ### English
-> Modules are my way of keeping the library from being overloaded and ensuring data integrity when too much stuff is crammed into a single .jar file, leading to unexpected errors. So if you are planning to use some library that requires a module, please follow the instructions in the next section.
+> Modules are my way of keeping the library from being overloaded as well as ensuring data integrity when having too much stuff crammed into one .jar file will lead to unexpected errors. Each Module contains a full range of different components such as dynamic link library, executable files, temporary directories... to help the library work correctly and minimize unnecessary data. If you don't use functions that require Modules, you can simply download the .jar file with a much smaller size, which makes a lot of sense. When you need to use a library that requires a Module, like FaceDetection, you just need to download its Module to the project. This, while going against the AL-Library project's motto of "Simple - Lean", does make the library lightweight enough to be easily propagated. I hope this is acceptable, so if you are planning to use some library that requires modules, follow the instructions in the next section.
 
 
 ## 4.2 Download Module / Tải xuống Module 
