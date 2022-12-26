@@ -303,7 +303,7 @@
 ````
 
 
-## 3.8 UI - Provide UI related libraries / Cung cấp các thư viện liên quan đến SMTP
+## 3.8 UI - Provide UI related libraries / Cung cấp các thư viện liên quan đến UI
   
 ### 3.8.1 AvatarPanel
   [ExampleAvatarPanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleAvatarPanel.java)
