@@ -68,7 +68,7 @@
 
 
 
-# 3. Quick start Guide / Hướng dẫn nhanh
+# 3. Quick Guide / Hướng dẫn nhanh
 [See details in project example / Xem chi tiết trong dự án mẫu](https://github.com/AnLaVN/AL-Library/tree/Releases/AL-Library_Example)
 
 ## 3.1 FILE - Provides file related libraries / Cung cấp các thư viện liên quan đến tập tin
