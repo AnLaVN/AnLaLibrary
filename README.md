@@ -304,10 +304,10 @@
 
 
 ## 3.8 UI - Provide UI related libraries / Cung cấp các thư viện liên quan đến SMTP
-  [See details in project example / Xem chi tiết trong dự án mẫu]()
+  [See details in project example / Xem chi tiết trong dự án mẫu](https://github.com/AnLaVN/AL-Library/tree/Releases/AL-Library_Example)
   
 ### 3.8.1 AvatarPanel
-  [ExampleAvatarPanel]()
+  [ExampleAvatarPanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleAvatarPanel.java)
 ```` java
   import com.AnLa.UI.AvatarPanel;
 
@@ -317,7 +317,7 @@
 ````
 
 ### 3.8.2 ChatBox
-   [ExampleChatBox]()
+   [ExampleChatBox](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleChatBox.java)
 ```` java
   import com.AnLa.UI.ChatBox;
   
@@ -328,7 +328,7 @@
 ````
 
 ### 3.8.3 ComboBox
-  [ExampleComboBox]()
+  [ExampleComboBox](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleComboBox.java)
 ```` java
   import com.AnLa.UI.ComboBox;
 
@@ -337,7 +337,7 @@
 ````
 
 ### 3.8.4 ImagePanel
-  [ExampleImagePanel]()
+  [ExampleImagePanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleImagePanel.java)
 ```` java
   import com.AnLa.UI.ImagePanel;
 
@@ -346,7 +346,7 @@
 ````
 
 ### 3.8.5 Mode
-  [ExampleMode]()
+  [ExampleMode](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleMode.java)
 ```` java
   import com.AnLa.UI.Mode;
   
@@ -355,7 +355,7 @@
 ````
 
 ### 3.8.6 Notification
-  [ExampleNotification]()
+  [ExampleNotification](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleNotification.java)
 ```` java
   import com.AnLa.UI.Notification;
   
@@ -365,7 +365,7 @@
 ````
 
 ### 3.8.7 ScrollBar
-  [ExampleScrollBar]()
+  [ExampleScrollBar](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleScrollBar.java)
 ```` java
 import com.AnLa.UI.ScrollBar;
 
@@ -373,7 +373,7 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 ````
 
 ### 3.8.8 DateChooser.DateChooser
-  [ExampleDateChooser]()
+  [ExampleDateChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleDateChooser.java)
 ```` java
   import com.AnLa.UI.DateChooser.DateChooser;
 
@@ -383,7 +383,7 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 ````
 
 ### 3.8.9 TimePicker.TimePicker
-  [ExampleTimePicker]()
+  [ExampleTimePicker](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleTimePicker.java)
 ```` java
   import com.AnLa.UI.TimePicker.TimePicker;
 
@@ -396,7 +396,7 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 ````
 
 ### 3.8.10 WinFileChooser.JnaFileChooser
-  [ExampleJnaFileChooser]()
+  [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleJnaFileChooser.java)
 ```` java
   import com.AnLa.UI.WinFileChooser.JnaFileChooser;
   
@@ -411,5 +411,3 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 
 ## 4. Download / Tải xuống
 * [Releases Version](https://github.com/AnLaVN/AnLaLibrary/releases)
-* [FaceDetection Module](https://github.com/AnLaVN/AL-Library/releases/download/v3.61.21/FaceDetection.exe)
-* [FaceRecognition Module](https://github.com/AnLaVN/AL-Library/releases/download/v3.61.21/FaceRecognition.exe)
