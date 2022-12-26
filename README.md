@@ -14,14 +14,15 @@
 
 
 # 1. Overview / Tổng quan
-### English
-> AL-Library is a personal and free project. It's basically a library that includes many other libraries that make it easier to use.
->
-> The library provides methods for you to do basic work in Java such as: Database Connection, Swing Components support, Cryptographic Hashing, SMTP email service, file upload and download from the Cloud, chat with ChatGPT bot, face detection, face recognition... and more...
 ### Tiếng Việt
 > AL-Library là một dự án cá nhân và miễn phí. Về cơ bản, nó là một thư viện bao hàm nhiều thư viện khác giúp việc sử dụng dễ dàng hơn.
 >
 > Thư viện cung cấp các phương thức để bạn có thể làm việc cơ bản trong Java như: Kết nối Database, hỗ trợ các Thành phần Swing, Băm mật mã học, dịch vụ gửi email SMTP, tải lên và tải về tệp từ Đám mây, trò chuyện với ChatGPT bot, nhận diện khuôn mặt, nhận dạng khuôn mặt... và hơn thế nữa...
+> 
+### English
+> AL-Library is a personal and free project. It's basically a library that includes many other libraries that make it easier to use.
+>
+> The library provides methods for you to do basic work in Java such as: Database Connection, Swing Components support, Cryptographic Hashing, SMTP email service, file upload and download from the Cloud, chat with ChatGPT bot, face detection, face recognition... and more...
 
 
 
@@ -408,5 +409,16 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
   See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleJnaFileChooser.java)
 
 
-## 4. Download / Tải xuống
+
+## 4. About Module / Giới thiệu về mô-đun
+
+### 4.1 Overview / Tổng quan
+#### Tiếng Việt
+> Module là cách mà tôi giúp cho thư viện không bị quá tải dung lượng cũng như đảm bảo tính toàn vẹn dữ liệu khi mà có quá nhiều thứ bị nhồi nhét vào một file .jar sẽ dẫn đến lỗi không mong muốn. Chính vì vậy nếu bạn đang có ý định sử dụng một vài thư viện yêu cầu module, hãy làm theo hướng dẫn ở mục tiếp theo.
+
+#### English
+> Modules are my way of keeping the library from being overloaded and ensuring data integrity when too much stuff is crammed into a single .jar file, leading to unexpected errors. So if you are planning to use some library that requires a module, please follow the instructions in the next section.
+
+
+## 5. Download / Tải xuống
 * [Releases Version](https://github.com/AnLaVN/AnLaLibrary/releases)
