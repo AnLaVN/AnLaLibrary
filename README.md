@@ -55,7 +55,7 @@
   * [AvatarPanel](#381-avatarpanel) (Add to Palette from JAR)
   * [ChatBox](#382-chatbox) (Add to Palette from JAR)
   * [ComboBox](#383-combobox) (Add to Palette from JAR)
-  * [ImgPanel](#384-imgpanel) (Add to Palette from JAR)
+  * [ImagePanel](#384-imagepanel) (Add to Palette from JAR)
   * [Mode](#385-mode)
   * [Notification](#386-notification)
   * [ScrollBar](#387-scrollBar)
