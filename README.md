@@ -421,7 +421,7 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 
 
 ## 4.2 Download Module / Tải xuống Module 
-> [FaceDetection Module](https://github.com/AnLaVN/AL-Library/releases/download/v3.61.21/FaceDetection.exe)
+> [FaceDetection Module](https://github.com/AnLaVN/AL-Library/releases/download/v3.61.21/FaceDetection.exe)<br>
 > [FaceRecognition Module](https://github.com/AnLaVN/AL-Library/releases/download/v3.61.21/FaceRecognition.exe)
 
 
