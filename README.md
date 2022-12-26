@@ -274,6 +274,7 @@
   FaceDetection.startDetection(0);  //start capture video from camera 0 and detect face, if you was setDetectFace(true, ..., ...)
   //FaceDetection.endDetection();   //end capture video
 ````
+  See more / Xem thêm : 
 
 ### 3.6.2 FaceRecognition
 ```` java
@@ -306,7 +307,6 @@
 ## 3.8 UI - Provide UI related libraries / Cung cấp các thư viện liên quan đến UI
   
 ### 3.8.1 AvatarPanel
-  [ExampleAvatarPanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleAvatarPanel.java)
 ```` java
   import com.AnLa.UI.AvatarPanel;
 
@@ -314,9 +314,9 @@
   avatar.setPic("myImage.png"); //set picture for panel from file
   avatar.setPic("https://i.pinimg.com/564x/b7/d2/62/b7d262d9ab6397f959a2030f65947b4f.jpg"); //set picture for panel from url
 ````
+  See more / Xem thêm [ExampleAvatarPanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleAvatarPanel.java)
 
 ### 3.8.2 ChatBox
-   [ExampleChatBox](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleChatBox.java)
 ```` java
   import com.AnLa.UI.ChatBox;
   
@@ -325,36 +325,36 @@
   chat.addLeftBubble("this is left side text"); //add bubble text in left side
   chat.addNotifiBox("this is notification text"); //add notification text in center
 ````
+  See more / Xem thêm [ExampleChatBox](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleChatBox.java)
 
 ### 3.8.3 ComboBox
-  [ExampleComboBox](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleComboBox.java)
 ```` java
   import com.AnLa.UI.ComboBox;
 
   ComboBox comboBox = new ComboBox();
   comboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "item 1", "item2" })); //use as normal combobox
 ````
+  See more / Xem thêm [ExampleComboBox](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleComboBox.java)
 
 ### 3.8.4 ImagePanel
-  [ExampleImagePanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleImagePanel.java)
 ```` java
   import com.AnLa.UI.ImagePanel;
 
   ImagePanel image = new ImagePanel();
   image.setPic("myImage.png"); //set picture for panel from file
 ````
+  See more / Xem thêm [ExampleImagePanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleImagePanel.java)
 
 ### 3.8.5 Mode
-  [ExampleMode](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleMode.java)
 ```` java
   import com.AnLa.UI.Mode;
   
   Mode.setMode(true); //set true is dark mode, false is light
   Mode.setModeComponent(yourComponent); //set the component will apply mode change
 ````
+  See more / Xem thêm [ExampleMode](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleMode.java)
 
 ### 3.8.6 Notification
-  [ExampleNotification](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleNotification.java)
 ```` java
   import com.AnLa.UI.Notification;
   
@@ -362,17 +362,17 @@
   Notification noti = new Notification(this, Notification.Type.WARNING, Notification.Location.TOP_CENTER, "Notification");
   noti.showNotification(); //show popup Notification
 ````
+  See more / Xem thêm [ExampleNotification](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleNotification.java)
 
 ### 3.8.7 ScrollBar
-  [ExampleScrollBar](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleScrollBar.java)
 ```` java
 import com.AnLa.UI.ScrollBar;
 
 yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 ````
+  See more / Xem thêm [ExampleScrollBar](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleScrollBar.java)
 
 ### 3.8.8 DateChooser.DateChooser
-  [ExampleDateChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleDateChooser.java)
 ```` java
   import com.AnLa.UI.DateChooser.DateChooser;
 
@@ -380,9 +380,9 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
   dateChooser.setReferenceLabel(yourLabel); //set JLabel where will display day was choose
   dateChooser.showPopup();  //show day chooser as popup
 ````
+  See more / Xem thêm [ExampleDateChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleDateChooser.java)
 
 ### 3.8.9 TimePicker.TimePicker
-  [ExampleTimePicker](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleTimePicker.java)
 ```` java
   import com.AnLa.UI.TimePicker.TimePicker;
 
@@ -393,9 +393,9 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
               (getWidth() - timePicker.getPreferredSize().width) / 2,
               (getHeight() - timePicker.getPreferredSize().height) / 2);
 ````
+  See more / Xem thêm [ExampleTimePicker](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleTimePicker.java)
 
 ### 3.8.10 WinFileChooser.JnaFileChooser
-  [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleJnaFileChooser.java)
 ```` java
   import com.AnLa.UI.WinFileChooser.JnaFileChooser;
   
@@ -406,6 +406,7 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
     System.out.println(SelectPic.getSelectedFile().getAbsolutePath());
   }
 ````
+  See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleJnaFileChooser.java)
 
 
 ## 4. Download / Tải xuống
