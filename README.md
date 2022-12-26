@@ -260,7 +260,6 @@
 ## 3.6 OpenCV - Provide OpenCV related libraries / Cung cấp các thư viện liên quan đến OpenCV
 
 ### 3.6.1 FaceDetection
-  [ExampleFaceDetection](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/OpenCV/ExampleFaceDetection.java)
 ```` java
   import com.AnLa.OpenCV.FaceDetection;
   
@@ -274,7 +273,7 @@
   FaceDetection.startDetection(0);  //start capture video from camera 0 and detect face, if you was setDetectFace(true, ..., ...)
   //FaceDetection.endDetection();   //end capture video
 ````
-  See more / Xem thêm : 
+  See more / Xem thêm [ExampleFaceDetection](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/OpenCV/ExampleFaceDetection.java)
 
 ### 3.6.2 FaceRecognition
 ```` java
