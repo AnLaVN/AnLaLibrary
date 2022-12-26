@@ -69,7 +69,7 @@
 
 
 # 3. Quick start Guide / Hướng dẫn nhanh
-
+[See details in project example / Xem chi tiết trong dự án mẫu](https://github.com/AnLaVN/AL-Library/tree/Releases/AL-Library_Example)
 
 ## 3.1 FILE - Provides file related libraries / Cung cấp các thư viện liên quan đến tập tin
 
@@ -260,7 +260,7 @@
 ## 3.6 OpenCV - Provide OpenCV related libraries / Cung cấp các thư viện liên quan đến OpenCV
 
 ### 3.6.1 FaceDetection
-  [See details in project example / Xem chi tiết trong dự án mẫu]()
+  [ExampleFaceDetection](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/OpenCV/ExampleFaceDetection.java)
 ```` java
   import com.AnLa.OpenCV.FaceDetection;
   
@@ -304,7 +304,6 @@
 
 
 ## 3.8 UI - Provide UI related libraries / Cung cấp các thư viện liên quan đến SMTP
-  [See details in project example / Xem chi tiết trong dự án mẫu](https://github.com/AnLaVN/AL-Library/tree/Releases/AL-Library_Example)
   
 ### 3.8.1 AvatarPanel
   [ExampleAvatarPanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleAvatarPanel.java)
