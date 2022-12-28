@@ -27,45 +27,85 @@
 
 
 # 2. Features / Tính năng
-* [FILE](#31-file---provides-file-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-tập-tin)
-  * [Log](#311-log)
-  * [NativeLibrary](#312-nativelibrary)
-  * [ObjectData](#313-objectdata)
-  * [Properties](#314-properties)
-  * [Raw](#315-raw)
-* [HASH](#32-hash---provides-cryptographic-hash-function-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-hàm-băm-mật-mã-học)
-  * [AES](#321-aes)
-  * [MD5](#322-md5)
-  * [SHA256](#323-sha256)
-* [JDBC](#33-jdbc---provide-database-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-cơ-sở-dữ-liệu)
-  * [SQL](#331-sql)
-* [NET](#34-net---provide-internet-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-internet)
-  * [Cloud](#341-cloud)
-  * [DocNet](#342-docnet)
-  * [Network](#343-network)
-* [OpenAI](#35-openai---provide-openai-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-openai)
-  * [ChatGPT](#351-chatgpt)
-* [OpenCV](#36-opencv---provide-opencv-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-opencv)
-  * [FaceDetection](#361-facedetection)
-    * [FaceDetection Module](https://github.com/AnLaVN/AL-Library/releases/download/v3.61.21/FaceDetection.exe)
-  * [FaceRecognition](#362-facerecognition)
-    * [FaceRecognition Module](https://github.com/AnLaVN/AL-Library/releases/download/v3.61.21/FaceRecognition.exe)
-* [SMTP](#37-smtp---provide-smtp-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-smtp)
-  * [SendMail](#371-sendmail)
-* [UI](#38-ui---provide-ui-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-ui)
-  * [AvatarPanel](#381-avatarpanel) (Add to Palette from JAR)
-  * [ChatBox](#382-chatbox) (Add to Palette from JAR)
-  * [ComboBox](#383-combobox) (Add to Palette from JAR)
-  * [ImagePanel](#384-imagepanel) (Add to Palette from JAR)
-  * [Mode](#385-mode)
-  * [Notification](#386-notification)
-  * [ScrollBar](#387-scrollBar)
-  * [DateChooser.DateChooser](#388-datechooserdatechooser)
-  * [TimePicker.TimePicker](#389-timepickertimepicker)
-  * [WinFileChooser.JnaFileChooser](#3810-winfilechooserjnafilechooser)
-* Java Doc
-  * [English](https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/)
-  * [Tiếng Việt](https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/)
+<details>
+  <summary><a href="#31-file---provides-file-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-tập-tin">FILE</a></summary>
+  <ol>
+    <li><a href="#311-log">Log</a></li>
+    <li><a href="#312-nativelibrary">NativeLibrary</a></li>
+    <li><a href="#313-objectdata">ObjectData</a></li>
+    <li><a href="#314-properties">Properties</a></li>
+    <li><a href="#315-raw">Raw</a></li>
+  </ol>
+</details>
+<details>
+  <summary><a href="#32-hash---provides-cryptographic-hash-function-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-hàm-băm-mật-mã-học">HASH</a></summary>
+  <ol>
+    <li><a href="#321-aes">AES</a></li>
+    <li><a href="#322-md5">MD5</a></li>
+    <li><a href="#323-sha256">SHA256</a></li>
+  </ol>
+</details>
+<details>
+  <summary><a href="#33-jdbc---provide-database-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-cơ-sở-dữ-liệu">JDBC</a></summary>
+  <ol>
+    <li><a href="#331-sql">SQL</a></li>
+  </ol>
+</details>
+<details>
+  <summary><a href="#34-net---provide-internet-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-internet">NET</a></summary>
+  <ol>
+    <li><a href="#341-cloud">Cloud</a></li>
+    <li><a href="#342-docnet">DocNet</a></li>
+    <li><a href="#343-network">Network</a></li>
+  </ol>
+</details>
+<details>
+  <summary><a href="#35-openai---provide-openai-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-openai">OpenAI</a></summary>
+  <ol>
+    <li><a href="#351-chatgpt">ChatGPT</a></li>
+  </ol>
+</details>
+<details>
+  <summary><a href="#36-opencv---provide-opencv-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-opencv">OpenCV</a></summary>
+  <ol>
+    <li><a href="#361-facedetection">FaceDetection</a></li>
+    <ul>
+        <li><a href="https://github.com/AnLaVN/AL-Library/releases/download/v3.61.21/FaceDetection.exe">FaceDetection Module</a></li>
+      </ul>
+    <li><a href="#362-facerecognition">FaceRecognition</a></li>
+    <ul>
+        <li><a href="https://github.com/AnLaVN/AL-Library/releases/download/v3.61.21/FaceRecognition.exe">FaceRecognition Module</a></li>
+      </ul>
+  </ol>
+</details>
+<details>
+  <summary><a href="#37-smtp---provide-smtp-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-smtp">SMTP</a></summary>
+  <ol>
+    <li><a href="#371-sendmail">SendMail</a></li>
+  </ol>
+</details>
+<details>
+  <summary><a href="#38-ui---provide-ui-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-ui">UI</a></summary>
+  <ol>
+    <li><a href="#381-avatarpanel">AvatarPanel</a> (Add to Palette from JAR)</li>
+    <li><a href="#382-chatbox">ChatBox</a> (Add to Palette from JAR)</li>
+    <li><a href="#383-combobox">ComboBox</a> (Add to Palette from JAR)</li>
+    <li><a href="#384-imagepanel">ImagePanel</a> (Add to Palette from JAR)</li>
+    <li><a href="#385-mode">Mode</a></li>
+    <li><a href="#386-notification">Notification</a></li>
+    <li><a href="#387-scrollbar">ScrollBar</a></li>
+    <li><a href="#388-datechooserdatechooser">DateChooser.DateChooser</a></li>
+    <li><a href="#389-timepickertimepicker">TimePicker.TimePicker</a></li>
+    <li><a href="#3810-winfilechooserjnafilechooser">WinFileChooser.JnaFileChooser</a></li>
+  </ol>
+</details>
+<details>
+  <summary>Java Doc</summary>
+  <ol>
+    <li><a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/">Tiếng Việt</a></li>
+    <li><a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/">English</a></li>
+  </ol>
+</details>
 
 
 
@@ -75,33 +115,33 @@
 ## 3.1 FILE - Provides file related libraries / Cung cấp các thư viện liên quan đến tập tin
 
 ### 3.1.1 Log
-```` java
+``` java
   import com.AnLa.FILE.Log;
     
   Log.add("Your text");   //write text to log file, will auto create as Log folder.
   System.out.println("File path: " + Log.getFilePath());  //print path of log file.
   Log.closeFile();    //close file if your dont use anymore.
-````
+```
  
 ### 3.1.2 NativeLibrary
-```` java
+``` java
   import com.AnLa.FILE.NativeLibrary;
   
   NativeLibrary.load("path/YourLib.dll");
-````
+```
 
 ### 3.1.3 ObjectData
   The main class.
-```` java
+``` java
   import com.AnLa.FILE.ObjectData;
   
   ObjectData.writeData("myFile.dat", new myObject("AnLaVN", 19)); //write new object to myFile.dat
   myObject myobj = (myObject) ObjectData.readData("myFile.dat");  //read object from myFile.dat, store in myobj variable
   System.out.println("My name: " + myobj.getName());  //print value of object
   System.out.println("My age: " + myobj.getAge());
-````
+```
   The myObject class.
-```` java
+``` java
   import java.io.Serializable;
   //Make sure your class have 'implements Serializable'
   public class myObject implements Serializable{
@@ -116,36 +156,36 @@
       public String getName() {   return name;    }
       public int getAge()     {   return age;     }
   }
-````
+```
 
 ### 3.1.4 Properties
   The main class
-```` java
+``` java
   import com.AnLa.FILE.Properties;
   
   String lang = "EN"; //"VN" if you want using vietnamese languages, "EN" if you want english
   Properties proper = new Properties("src/FILE/myProperties_" + lang + ".properties");    //load properties file
   System.out.println("Properties of hello key: " + proper.getString("hello"));    //print value of key in file
-````
+```
   The myProperties_VN.properties file ![image](https://user-images.githubusercontent.com/90229487/209496791-a1abfc66-77e0-48e5-94ce-2b83cb68c703.png)<br>
   The myProperties_EN.properties file ![image](https://user-images.githubusercontent.com/90229487/209496563-fbad72f0-ecdf-4edd-bf37-238f63a2f94b.png)
   
 ### 3.1.5 Raw
   The main class
-```` java
+``` java
   import com.AnLa.FILE.Raw;
   
   Raw raw = new Raw("src/FILE/myFile.txt");    //create myFile.txt in src/FILE/ folder
   raw.writeData("your text"); //write data to file
   System.out.println(raw.readData()); //read data from file
   raw.closeFile();    //close file if you dont use anymore
-````
+```
 
 
 ## 3.2 HASH - Provides cryptographic hash function related libraries / Cung cấp các thư viện liên quan đến hàm băm mật mã học
 
 ### 3.2.1 AES
-```` java
+``` java
   import com.AnLa.HASH.AES;
   
   String orgStr = "This is original string.", //declare original string need to hash
@@ -153,32 +193,32 @@
          hashStr= AES.Encrypt(orgStr, myKey); //hash original string with security key
   System.out.println("Hash AES of orgStr: " + hashStr);   //print hash string
   System.out.println("My original string: " + AES.Decrypt(hashStr, myKey));   //encrypt hash string and print it
-````
+```
 
 ### 3.2.2 MD5
-```` java
+``` java
   import com.AnLa.HASH.MD5;
   
   String orgStr = "This is original string.", //declare original string need to hash
          hashStr= MD5.Encrypt(orgStr); //hash original string, only supports encryption, decryption it is impossible.
   System.out.println("Hash MD5 of orgStr: " + hashStr);   //print hash string
-````
+```
 
 ### 3.2.3 SHA256
-```` java
+``` java
   import com.AnLa.HASH.SHA256;
   
   String orgStr = "This is original string.", //declare original string need to hash
          hashStr= SHA256.Encrypt(orgStr); //hash original string, only supports encryption, decryption it is impossible.
   System.out.println("Hash SHA256 of orgStr: " + hashStr);   //print hash string
-````
+```
 
 
 ## 3.3 JDBC - Provide database related libraries / Cung cấp các thư viện liên quan đến cơ sở dữ liệu
 
 ### 3.3.1 SQL
   The main class
-```` java
+``` java
   import com.AnLa.JDBC.SQL;
   import java.sql.*;
 
@@ -198,9 +238,9 @@
   while(rs.next()){
     System.out.println("ID: " + rs.getString("ID") + " - " + rs.getString("Name"));//get value
   }
-````
+```
   The sql file
-```` sql
+``` sql
   USE MASTER
   DROP DATABASE  IF EXISTS myDatabase 
   CREATE DATABASE myDatabase
@@ -214,54 +254,54 @@
   INSERT INTO myTable VALUES
     (1, 'AnLaVN'),
     (2, N'Bình An')
-````
+```
 
 
 ## 3.4 NET - Provide Internet related libraries / Cung cấp các thư viện liên quan đến Internet
 
 ### 3.4.1 Cloud
-```` java
+``` java
   import com.AnLa.NET.Cloud;
   
   Cloud cloud = new Cloud("cloudinary://yoururlapi");//setup your cloudinary api
   String url = cloud.FileUpload("myImage.png");   //get url after upload image file
   System.out.println("Link of my file: " + url);  //print url
   //cloud.FileDeleteByURL(url);                   //delete file using url
-````
+```
 
 ### 3.4.2 DocNet
-```` java
+``` java
   import com.AnLa.NET.DocNet;
   
   DocNet docnet = new DocNet("https://raw.githubusercontent.com/AnLaVN/AL-Library/Releases/LICENSE"); //set address of network document
   System.out.println(docnet.readAllLine());   //read all line in network document
-````
+```
 
 ### 3.4.3 Network
-```` java
+``` java
   import com.AnLa.NET.Network;
   
   System.out.println("My IPv4: " + Network.myIPv4());//print my public ip, not local ip
   System.out.println("My Wlan: " + Network.myWLAN().get("SSID"));//print wlan ssid name
-````
+```
 
 
 ## 3.5 OpenAI - Provide OpenAI related libraries / Cung cấp các thư viện liên quan đến OpenAI
 
 ### 3.5.1 ChatGPT
-```` java
+``` java
   import com.AnLa.OpenAI.ChatGPT;
   
   ChatGPT cgpt = new ChatGPT("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");  //connect to OpenAI service using API key
   String Result = cgpt.Chat("Who is mr bean?", ChatGPT.Model.Davinci, 128); //get result from request, calling model Davinci with max 128 token
   System.out.println(Result); //print result
-````
+```
 
 
 ## 3.6 OpenCV - Provide OpenCV related libraries / Cung cấp các thư viện liên quan đến OpenCV
 
 ### 3.6.1 FaceDetection
-```` java
+``` java
   import com.AnLa.OpenCV.FaceDetection;
   
   FaceDetection.loadDetect(); //load module to detect
@@ -273,11 +313,11 @@
   
   FaceDetection.startDetection(0);  //start capture video from camera 0 and detect face, if you was setDetectFace(true, ..., ...)
   //FaceDetection.endDetection();   //end capture video
-````
+```
   See more / Xem thêm [ExampleFaceDetection](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/OpenCV/ExampleFaceDetection.java)
 
 ### 3.6.2 FaceRecognition
-```` java
+``` java
   import com.AnLa.OpenCV.FaceRecognition;
   
   //set image for original face and test face using URL.
@@ -289,101 +329,101 @@
   System.out.println(FaceRecognition.Recognition());//recognition face and get result
   System.out.println(FaceRecognition.getPercent());//get percent was recognition
   System.out.println(FaceRecognition.isMatch());//get value if match, true if percent was recognition higher or equal with percentage requirement
-````
+```
 
 
 ## 3.7 SMTP - Provide SMTP related libraries / Cung cấp các thư viện liên quan đến SMTP
 
 ### 3.7.1 SendMail
-```` java
+``` java
   import com.AnLa.SMTP.SendMail;
   
   SendMail sm = new SendMail("yourEmail@domain.com", "applicationPass");//setup your SMTP service, at here is GMail SMTP
   sm.setEmail("Tittle Email", "<h1>hello, this is test email</h1>");  //set up your email
   sm.sendMailTo("yourFriend@domain.com"); //set email for your friend
-````
+```
 
 
 ## 3.8 UI - Provide UI related libraries / Cung cấp các thư viện liên quan đến UI
   
 ### 3.8.1 AvatarPanel
-```` java
+``` java
   import com.AnLa.UI.AvatarPanel;
 
   AvatarPanel avatar = new AvatarPanel();
   avatar.setPic("myImage.png"); //set picture for panel from file
   avatar.setPic("https://i.pinimg.com/564x/b7/d2/62/b7d262d9ab6397f959a2030f65947b4f.jpg"); //set picture for panel from url
-````
+```
   See more / Xem thêm [ExampleAvatarPanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleAvatarPanel.java)
 
 ### 3.8.2 ChatBox
-```` java
+``` java
   import com.AnLa.UI.ChatBox;
   
   ChatBox chat = new ChatBox();
   chat.addRightBubble("this is right side text"); //add bubble text in right side
   chat.addLeftBubble("this is left side text"); //add bubble text in left side
   chat.addNotifiBox("this is notification text"); //add notification text in center
-````
+```
   See more / Xem thêm [ExampleChatBox](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleChatBox.java)
 
 ### 3.8.3 ComboBox
-```` java
+``` java
   import com.AnLa.UI.ComboBox;
 
   ComboBox comboBox = new ComboBox();
   comboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "item 1", "item2" })); //use as normal combobox
-````
+```
   See more / Xem thêm [ExampleComboBox](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleComboBox.java)
 
 ### 3.8.4 ImagePanel
-```` java
+``` java
   import com.AnLa.UI.ImagePanel;
 
   ImagePanel image = new ImagePanel();
   image.setPic("myImage.png"); //set picture for panel from file
-````
+```
   See more / Xem thêm [ExampleImagePanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleImagePanel.java)
 
 ### 3.8.5 Mode
-```` java
+``` java
   import com.AnLa.UI.Mode;
   
   Mode.setMode(true); //set true is dark mode, false is light
   Mode.setModeComponent(yourComponent); //set the component will apply mode change
-````
+```
   See more / Xem thêm [ExampleMode](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleMode.java)
 
 ### 3.8.6 Notification
-```` java
+``` java
   import com.AnLa.UI.Notification;
   
   //setup the notification will popup
   Notification noti = new Notification(this, Notification.Type.WARNING, Notification.Location.TOP_CENTER, "Notification");
   noti.showNotification(); //show popup Notification
-````
+```
   See more / Xem thêm [ExampleNotification](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleNotification.java)
 
 ### 3.8.7 ScrollBar
-```` java
+``` java
 import com.AnLa.UI.ScrollBar;
 
 yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
-````
+```
   See more / Xem thêm [ExampleScrollBar](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleScrollBar.java)
 
 ### 3.8.8 DateChooser.DateChooser
-```` java
+``` java
   import com.AnLa.UI.DateChooser.DateChooser;
 
   DateChooser dateChooser = new DateChooser();
   dateChooser.setReferenceLabel(yourLabel); //set JLabel where will display day was choose
   dateChooser.showPopup();  //show day chooser as popup
-````
+```
   See more / Xem thêm [ExampleDateChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleDateChooser.java)
 
 ### 3.8.9 TimePicker.TimePicker
-```` java
+``` java
   import com.AnLa.UI.TimePicker.TimePicker;
 
   TimePicker timePicker = new TimePicker();
@@ -392,11 +432,11 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
   timePicker.showPopup(this,
               (getWidth() - timePicker.getPreferredSize().width) / 2,
               (getHeight() - timePicker.getPreferredSize().height) / 2);
-````
+```
   See more / Xem thêm [ExampleTimePicker](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleTimePicker.java)
 
 ### 3.8.10 WinFileChooser.JnaFileChooser
-```` java
+``` java
   import com.AnLa.UI.WinFileChooser.JnaFileChooser;
   
   JnaFileChooser SelectPic = new JnaFileChooser();
@@ -405,7 +445,7 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
   //get absolute path of choose file and print it
     System.out.println(SelectPic.getSelectedFile().getAbsolutePath());
   }
-````
+```
   See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleJnaFileChooser.java)
 
 
