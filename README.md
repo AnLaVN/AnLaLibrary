@@ -100,7 +100,7 @@
   </ol>
 </details>
 <details>
-  <summary>Java Doc</summary>
+  <summary><a href="#super-ultra-ultimate-library-java-">Java Doc</a></summary>
   <ol>
     <li><a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/">Tiếng Việt</a></li>
     <li><a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/">English</a></li>
