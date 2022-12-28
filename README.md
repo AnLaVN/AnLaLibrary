@@ -1,4 +1,4 @@
-<h1 align="center">A Super, Ultra, Ultimate Library Java Application :)))</h1>
+<h1 align="center">A Super, Ultra, Ultimate Library Java :)))</h1>
 <p align="center">
   <img src="https://user-images.githubusercontent.com/90229487/193866183-451ebfc8-b0f7-4679-9442-653cc0f0be12.png" height = "500px">
   <br>
