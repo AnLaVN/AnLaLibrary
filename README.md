@@ -6,9 +6,10 @@
   &nbsp;<b>·</b>&nbsp;
   <a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/"><strong>Java Doc Tiếng Việt</strong></a>
   <br><br>
-  <a href="https://www.apache.org/licenses/LICENSE-2.0">
-    <img src="https://img.shields.io/github/license/exadel-inc/CompreFace" alt="GitHub license" />
-  </a>
+  <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/github/license/exadel-inc/CompreFace" alt="GitHub license"/></a>
+  <a href="https://pypi.org/project/face-recognition/"><img src="https://img.shields.io/badge/Python-Face%20Recognition-blue" alt="Face Recognition"></a>
+  <a href="https://opencv.org/releases/"><img src="https://img.shields.io/badge/Java-OpenCV%20--%20Face%20Detection-brightgreen" alt="Face Detection"></a>
+  <a href="https://openai.com/blog/chatgpt/"><img src="https://img.shields.io/badge/Java-OpenAI%20--%20ChatGPT-lightgrey" alt="ChatGPT"></a>
 </p>
 
 
