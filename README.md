@@ -59,6 +59,7 @@
     <li><a href="#341-cloud">Cloud</a></li>
     <li><a href="#342-docnet">DocNet</a></li>
     <li><a href="#343-network">Network</a></li>
+    <li><a href="#344-randomorg">RandomORG</a></li>
   </ol>
 </details>
 <details>
@@ -285,6 +286,16 @@
   
   System.out.println("My IPv4: " + Network.myIPv4());//print my public ip, not local ip
   System.out.println("My Wlan: " + Network.myWLAN().get("SSID"));//print wlan ssid name
+```
+
+### 3.4.4 RandomORG
+``` java
+  import com.AnLa.NET.RandomORG;
+  
+  System.out.println(RandomORG.getInteger(0, 10, 10));            //get a truly random integer from 0 to 10 in decimal
+  System.out.println(RandomORG.getSequence(1, 10));               //get truly random order integer from 0 to 10
+  System.out.println(RandomORG.getString(10, true, true, true));  //get a truly random string with digit, upper, lower case and length equal 10
+  System.out.println(RandomORG.getQuota());                       //get number quota bits remaining of your IP address.
 ```
 
 
