@@ -1,6 +1,6 @@
 <h1 align="center">Super, Ultra, Ultimate Library Java :)))</h1>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/90229487/193866183-451ebfc8-b0f7-4679-9442-653cc0f0be12.png" height = "500px">
+  <img src="https://user-images.githubusercontent.com/90229487/210226067-12f868ef-36cc-45b1-9cce-3c3297f13d25.png" height = "300em">
   <br>
   <a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/"><strong>Java Doc English</strong></a>
   &nbsp;<b>·</b>&nbsp;
