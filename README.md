@@ -276,7 +276,7 @@
 ``` java
   import com.AnLa.NET.DocNet;
   
-  DocNet docnet = new DocNet("https://raw.githubusercontent.com/AnLaVN/AL-Library/Releases/LICENSE"); //set address of network document
+  DocNet docnet = new DocNet("https://raw.githubusercontent.com/AnLaVN/AL-Library/Releases/LICENSE.md"); //set address of network document
   System.out.println(docnet.readAllLine());   //read all line in network document
 ```
 
