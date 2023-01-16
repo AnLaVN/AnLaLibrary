@@ -10,7 +10,7 @@
   <a href="https://pypi.org/project/face-recognition/"><img src="https://img.shields.io/badge/Python-Face%20Recognition-blue" alt="Face Recognition"></a>
   <a href="https://opencv.org/releases/"><img src="https://img.shields.io/badge/OpenCV-Face%20Detection-brightgreen" alt="Face Detection"></a>
   <a href="https://openai.com/blog/chatgpt/"><img src="https://img.shields.io/badge/OpenAI-ChatGPT-lightgrey" alt="ChatGPT"></a>
-  <a href="https://cloudinary.com/"><img src="https://img.shields.io/badge/Cloud-Cloudinary-blue" alt="ChatGPT"></a>
+  <a href="https://cloudinary.com/"><img src="https://img.shields.io/badge/Cloud-Cloudinary-blue" alt="Cloudinary"></a>
 </p>
 
 
