@@ -242,17 +242,18 @@
 ``` java
   import com.AnLa.NET.Email;
   
-  Email mail = new Email("yourEmail@domain.com", "applicationPass");//setup your SMTP service, at here is GMail SMTP
-  mail.setEmail("Tittle Email", "<h1>hello, this is test email</h1>");  //set up your email
-  mail.sendMailTo("yourFriend@domain.com"); //set email for your friend
+  Email mail = new Email("yourEmail@domain.com", "applicationPass");//setup your SMTP service
+  mail.setEmail("Tittle Email", "<h1>hello, this is test email</h1>");  //setup your email content
+  mail.sendEmailTo("yourFriend1@domain.com", "yourFriend2@domain.com", "..."); //send email for your friend
 ```
 
 ### 3.3.4 Network
 ``` java
   import com.AnLa.NET.Network;
+  import static com.AnLa.NET.Network.Key.*;
   
-  System.out.println("My IPv4: " + Network.myIPv4());//print my public ip, not local ip
-  System.out.println("My Wlan: " + Network.myWLAN().get("SSID"));//print wlan ssid name
+  System.out.println("My IPv4: " + Network.myIPv4());             //print my public ip, not local ip
+  System.out.println("My Wlan: " + Network.myWLAN().get(SSID));   //print wlan ssid name
 ```
 
 ### 3.3.5 RandomORG
@@ -324,7 +325,7 @@
 ``` java
   import com.AnLa.OpenCV.FaceDetection;
   
-  FaceDetection.loadDetect(); //load module to detect
+  FaceDetection.loadModule(); //load module to detect
   FaceDetection.setDetectPanel(myPanel, 20);  //set JPanel where will display video capture from camera with rounded corners
   
   //set how the rectangle display when detect a face,
