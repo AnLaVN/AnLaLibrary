@@ -2,9 +2,9 @@
 <p align="center">
   <img src="https://user-images.githubusercontent.com/90229487/210226067-12f868ef-36cc-45b1-9cce-3c3297f13d25.png" width = "50%">
   <br>
-  <a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/"><strong>Java Doc English</strong></a>
+  <a href="https://anlavn.github.io/AL-Library/AL-Library_JavaDoc/English/"><strong>Java Doc English</strong></a>
   &nbsp;<b>·</b>&nbsp;
-  <a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/"><strong>Java Doc Tiếng Việt</strong></a>
+  <a href="https://anlavn.github.io/AL-Library/AL-Library_JavaDoc/Vietnamese/"><strong>Java Doc Tiếng Việt</strong></a>
   <br><br>
   <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/github/license/exadel-inc/CompreFace" alt="GitHub license"/></a>
   <a href="https://pypi.org/project/face-recognition/"><img src="https://img.shields.io/badge/Python-Face%20Recognition-blue" alt="Face Recognition"></a>
@@ -37,6 +37,7 @@
     <li><a href="#313-objectdata">ObjectData</a></li>
     <li><a href="#314-properties">Properties</a></li>
     <li><a href="#315-raw">Raw</a></li>
+    <li><a href="#316-zip">Zip</a></li>
   </ol>
 </details>
 <details>
@@ -69,13 +70,7 @@
   <summary><a href="#35-opencv---provide-opencv-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-opencv">OpenCV</a></summary>
   <ol>
     <li><a href="#351-facedetection">FaceDetection</a></li>
-    <ul>
-        <li><a href="https://github.com/AnLaVN/AL-Library/releases/download/v3.63.11/FaceDetection.exe">FaceDetection Module</a></li>
-      </ul>
     <li><a href="#352-facerecognition">FaceRecognition</a></li>
-    <ul>
-        <li><a href="https://github.com/AnLaVN/AL-Library/releases/download/v3.63.11/FaceRecognition.exe">FaceRecognition Module</a></li>
-      </ul>
   </ol>
 </details>
 <details>
@@ -85,12 +80,14 @@
     <li><a href="#362-chatbox">ChatBox</a> (Add to Palette from JAR)</li>
     <li><a href="#363-combobox">ComboBox</a> (Add to Palette from JAR)</li>
     <li><a href="#364-imagepanel">ImagePanel</a> (Add to Palette from JAR)</li>
-    <li><a href="#365-mode">Mode</a></li>
-    <li><a href="#366-notification">Notification</a></li>
-    <li><a href="#367-scrollbar">ScrollBar</a></li>
-    <li><a href="#368-datechooserdatechooser">DateChooser.DateChooser</a></li>
-    <li><a href="#369-timepickertimepicker">TimePicker.TimePicker</a></li>
-    <li><a href="#3610-winfilechooserjnafilechooser">WinFileChooser.JnaFileChooser</a></li>
+    <li><a href="#365-liquidprogress">LiquidProgress</a> (Add to Palette from JAR)</li>
+    <li><a href="#366-mode">Mode</a></li>
+    <li><a href="#367-notification">Notification</a></li>
+    <li><a href="#368-progressbar">ProgressBar</a> (Add to Palette from JAR)</li>
+    <li><a href="#369-scrollbar">ScrollBar</a></li>
+    <li><a href="#3610-datechooserdatechooser">DateChooser.DateChooser</a></li>
+    <li><a href="#3611-timepickertimepicker">TimePicker.TimePicker</a></li>
+    <li><a href="#3612-winfilechooserjnafilechooser">WinFileChooser.JnaFileChooser</a></li>
   </ol>
 </details>
 <details>
@@ -173,6 +170,14 @@
   raw.writeData("your text"); //write data to file
   System.out.println(raw.readData()); //read data from file
   raw.closeFile();    //close file if you dont use anymore
+```
+
+### 3.1.6 Zip
+  The main class
+``` java
+  import com.AnLa.FILE.Zip;
+  
+  Zip.Extract("myFileZip.zip", "ZipFolder");  //Extract myFileZip.zip to ZipFolder directory
 ```
 
 
@@ -393,8 +398,17 @@
   image.setPic("myImage.png"); //set picture for panel from file
 ```
   See more / Xem thêm [ExampleImagePanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleImagePanel.java)
+  
+### 3.6.5 LiquidProgress
+``` java
+  import com.AnLa.UI.LiquidProgress;
 
-### 3.6.5 Mode
+  LiquidProgress liquidProgress = new LiquidProgress();
+  liquidProgress1.setValue(50);
+```
+  See more / Xem thêm [ExampleImagePanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleLiquidProgress.java)
+
+### 3.6.6 Mode
 ``` java
   import com.AnLa.UI.Mode;
   
@@ -403,7 +417,7 @@
 ```
   See more / Xem thêm [ExampleMode](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleMode.java)
 
-### 3.6.6 Notification
+### 3.6.7 Notification
 ``` java
   import com.AnLa.UI.Notification;
   
@@ -412,8 +426,17 @@
   noti.showNotification(); //show popup Notification
 ```
   See more / Xem thêm [ExampleNotification](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleNotification.java)
+  
+### 3.6.8 ProgressBar
+``` java
+  import com.AnLa.UI.ProgressBar;
+  
+  ProgressBar progressBar1 = new ProgressBar();
+  progressBar1.setValue(50);
+```
+  See more / Xem thêm [ExampleNotification](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleProgressBar.java)
 
-### 3.6.7 ScrollBar
+### 3.6.9 ScrollBar
 ``` java
 import com.AnLa.UI.ScrollBar;
 
@@ -421,7 +444,7 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 ```
   See more / Xem thêm [ExampleScrollBar](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleScrollBar.java)
 
-### 3.6.8 DateChooser.DateChooser
+### 3.6.10 DateChooser.DateChooser
 ``` java
   import com.AnLa.UI.DateChooser.DateChooser;
 
@@ -431,7 +454,7 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 ```
   See more / Xem thêm [ExampleDateChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleDateChooser.java)
 
-### 3.6.9 TimePicker.TimePicker
+### 3.6.11 TimePicker.TimePicker
 ``` java
   import com.AnLa.UI.TimePicker.TimePicker;
 
@@ -444,7 +467,7 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 ```
   See more / Xem thêm [ExampleTimePicker](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleTimePicker.java)
 
-### 3.6.10 WinFileChooser.JnaFileChooser
+### 3.6.12 WinFileChooser.JnaFileChooser
 ``` java
   import com.AnLa.UI.WinFileChooser.JnaFileChooser;
   
@@ -459,27 +482,5 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 
 
 
-# 4. About Module / Giới thiệu về Module
-
-## 4.1 Overview / Tổng quan
-### Tiếng Việt
-> Module là cách mà tôi giúp cho thư viện không bị quá tải dung lượng cũng như đảm bảo tính toàn vẹn dữ liệu khi mà có quá nhiều thứ bị nhồi nhét vào một file .jar sẽ dẫn đến lỗi không mong muốn. Mỗi Module chứa đầy đủ các thành phần khác nhau như các thư viện liên kết động, tệp thực thi, thư mục tạm... giúp cho thư viện hoạt động chính xác nhất và giảm thiểu tối đa dữ liệu không cần thiết. Nếu bạn không dùng tới các chức năng yêu cầu Module, bạn chỉ cần tải file .jar với dung lượng nhỏ hơn nhiều, việc này là cực kỳ có ý nghĩa. Khi bạn cần dùng thư viện có yêu cầu Module, như FaceDetection, bạn chỉ cần tải Module của nó về dự án. Điều này mặc dù đi ngược lại với tôn chỉ của dự án AL-Library là "Đơn giản - Tinh gọn", nhưng nó giúp cho thư viện đủ nhẹ để có thể dễ dàng truyền bá đi xa. Tôi hy vọng điều này là chấp nhận được, chính vì vậy nếu bạn đang có ý định sử dụng một vài thư viện yêu cầu Module, hãy làm theo hướng dẫn ở mục tiếp theo.
-
-### English
-> Modules are my way of keeping the library from being overloaded as well as ensuring data integrity when having too much stuff crammed into one .jar file will lead to unexpected errors. Each Module contains a full range of different components such as dynamic link library, executable files, temporary directories... to help the library work correctly and minimize unnecessary data. If you don't use functions that require Modules, you can simply download the .jar file with a much smaller size, which makes a lot of sense. When you need to use a library that requires a Module, like FaceDetection, you just need to download its Module to the project. This, while going against the AL-Library project's motto of "Simple - Lean", does make the library lightweight enough to be easily propagated. I hope this is acceptable, so if you are planning to use some library that requires Module, follow the instructions in the next section.
-
-
-## 4.2 Download Module / Tải xuống Module 
-> [FaceDetection Module](https://github.com/AnLaVN/AL-Library/releases/download/v3.63.11/FaceDetection.exe)<br>
-> [FaceRecognition Module](https://github.com/AnLaVN/AL-Library/releases/download/v3.63.11/FaceRecognition.exe)
-
-
-## 4.3 Install Module / Cài đặt Module
-> ### Bước 1: Copy tệp cài đặt Module vào bên trong thư mục projects, kế bên thư mục src.<br>Step 1: Copy the Module installer to inside the projects folder, next to the src folder.<br> ![image](https://user-images.githubusercontent.com/90229487/209553175-df8e54d3-3b6b-4861-a7bc-16d4719bce83.png)
-> ### Bước 2: Nhấp vào tệp, và ấn giải nén (Extract), không thay đổi đường dẫn hoặc tên thư mục.<br>Step 2: Click on the file, and press Extract, do not changing the path or folder name.<br> ![image](https://user-images.githubusercontent.com/90229487/209553682-6eb4b7de-d481-4089-89d3-8b7f288784ea.png)
-> ### Bước 3: Kiểm tra xem Module đã được giải nén đúng vị trí hay chưa.<br>Step 3: Check if the Module has been extracted to the correct location.<br> ![image](https://user-images.githubusercontent.com/90229487/209554614-44ea77c5-86af-44f4-8c2b-057737991bbf.png)
-
-
-
-# 5. Download / Tải xuống
+# 4. Download / Tải xuống
 * [Releases Version](https://github.com/AnLaVN/AnLaLibrary/releases)
