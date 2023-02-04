@@ -93,8 +93,8 @@
 <details>
   <summary><a href="#super-ultra-ultimate-library-java-">Java Doc</a></summary>
   <ol>
-    <li><a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___VN/">Tiếng Việt</a></li>
-    <li><a href="https://anlavn.github.io/AnLaLibrary___JavaDoc___EN/">English</a></li>
+    <li><a href="https://anlavn.github.io/AL-Library/AL-Library_JavaDoc/English/">Tiếng Việt</a></li>
+    <li><a href="https://anlavn.github.io/AL-Library/AL-Library_JavaDoc/Vietnamese/">English</a></li>
   </ol>
 </details>
 
@@ -241,6 +241,7 @@
   
   DocNet docnet = new DocNet("https://raw.githubusercontent.com/AnLaVN/AL-Library/Releases/LICENSE.md"); //set address of network document
   System.out.println(docnet.readAllLine());   //read all line in network document
+  docnet.saveAs("LICENSE.md");
 ```
 
 ### 3.3.3 Email
