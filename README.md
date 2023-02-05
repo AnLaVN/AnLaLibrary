@@ -191,7 +191,7 @@
          myKey  = "This is key to hash ",     //declare my security key to hash string
          hashStr= AES.Encrypt(orgStr, myKey); //hash original string with security key
   System.out.println("Hash AES of orgStr: " + hashStr);   //print hash string
-  System.out.println("My original string: " + AES.Decrypt(hashStr, myKey));   //encrypt hash string and print it
+  System.out.println("My original string: " + AES.Decrypt(hashStr, myKey));   //decrypt hash string and print it
 ```
 
 ### 3.2.2 BCrypt
