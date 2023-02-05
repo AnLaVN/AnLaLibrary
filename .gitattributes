@@ -1,1 +1,3 @@
-AL-Library_JavaDoc/* linguist-vendored=false
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+*.js linguist-detectable=false
