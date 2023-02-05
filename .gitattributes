@@ -1,1 +1,2 @@
 *.html linguist-detectable=false
+AL-Library_JavaDoc/* linguist-vendored=false
