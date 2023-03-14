@@ -484,4 +484,26 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 
 
 # 4. Download / Tải xuống
+
+## 4.1 Maven Repository
+
+### 4.1.1 AL-Library English Version
+```
+<dependency>
+  <groupId>io.github.AnLaVN</groupId>
+  <artifactId>AL-Library_EN</artifactId>
+  <version>3.68.11</version>
+</dependency>
+```
+
+### 4.1.2 AL-Library Vietnamses Version
+```
+<dependency>
+  <groupId>io.github.AnLaVN</groupId>
+  <artifactId>AL-Library_VN</artifactId>
+  <version>3.68.11</version>
+</dependency>
+```
+
+## 4.2 External JAR
 * [Releases Version](https://github.com/AnLaVN/AnLaLibrary/releases)
