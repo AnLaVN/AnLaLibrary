@@ -484,30 +484,51 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 
 
 # 4. Download / Tải xuống
+### Tiếng Việt
+> Tôi đã phát hành AL-Library của mình dưới dạng file .jar đơn giản, bao gồm tất cả các thư viện liên quan và javadoc trong cùng một file jar. Điều này giúp cho người dùng dễ dàng tiếp cận sản phẩm của tôi bằng cách tải xuống và sử dụng trực tiếp trong các dự án phát triển phần mềm.
+>
+> Ngoài ra, tôi đã đăng tải AL-Library lên Maven Central. Việc đăng tải giúp việc sử dụng thư viện của tôi trở nên tiện lợi và đơn giản hơn bao giờ hết, thông qua việc cập nhật các phiên bản mới nhất một cách tự động. Điều này đánh dấu một bước ngoặt lớn trong quá trình phát triển ứng dụng của tôi và cho phép người dùng trên toàn thế giới dễ dàng truy cập và sử dụng thư viện của tôi thông qua Maven Central Repository. Điều này không chỉ giúp tăng khả năng tiếp cận của ứng dụng của tôi đến với nhiều người hơn, mà còn đảm bảo tính ổn định và tin cậy của ứng dụng. Tôi rất vui mừng và tự hào vì đã đạt được mục tiêu này.
+### English
+> AL-Library has been released as a single .jar file, which includes all related libraries and javadoc in one file, making it easier for users to access my product by downloading and using it directly in software development projects.
+>
+> In addition, AL-Library has also been uploaded to Maven Central. Uploading to Maven Central makes it more convenient and easier than ever to use AL-Library, through automatic updates of the latest versions. This marks a major turning point in the development process of my application. From now on, users around the world can easily access and use my AL-Library through the Maven Central Repository. This not only helps increase accessibility of my application to more people, but also ensures the stability and reliability of the application. I am very happy and proud to have achieved this goal.
 
-## 4.1 Maven Central Repository
 
-### 4.1.1 AL-Library English Version
-  - Apache Maven
-```xml
-<dependency>
-  <groupId>io.github.AnLaVN</groupId>
-  <artifactId>AL-Library_EN</artifactId>
-  <version>3.68.11</version>
-</dependency>
-```
-  - [AL-Library English Version - Maven Central Repository](https://search.maven.org/artifact/io.github.AnLaVN/AL-Library_EN)
 
-### 4.1.2 AL-Library Vietnamses Version
-  - Apache Maven
-```xml
-<dependency>
-  <groupId>io.github.AnLaVN</groupId>
-  <artifactId>AL-Library_VN</artifactId>
-  <version>3.68.11</version>
-</dependency>
-```
-  - [AL-Library Vietnamses Version - Maven Central Repository](https://search.maven.org/artifact/io.github.AnLaVN/AL-Library_VN)
+## 4.1 External JAR
 
-## 4.2 External JAR
-* [Releases Version](https://github.com/AnLaVN/AnLaLibrary/releases)
+- [Releases Version](https://github.com/AnLaVN/AnLaLibrary/releases)
+
+
+## 4.2 Maven Central Repository
+
+- [mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN)
+  - [AL-Library_EN | mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN/AL-Library_EN)
+  - [AL-Library_VN | mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN/AL-Library_VN)
+  
+- [search.maven.org](https://search.maven.org/artifact/io.github.AnLaVN/AL-Library_VN)
+  - [AL-Library_EN | search.maven.org](https://search.maven.org/artifact/io.github.AnLaVN/AL-Library_EN)
+  - [AL-Library_VN | search.maven.org](https://search.maven.org/artifact/io.github.AnLaVN/AL-Library_VN)
+  
+- [repo1.maven.org](https://repo1.maven.org/maven2/io/github/AnLaVN/)
+  - [AL-Library_EN | repo1.maven.org](https://repo1.maven.org/maven2/io/github/AnLaVN/AL-Library_EN)
+  - [AL-Library_VN | repo1.maven.org](https://repo1.maven.org/maven2/io/github/AnLaVN/AL-Library_VN)
+
+- POM code
+  - AL-Library English Version
+    ```xml
+      <dependency>
+        <groupId>io.github.AnLaVN</groupId>
+        <artifactId>AL-Library_EN</artifactId>
+        <version>3.68.11</version>
+      </dependency>
+    ```
+
+  - AL-Library Vietnamses Version
+    ```xml
+      <dependency>
+        <groupId>io.github.AnLaVN</groupId>
+        <artifactId>AL-Library_VN</artifactId>
+        <version>3.68.11</version>
+      </dependency>
+    ```
