@@ -516,19 +516,19 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 
 - POM code
   - AL-Library English Version
-    ```xml
-      <dependency>
-        <groupId>io.github.AnLaVN</groupId>
-        <artifactId>AL-Library_EN</artifactId>
-        <version>3.68.11</version>
-      </dependency>
-    ```
+```xml
+  <dependency>
+    <groupId>io.github.AnLaVN</groupId>
+    <artifactId>AL-Library_EN</artifactId>
+    <version>3.68.11</version>
+  </dependency>
+```
 
   - AL-Library Vietnamses Version
-    ```xml
-      <dependency>
-        <groupId>io.github.AnLaVN</groupId>
-        <artifactId>AL-Library_VN</artifactId>
-        <version>3.68.11</version>
-      </dependency>
-    ```
+```xml
+  <dependency>
+    <groupId>io.github.AnLaVN</groupId>
+    <artifactId>AL-Library_VN</artifactId>
+    <version>3.68.11</version>
+  </dependency>
+```
