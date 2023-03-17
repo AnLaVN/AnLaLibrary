@@ -94,8 +94,8 @@
 <details>
   <summary><a href="#super-ultra-ultimate-library-java-">Java Doc</a></summary>
   <ol>
-    <li><a href="https://anlavn.github.io/AL-Library/AL-Library_JavaDoc/English/">Tiếng Việt</a></li>
-    <li><a href="https://anlavn.github.io/AL-Library/AL-Library_JavaDoc/Vietnamese/">English</a></li>
+    <li><a href="https://anlavn.github.io/AL-Library/AL-Library_JavaDoc/English/">English</a></li>
+    <li><a href="https://anlavn.github.io/AL-Library/AL-Library_JavaDoc/Vietnamese/">Tiếng Việt</a></li>
   </ol>
 </details>
 
