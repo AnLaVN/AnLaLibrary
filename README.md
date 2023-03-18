@@ -486,7 +486,7 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 
 # 4. Download / Tải xuống
 ### Tiếng Việt
-> Tôi đã phát hành AL-Library của mình dưới dạng file .jar đơn giản, bao gồm tất cả các thư viện liên quan và javadoc trong cùng một file jar. Điều này giúp cho người dùng dễ dàng tiếp cận sản phẩm của tôi bằng cách tải xuống và sử dụng trực tiếp trong các dự án phát triển phần mềm.
+> Tôi đã phát hành AL-Library của mình dưới dạng file .jar đơn nhất, bao gồm tất cả các thư viện liên quan và javadoc trong cùng một file jar. Điều này giúp cho người dùng dễ dàng tiếp cận sản phẩm của tôi bằng cách tải xuống và sử dụng trực tiếp trong các dự án phát triển phần mềm.
 >
 > Ngoài ra, tôi đã đăng tải AL-Library lên Maven Central. Việc đăng tải giúp việc sử dụng thư viện của tôi trở nên tiện lợi và đơn giản hơn bao giờ hết, thông qua việc cập nhật các phiên bản mới nhất một cách tự động. Điều này đánh dấu một bước ngoặt lớn trong quá trình phát triển ứng dụng của tôi và cho phép người dùng trên toàn thế giới dễ dàng truy cập và sử dụng thư viện của tôi thông qua Maven Central Repository. Điều này không chỉ giúp tăng khả năng tiếp cận của ứng dụng của tôi đến với nhiều người hơn, mà còn đảm bảo tính ổn định và tin cậy của ứng dụng. Tôi rất vui mừng và tự hào vì đã đạt được mục tiêu này.
 ### English
