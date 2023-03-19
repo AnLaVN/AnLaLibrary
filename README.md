@@ -345,6 +345,7 @@
   See more / Xem thêm [ExampleFaceDetection](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/OpenCV/ExampleFaceDetection.java)
 
 ### 3.5.2 FaceRecognition
+  ⚠️ ***This feature is only for Windows operating system*** / ***Tính năng này chỉ dành cho hệ điều hành Windows*** ⚠️
 ``` java
   import com.AnLa.OpenCV.FaceRecognition;
   
