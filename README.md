@@ -515,16 +515,16 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 ## 4.2 Maven Central Repository
 
 - [mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN)
-  - [AL-Library_EN | mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN/AL-Library_EN)
-  - [AL-Library_VN | mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN/AL-Library_VN)
+  - [AL-Library_EN / mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN/AL-Library_EN)
+  - [AL-Library_VN / mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN/AL-Library_VN)
   
 - [search.maven.org](https://search.maven.org/search?q=g:io.github.AnLaVN)
-  - [AL-Library_EN | search.maven.org](https://search.maven.org/artifact/io.github.AnLaVN/AL-Library_EN)
-  - [AL-Library_VN | search.maven.org](https://search.maven.org/artifact/io.github.AnLaVN/AL-Library_VN)
+  - [AL-Library_EN / search.maven.org](https://search.maven.org/artifact/io.github.AnLaVN/AL-Library_EN)
+  - [AL-Library_VN / search.maven.org](https://search.maven.org/artifact/io.github.AnLaVN/AL-Library_VN)
   
 - [repo1.maven.org](https://repo1.maven.org/maven2/io/github/AnLaVN)
-  - [AL-Library_EN | repo1.maven.org](https://repo1.maven.org/maven2/io/github/AnLaVN/AL-Library_EN)
-  - [AL-Library_VN | repo1.maven.org](https://repo1.maven.org/maven2/io/github/AnLaVN/AL-Library_VN)
+  - [AL-Library_EN / repo1.maven.org](https://repo1.maven.org/maven2/io/github/AnLaVN/AL-Library_EN)
+  - [AL-Library_VN / repo1.maven.org](https://repo1.maven.org/maven2/io/github/AnLaVN/AL-Library_VN)
 
 - POM code
   - AL-Library English Version
