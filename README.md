@@ -505,7 +505,6 @@ yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 > In addition, AL-Library has also been uploaded to Maven Central. Uploading to Maven Central makes it more convenient and easier than ever to use AL-Library, through automatic updates of the latest versions. This marks a major turning point in the development process of my application. From now on, users around the world can easily access and use my AL-Library through the Maven Central Repository. This not only helps increase accessibility of my application to more people, but also ensures the stability and reliability of the application. I am very happy and proud to have achieved this goal.
 
 
-
 ## 4.1 External JAR
 
 - [Releases Version](https://github.com/AnLaVN/AnLaLibrary/releases)
