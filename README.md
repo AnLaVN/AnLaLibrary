@@ -18,9 +18,9 @@
   <img src="https://img.shields.io/github/languages/code-size/AnLaVN/AL-Library">
   <img src="https://img.shields.io/github/downloads/AnLaVN/AL-Library/total">
   <br>
-  <img src="https://img.shields.io/github/commit-activity/w/AnLaVN/AL-Library">
-  <img src="https://img.shields.io/github/last-commit/AnLaVN/AL-Library">
-  <img src="https://img.shields.io/github/release-date/AnLaVN/AL-Library">
+  <a href="https://github.com/AnLaVN/AL-Library/commits/Releases"><img src="https://img.shields.io/github/commit-activity/w/AnLaVN/AL-Library"></a>
+  <a href="https://github.com/AnLaVN/AL-Library/commits/Releases"><img src="https://img.shields.io/github/last-commit/AnLaVN/AL-Library"></a>
+  <a href="https://github.com/AnLaVN/AL-Library/releases"><img src="https://img.shields.io/github/release-date/AnLaVN/AL-Library"></a>
   <br><br>
 </p>
 
