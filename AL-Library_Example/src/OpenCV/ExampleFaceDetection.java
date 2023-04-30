@@ -1,4 +1,5 @@
 package OpenCV;
+// Make By Bình An || AnLaVN || KatoVN
 
 import com.AnLa.OpenCV.FaceDetection;
 import java.awt.Color;

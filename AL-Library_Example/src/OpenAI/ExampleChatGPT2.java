@@ -1,4 +1,5 @@
 package OpenAI;
+// Make By Bình An || AnLaVN || KatoVN
 
 import com.AnLa.OpenAI.ChatGPT;
 import com.AnLa.UI.ScrollBar;

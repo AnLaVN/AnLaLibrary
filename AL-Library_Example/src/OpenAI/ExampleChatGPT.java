@@ -3,7 +3,6 @@ package OpenAI;
 
 import com.AnLa.OpenAI.ChatGPT;
 
-
 public class ExampleChatGPT {
 
     public static void main(String[] args) {
