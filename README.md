@@ -200,7 +200,7 @@ public class myObject implements Serializable{
 	}
 	public String getName() {   return name;    }
 	public int getAge()     {   return age;     }
-	}
+}
 ```
 See more / Xem thêm [ExampleObjectData](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleObjectData.java)
 
@@ -263,10 +263,10 @@ See more / Xem thêm [ExampleZip](https://github.com/AnLaVN/AL-Library/blob/Rele
 import com.AnLa.HASH.AES;
 
 String 	orgStr = "This is original string.", //declare original string need to hash
-		myKey  = "This is key to hash ",     //declare my security key to hash string
-		hashStr= AES.Encrypt(orgStr, myKey); //hash original string with security key
-	System.out.println("Hash AES of orgStr: " + hashStr);   //print hash string
-	System.out.println("My original string: " + AES.Decrypt(hashStr, myKey));   //decrypt hash string and print it
+	myKey  = "This is key to hash ",     //declare my security key to hash string
+	hashStr= AES.Encrypt(orgStr, myKey); //hash original string with security key
+System.out.println("Hash AES of orgStr: " + hashStr);   //print hash string
+System.out.println("My original string: " + AES.Decrypt(hashStr, myKey));   //decrypt hash string and print it
 ```
 See more / Xem thêm [ExampleAES](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/HASH/ExampleAES.java)
 
@@ -280,7 +280,7 @@ See more / Xem thêm [ExampleAES](https://github.com/AnLaVN/AL-Library/blob/Rele
 import com.AnLa.HASH.BCrypt;
 
 String 	pass = "This is original string.",               //declare original string need to hash
-	 hashStr = BCrypt.Encrypt(pass, BCrypt.genSalt());   //hash original string, only supports encryption.
+     hashStr = BCrypt.Encrypt(pass, BCrypt.genSalt());   //hash original string, only supports encryption.
 System.out.println("Hash BCrypt of orgStr: " + hashStr);//print hash string
 System.out.println("is orgStr match: " + BCrypt.Check(pass, hashStr));  //check if original string is match with hash string
 ```
@@ -296,7 +296,7 @@ See more / Xem thêm [ExampleBCrypt](https://github.com/AnLaVN/AL-Library/blob/R
 import com.AnLa.HASH.MD5;
 	
 String	orgStr = "This is original string.", //declare original string need to hash
-		hashStr= MD5.Encrypt(orgStr); 		//hash original string, only supports encryption, decryption it is impossible.
+	hashStr= MD5.Encrypt(orgStr); 		//hash original string, only supports encryption, decryption it is impossible.
 System.out.println("Hash MD5 of orgStr: " + hashStr);   //print hash string
 ```
 See more / Xem thêm [ExampleMD5](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/HASH/ExampleMD5.java)
@@ -311,7 +311,7 @@ See more / Xem thêm [ExampleMD5](https://github.com/AnLaVN/AL-Library/blob/Rele
 import com.AnLa.HASH.SHA256;
 	
 String 	orgStr = "This is original string.", //declare original string need to hash
-		hashStr= SHA256.Encrypt(orgStr); 	//hash original string, only supports encryption, decryption it is impossible.
+	hashStr= SHA256.Encrypt(orgStr); 	//hash original string, only supports encryption, decryption it is impossible.
 System.out.println("Hash SHA256 of orgStr: " + hashStr);   //print hash string
 ```
 See more / Xem thêm [ExampleSHA256](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/HASH/ExampleSHA256.java)
