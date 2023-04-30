@@ -122,111 +122,132 @@
 - The Excel class support to read/write data from/to excel file.
 
 ``` java
-	import com.AnLa.FILE.Excel;
-			
-	//Write
-	ArrayList<Object[]> myData = new ArrayList<>();         //declare array to store data to write to Excel file
-	myData.add(new Object[]{3, 69.11, "AnLaVN", true});     //add data
-	myData.add(new Object[]{3, 68.11, "AnLaVN", false});    //add data
-	Excel.WriteExcel("myExcel.xlsx", "mySheet", myData.iterator()); //convert to Iterator and write to Excel file
-			
-	//Read
-	Iterator<Object[]> myExcel = Excel.ReadExcel("myExcel.xlsx", "mySheet");    //declare Iterator to store data from Excel file
-	while (myExcel.hasNext()) { //loop to take every row from Iterator
-		Object[] row = myExcel.next();  //get row data
-		System.out.println(row[0]+" | "+row[1]+" | "+row[2]+" | "+row[3]);  //print it
-	}
+import com.AnLa.FILE.Excel;
+		
+//Write
+ArrayList<Object[]> myData = new ArrayList<>();         //declare array to store data to write to Excel file
+myData.add(new Object[]{3, 69.11, "AnLaVN", true});     //add data
+myData.add(new Object[]{3, 68.11, "AnLaVN", false});    //add data
+Excel.WriteExcel("myExcel.xlsx", "mySheet", myData.iterator()); //convert to Iterator and write to Excel file
+		
+//Read
+Iterator<Object[]> myExcel = Excel.ReadExcel("myExcel.xlsx", "mySheet");    //declare Iterator to store data from Excel file
+while (myExcel.hasNext()) { //loop to take every row from Iterator
+	Object[] row = myExcel.next();  //get row data
+	System.out.println(row[0]+" | "+row[1]+" | "+row[2]+" | "+row[3]);  //print it
+}
 ```
+See more / Xem thêm [ExampleExcel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleExcel.java)
+
+---
 
 ### 3.1.2 Log
 - Lớp Log hỗ trợ xuất thông tin ra tệp nhật ký và màn hình console.
 - The Log class supports to print to console and output log file.
 
 ``` java
-	import com.AnLa.FILE.Log;
+import com.AnLa.FILE.Log;
 
-	Log.add("Your text");   //write text to log file, will auto create as Logs folder.
-	System.out.println("File path: " + Log.getFilePath());  //print path of log file.
-	Log.closeFile();    //close file if your dont use anymore.
+Log.add("Your text");   //write text to log file, will auto create as Logs folder.
+System.out.println("File path: " + Log.getFilePath());  //print path of log file.
+Log.closeFile();    //close file if your dont use anymore.
 ```
- 
+See more / Xem thêm [ExampleLog](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleLog.java)
+
+---
+
 ### 3.1.3 NativeLibrary
 - Lớp NativeLibrary hỗ trợ tải các thư viện động. 
 - The NativeLibrary class supports to loading dynamic libraries. 
 
 ``` java
-	import com.AnLa.FILE.NativeLibrary;
+import com.AnLa.FILE.NativeLibrary;
 
-	NativeLibrary.load("path/YourLib.dll");
+NativeLibrary.load("path/YourLib.dll");
 ```
+See more / Xem thêm [ExampleNativeLibrary](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleNativeLibrary.java)
+
+---
 
 ### 3.1.4 ObjectData
 - Lớp ObjectData hỗ trợ ghi và đọc dữ liệu của đối tượng vào tệp tại vị trí được chỉ định.
 - The ObjectData class supports write and read object data to file at specific location.
 
 ``` java
-	import com.AnLa.FILE.ObjectData;
+import com.AnLa.FILE.ObjectData;
 
-	ObjectData.writeData("myFile.dat", new myObject("AnLaVN", 19)); //write new object to myFile.dat
-	myObject myobj = (myObject) ObjectData.readData("myFile.dat");  //read object from myFile.dat, store in myobj variable
-	System.out.println("My name: " + myobj.getName());  //print value of object
-	System.out.println("My age: " + myobj.getAge());
+ObjectData.writeData("myFile.dat", new myObject("AnLaVN", 19)); //write new object to myFile.dat
+myObject myobj = (myObject) ObjectData.readData("myFile.dat");  //read object from myFile.dat, store in myobj variable
+System.out.println("My name: " + myobj.getName());  //print value of object
+System.out.println("My age: " + myobj.getAge());
 ```
 
 The myObject class.
 ``` java
-	import java.io.Serializable;
-	//Make sure your class have 'implements Serializable'
-	public class myObject implements Serializable{
-		private String name;
-		private int age;
+import java.io.Serializable;
+//Make sure your class have 'implements Serializable'
+public class myObject implements Serializable{
+	private String name;
+	private int age;
 
-		public myObject() {}
-		public myObject(String name, int age) {
-			this.name = name;
-			this.age = age;
-		}
-		public String getName() {   return name;    }
-		public int getAge()     {   return age;     }
+	public myObject() {}
+	public myObject(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	public String getName() {   return name;    }
+	public int getAge()     {   return age;     }
 	}
 ```
+See more / Xem thêm [ExampleObjectData](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleObjectData.java)
+
+---
 
 ### 3.1.5 Properties
 - Lớp Properties hỗ trợ để lấy giá trị của các thuộc tính tại vị trí được chỉ định.
 - The Properties class supports to get value of properties at specific location.
 
 ``` java
-	import com.AnLa.FILE.Properties;
+import com.AnLa.FILE.Properties;
 
-	String lang = "EN"; //"VN" if you want using vietnamese languages, "EN" if you want english
-	Properties proper = new Properties("src/FILE/myProperties_" + lang + ".properties");    //load properties file
-	System.out.println("Properties of hello key: " + proper.getString("hello"));    //print value of key in file
+String lang = "EN"; //"VN" if you want using vietnamese languages, "EN" if you want english
+Properties proper = new Properties("src/FILE/myProperties_" + lang + ".properties");    //load properties file
+System.out.println("Properties of hello key: " + proper.getString("hello"));    //print value of key in file
 ```
-The myProperties_VN.properties file ![image](https://user-images.githubusercontent.com/90229487/209496791-a1abfc66-77e0-48e5-94ce-2b83cb68c703.png)<br>
-The myProperties_EN.properties file ![image](https://user-images.githubusercontent.com/90229487/209496563-fbad72f0-ecdf-4edd-bf37-238f63a2f94b.png)
+The myProperties_VN.properties file ![image](https://user-images.githubusercontent.com/90229487/209496791-a1abfc66-77e0-48e5-94ce-2b83cb68c703.png)  
+The myProperties_EN.properties file ![image](https://user-images.githubusercontent.com/90229487/209496563-fbad72f0-ecdf-4edd-bf37-238f63a2f94b.png)  
+See more / Xem thêm [ExampleProperties](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleProperties.java)
+
+---
 
 ### 3.1.6 Raw
 - Lớp Raw hỗ trợ ghi và đọc chuỗi dữ liệu Thô vào tệp tại vị trí được chỉ định.
 - The Raw class supports write and read string data to file at specific location.
 
 ``` java
-	import com.AnLa.FILE.Raw;
+import com.AnLa.FILE.Raw;
 
-	Raw raw = new Raw("src/FILE/myFile.txt");    //create myFile.txt in src/FILE/ folder
-	raw.writeData("your text"); //write data to file
-	System.out.println(raw.readData()); //read data from file
-	raw.closeFile();    //close file if you dont use anymore
+Raw raw = new Raw("src/FILE/myFile.txt");    //create myFile.txt in src/FILE/ folder
+raw.writeData("your text"); //write data to file
+System.out.println(raw.readData()); //read data from file
+raw.closeFile();    //close file if you dont use anymore
 ```
+See more / Xem thêm [ExampleRaw](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleRaw.java)
+
+---
 
 ### 3.1.7 Zip
 - Lớp Zip hỗ trợ giải nén tệp zip vào thư mục của bạn.
 - The Zip class supports to extract a zip file to your directories.
 
 ``` java
-	import com.AnLa.FILE.Zip;
+import com.AnLa.FILE.Zip;
 
-	Zip.Extract("myFileZip.zip", "ZipFolder");  //Extract myFileZip.zip to ZipFolder directory
+Zip.Extract("myFileZip.zip", "ZipFolder");  //Extract myFileZip.zip to ZipFolder directory
 ```
+See more / Xem thêm [ExampleZip](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleZip.java)
+
+---
 
 
 ## 3.2 HASH - Provides cryptographic hash function related libraries / Cung cấp các thư viện liên quan đến hàm băm mật mã học
@@ -236,51 +257,63 @@ The myProperties_EN.properties file ![image](https://user-images.githubuserconte
 - The AES class supports encryption and decryption a String, using a security key.
 
 ``` java
-	import com.AnLa.HASH.AES;
-	
-	String orgStr = "This is original string.", //declare original string need to hash
-		   myKey  = "This is key to hash ",     //declare my security key to hash string
-		   hashStr= AES.Encrypt(orgStr, myKey); //hash original string with security key
+import com.AnLa.HASH.AES;
+
+String 	orgStr = "This is original string.", //declare original string need to hash
+		myKey  = "This is key to hash ",     //declare my security key to hash string
+		hashStr= AES.Encrypt(orgStr, myKey); //hash original string with security key
 	System.out.println("Hash AES of orgStr: " + hashStr);   //print hash string
 	System.out.println("My original string: " + AES.Decrypt(hashStr, myKey));   //decrypt hash string and print it
 ```
+See more / Xem thêm [ExampleAES](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/HASH/ExampleAES.java)
+
+---
 
 ### 3.2.2 BCrypt
 - Lớp BCrypt hỗ trợ băm mật khẩu Blowfish kiểu OpenBSD cho Java.
 - The BCrypt class supports to OpenBSD-style Blowfish password hashing for Java.
 
 ``` java
-	import com.AnLa.HASH.BCrypt;
-	
-    String pass = "This is original string.",               //declare original string need to hash
-        hashStr = BCrypt.Encrypt(pass, BCrypt.genSalt());   //hash original string, only supports encryption.
-    System.out.println("Hash BCrypt of orgStr: " + hashStr);//print hash string
-    System.out.println("is orgStr match: " + BCrypt.Check(pass, hashStr));  //check if original string is match with hash string
+import com.AnLa.HASH.BCrypt;
+
+String 	pass = "This is original string.",               //declare original string need to hash
+	 hashStr = BCrypt.Encrypt(pass, BCrypt.genSalt());   //hash original string, only supports encryption.
+System.out.println("Hash BCrypt of orgStr: " + hashStr);//print hash string
+System.out.println("is orgStr match: " + BCrypt.Check(pass, hashStr));  //check if original string is match with hash string
 ```
+See more / Xem thêm [ExampleBCrypt](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/HASH/ExampleBCrypt.java)
+
+---
 
 ### 3.2.3 MD5
 - Lớp MD5 chỉ hỗ trợ mã hóa đối tượng, giải mã nó là bất khả thi.
 - The MD5 class only supports object encryption, decryption it is impossible.
 
 ``` java
-	import com.AnLa.HASH.MD5;
+import com.AnLa.HASH.MD5;
 	
-	String orgStr = "This is original string.", //declare original string need to hash
-		   hashStr= MD5.Encrypt(orgStr); 		//hash original string, only supports encryption, decryption it is impossible.
-	System.out.println("Hash MD5 of orgStr: " + hashStr);   //print hash string
+String	orgStr = "This is original string.", //declare original string need to hash
+		hashStr= MD5.Encrypt(orgStr); 		//hash original string, only supports encryption, decryption it is impossible.
+System.out.println("Hash MD5 of orgStr: " + hashStr);   //print hash string
 ```
+See more / Xem thêm [ExampleMD5](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/HASH/ExampleMD5.java)
+
+---
 
 ### 3.2.4 SHA256
 - Lớp SHA256 chỉ hỗ trợ mã hóa đối tượng, giải mã nó là bất khả thi.
 - The SHA256 class only supports object encryption, decryption it is impossible.
 
 ``` java
-	import com.AnLa.HASH.SHA256;
+import com.AnLa.HASH.SHA256;
 	
-	String orgStr = "This is original string.", //declare original string need to hash
-		   hashStr= SHA256.Encrypt(orgStr); 	//hash original string, only supports encryption, decryption it is impossible.
-	System.out.println("Hash SHA256 of orgStr: " + hashStr);   //print hash string
+String 	orgStr = "This is original string.", //declare original string need to hash
+		hashStr= SHA256.Encrypt(orgStr); 	//hash original string, only supports encryption, decryption it is impossible.
+System.out.println("Hash SHA256 of orgStr: " + hashStr);   //print hash string
 ```
+See more / Xem thêm [ExampleSHA256](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/HASH/ExampleSHA256.java)
+
+---
 
 
 ## 3.3 NET - Provide Internet related libraries / Cung cấp các thư viện liên quan đến Internet
@@ -290,88 +323,103 @@ The myProperties_EN.properties file ![image](https://user-images.githubuserconte
 - The Cloud class supports connected to your Cloudinary.
 
 ``` java
-	import com.AnLa.NET.Cloud;
+import com.AnLa.NET.Cloud;
 	
-	Cloud cloud = new Cloud("cloudinary://yoururlapi");	//setup your cloudinary api
-	String url = cloud.FileUpload("myImage.png");   	//get url after upload image file
-	System.out.println("Link of my file: " + url); 		//print url
-	//cloud.FileDeleteByURL(url);                   	//delete file using url
+Cloud cloud = new Cloud("cloudinary://yoururlapi");	//setup your cloudinary api
+String url = cloud.FileUpload("myImage.png");   	//get url after upload image file
+System.out.println("Link of my file: " + url); 		//print url
+//cloud.FileDeleteByURL(url);                   	//delete file using url
 ```
+See more / Xem thêm [ExampleCloud](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/NET/ExampleCloud.java)
+
+---
 
 ### 3.3.2 DocNet
 - Lớp DocNet hỗ trợ đọc tài liệu trực tuyến từ URL.
 - The DocNet class supports to read an online document from URL.
 
 ``` java
-	import com.AnLa.NET.DocNet;
-	
-	DocNet docnet = new DocNet("https://raw.githubusercontent.com/AnLaVN/AL-Library/Releases/LICENSE.md"); //set address of network document
-	System.out.println(docnet.readAllLine());   //read all line in network document
-	docnet.saveAs("LICENSE.md");    //save document to file in local
+import com.AnLa.NET.DocNet;
+
+DocNet docnet = new DocNet("https://raw.githubusercontent.com/AnLaVN/AL-Library/Releases/LICENSE.md"); //set address of network document
+System.out.println(docnet.readAllLine());   //read all line in network document
+docnet.saveAs("LICENSE.md");    //save document to file in local
 ```
+See more / Xem thêm [ExampleDocNet](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/NET/ExampleDocNet.java)
+
+---
 
 ### 3.3.3 Email
 - Lớp Email hỗ trợ tạo một SMTP để gửi email.
 - The Email class supports create a SMTP to send email.
 
 ``` java
-	import com.AnLa.NET.Email;
-	
-	Email mail = new Email("yourEmail@domain.com", "applicationPass");  //setup your SMTP service
-	mail.setEmail("Tittle Email", "<h1>hello, this is test email</h1>");  //setup your email content
-	mail.sendEmailTO("yourFriend1@domain.com", "yourFriend2@domain.com", "..."); //send email to your friend as RecipientType is TO
-	mail.sendEmailCC("yourFriend3@domain.com", "yourFriend4@domain.com", "..."); //send email to your friend as RecipientType is CC
+import com.AnLa.NET.Email;
+
+Email mail = new Email("yourEmail@domain.com", "applicationPass");  //setup your SMTP service
+mail.setEmail("Tittle Email", "<h1>hello, this is test email</h1>");  //setup your email content
+mail.sendEmailTO("yourFriend1@domain.com", "yourFriend2@domain.com", "..."); //send email to your friend as RecipientType is TO
+mail.sendEmailCC("yourFriend3@domain.com", "yourFriend4@domain.com", "..."); //send email to your friend as RecipientType is CC
 ```
+See more / Xem thêm [ExampleEmail](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/NET/ExampleEmail.java)
+
+---
 
 ### 3.3.4 Network
 - Lớp Network hỗ trợ lấy thông tin mạng: Thông tin WLAN, địa chỉ IPv4.
 - The Network class supports get network information: WLAN information, address IPv4.
 
 ``` java
-	import com.AnLa.NET.Network;
-	import static com.AnLa.NET.Network.Key.*;
+import com.AnLa.NET.Network;
+import static com.AnLa.NET.Network.Key.*;
 	
-	System.out.println("My IPv4: " + Network.myIPv4());             //print my public ip, not local ip
-	System.out.println("My Wlan: " + Network.myWLAN().get(SSID));   //print wlan ssid name
+System.out.println("My IPv4: " + Network.myIPv4());             //print my public ip, not local ip
+System.out.println("My Wlan: " + Network.myWLAN().get(SSID));   //print wlan ssid name
 ```
+See more / Xem thêm [ExampleNetwork](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/NET/ExampleNetwork.java)
+
+---
 
 ### 3.3.5 RandomORG
 - Lớp RandomORG hỗ trợ tạo số thực sự ngẫu nhiên từ random.org
 - The RandomORG class supports to create true random numbers from random.org
 
 ``` java
-	import com.AnLa.NET.RandomORG;
+import com.AnLa.NET.RandomORG;
 	
-	System.out.println(RandomORG.getInteger(0, 10, 10));            //get a truly random integer from 0 to 10 in decimal
-	System.out.println(RandomORG.getSequence(0, 10));               //get truly random order integer from 0 to 10
-	System.out.println(RandomORG.getString(10, true, true, true));  //get a truly random string with digit, upper, lower case and length equal 10
-	System.out.println(RandomORG.getQuota());                       //get number quota bits remaining of your IP address.
+System.out.println(RandomORG.getInteger(0, 10, 10));            //get a truly random integer from 0 to 10 in decimal
+System.out.println(RandomORG.getSequence(0, 10));               //get truly random order integer from 0 to 10
+System.out.println(RandomORG.getString(10, true, true, true));  //get a truly random string with digit, upper, lower case and length equal 10
+System.out.println(RandomORG.getQuota());                       //get number quota bits remaining of your IP address.
 ```
+See more / Xem thêm [ExampleRandomORG](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/NET/ExampleRandomORG.java)
+
+---
 
 ### 3.3.6 SQL
 - Lớp SQL hỗ trợ kết nối, thực thi mySQL và SQL Server.
 - The SQL class supports to connect, execute mySQL and SQL server.
 	
 ``` java
-	import com.AnLa.NET.SQL;
-	import java.sql.*;
+import com.AnLa.NET.SQL;
+import java.sql.*;
 
-	SQL sql = new SQL(DB_url, DB_username, DB_password);    //setup to your database information
-	sql.Connect();  //connect to your database (if exists)
-				
-	ResultSet rs = sql.Query("select * from myTable");      //query all from table
-	while(rs.next()){
-		System.out.println("ID: " + rs.getString("ID") + " - " + rs.getString("Name"));//get value
-	}
-				
-	System.out.println("-------------------------------------------------------------------------");
+SQL sql = new SQL(DB_url, DB_username, DB_password);    //setup to your database information
+sql.Connect();  //connect to your database (if exists)
+			
+ResultSet rs = sql.Query("select * from myTable");      //query all from table
+while(rs.next()){
+	System.out.println("ID: " + rs.getString("ID") + " - " + rs.getString("Name"));//get value
+}
+			
+System.out.println("-------------------------------------------------------------------------");
 
-	int ID = 1;
-	sql.Update("delete from myTable where ID = ?", ID); //query delete from table with parameters ID
-	rs = sql.Query("select * from myTable");            //query all from table
-	while(rs.next()){
-		System.out.println("ID: " + rs.getString("ID") + " - " + rs.getString("Name"));//get value
-	}
+int ID = 1;
+sql.Update("delete from myTable where ID = ?", ID); //query delete from table with parameters ID
+rs = sql.Query("select * from myTable");            //query all from table
+while(rs.next()){
+	System.out.println("ID: " + rs.getString("ID") + " - " + rs.getString("Name"));//get value
+}
 ```
 
 The sql file
@@ -390,6 +438,9 @@ The sql file
 		(1, 'AnLaVN'),
 		(2, N'Bình An')
 ```
+See more / Xem thêm [ExampleSQL](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/NET/ExampleSQL.java)
+
+---
 
 
 ## 3.4 OpenAI - Provide OpenAI related libraries / Cung cấp các thư viện liên quan đến OpenAI
@@ -399,12 +450,15 @@ The sql file
 - The ChatGPT class supports to connect to OpenAI using API key.
 
 ``` java
-	import com.AnLa.OpenAI.ChatGPT;
-	
-	ChatGPT cgpt = new ChatGPT("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");  //connect to OpenAI service using API key
-	String Result = cgpt.Chat("Who is mr bean?", ChatGPT.Model.Davinci, 128); //get result from request, calling model Davinci with max 128 token
-	System.out.println(Result); //print result
+import com.AnLa.OpenAI.ChatGPT;
+
+ChatGPT cgpt = new ChatGPT("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");  //connect to OpenAI service using API key
+String Result = cgpt.Chat("Who is mr bean?", ChatGPT.Model.Davinci, 128); //get result from request, calling model Davinci with max 128 token
+System.out.println(Result); //print result
 ```
+See more / Xem thêm [ExampleChatGPT](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/OpenAI/ExampleChatGPT.java)
+
+---
 
 
 ## 3.5 OpenCV - Provide OpenCV related libraries / Cung cấp các thư viện liên quan đến OpenCV
@@ -414,39 +468,45 @@ The sql file
 - The FaceDetection class supports to face detection using the world’s largest computer vision library - OpenCV.
 
 ``` java
-	import com.AnLa.OpenCV.FaceDetection;
+import com.AnLa.OpenCV.FaceDetection;
 	
-	FaceDetection.loadModule(); //load module to detect
-	FaceDetection.setDetectPanel(myPanel, 20);  //set JPanel where will display video capture from camera with rounded corners
-	
-	//set how the rectangle display when detect a face,
-	FaceDetection.setDetectFace(true, Color.GREEN, 2);  //this line mean will detect face and display with green rectangle and thickness 2px
-	//FaceDetection.setDetectFace(false, Color.GREEN, 2); //this line mean will not detect face and not display any rectangle no matter what color and how thick it is 
-	
-	FaceDetection.startDetection(0);  //start capture video from camera 0 and detect face, if you was setDetectFace(true, ..., ...)
-	//FaceDetection.endDetection();   //end capture video
+FaceDetection.loadModule(); //load module to detect
+FaceDetection.setDetectPanel(myPanel, 20);  //set JPanel where will display video capture from camera with rounded corners
+
+//set how the rectangle display when detect a face,
+FaceDetection.setDetectFace(true, Color.GREEN, 2);  //this line mean will detect face and display with green rectangle and thickness 2px
+//FaceDetection.setDetectFace(false, Color.GREEN, 2); //this line mean will not detect face and not display any rectangle no matter what color and how thick it is 
+
+FaceDetection.startDetection(0);  //start capture video from camera 0 and detect face, if you was setDetectFace(true, ..., ...)
+//FaceDetection.endDetection();   //end capture video
 ```
 See more / Xem thêm [ExampleFaceDetection](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/OpenCV/ExampleFaceDetection.java)
 
+---
+
 ### 3.5.2 FaceRecognition
-⚠️ ***This feature is only for Windows operating system / Tính năng này chỉ dành cho hệ điều hành Windows*** ⚠️
 - Lớp FaceRecognition hỗ trợ nhận dạng khuôn mặt trong java, sử dụng chương trình python được biên dịch.
 - The FaceRecognition class supports to face recognition in java, using python program compiled.
 
-``` java
-	import com.AnLa.OpenCV.FaceRecognition;
-	
-	FaceRecognition.checkModule();  //check module for recognition, download automatically if you don't have one
-	//set image for original face and test face using URL.
-	//network connection is required to use the module regardless if you have set image from URL or not
-	FaceRecognition.setImageOrginal("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNU14t4OtvdSZf-rTJAQWI6LdTIw5nYCYT1V3SfHgWja6cYMbG");
-	FaceRecognition.setImageTesting("https://nld.mediacdn.vn/2021/1/5/d9db633fe9c98429ec9025ca0950f241-16098228091571816318835.jpg");
-	FaceRecognition.setRequirementPercent(60.0);//set a percentage requirement for face recognition, the higher the stricter
+⚠️ ***Tính năng này chỉ dành cho hệ điều hành Windows / This feature is only for Windows operating system*** ⚠️
 
-	System.out.println(FaceRecognition.Recognition());//recognition face and get result
-	System.out.println(FaceRecognition.getPercent());//get percent was recognition
-	System.out.println(FaceRecognition.isMatch());//get value if match, true if percent was recognition higher or equal with percentage requirement
+``` java
+import com.AnLa.OpenCV.FaceRecognition;
+
+FaceRecognition.checkModule();  //check module for recognition, download automatically if you don't have one
+//set image for original face and test face using URL.
+//network connection is required to use the module regardless if you have set image from URL or not
+FaceRecognition.setImageOrginal("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNU14t4OtvdSZf-rTJAQWI6LdTIw5nYCYT1V3SfHgWja6cYMbG");
+FaceRecognition.setImageTesting("https://nld.mediacdn.vn/2021/1/5/d9db633fe9c98429ec9025ca0950f241-16098228091571816318835.jpg");
+FaceRecognition.setRequirementPercent(60.0);//set a percentage requirement for face recognition, the higher the stricter
+
+System.out.println(FaceRecognition.Recognition());//recognition face and get result
+System.out.println(FaceRecognition.getPercent());//get percent was recognition
+System.out.println(FaceRecognition.isMatch());//get value if match, true if percent was recognition higher or equal with percentage requirement
 ```
+See more / Xem thêm [ExampleFaceRecognition](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/OpenCV/ExampleFaceRecognition.java)
+
+---
 
 
 ## 3.6 UI - Provide UI related libraries / Cung cấp các thư viện liên quan đến UI
@@ -456,151 +516,173 @@ See more / Xem thêm [ExampleFaceDetection](https://github.com/AnLaVN/AL-Library
 - The AvatarPanel class supports display a cropped avatar picture.
 
 ``` java
-	import com.AnLa.UI.AvatarPanel;
+import com.AnLa.UI.AvatarPanel;
 
-	AvatarPanel avatar = new AvatarPanel();
-	avatar.setPic("myImage.png"); //set picture for panel from file
-	avatar.setPic("https://i.pinimg.com/564x/b7/d2/62/b7d262d9ab6397f959a2030f65947b4f.jpg"); //set picture for panel from url
+AvatarPanel avatar = new AvatarPanel();
+avatar.setPic("myImage.png"); //set picture for panel from file
+avatar.setPic("https://i.pinimg.com/564x/b7/d2/62/b7d262d9ab6397f959a2030f65947b4f.jpg"); //set picture for panel from url
 ```
 See more / Xem thêm [ExampleAvatarPanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleAvatarPanel.java)
+
+---
 
 ### 3.6.2 ChatBox
 - Lớp ChatBox hỗ trợ hiển thị hộp tin nhắn như messenger.
 - The ChatBox class supports display a message box like messenger.
 
 ``` java
-	import com.AnLa.UI.ChatBox;
+import com.AnLa.UI.ChatBox;
 	
-	ChatBox chat = new ChatBox();
-	chat.addRightBubble("this is right side text"); //add bubble text in right side
-	chat.addLeftBubble("this is left side text"); //add bubble text in left side
-	chat.addNotifiBox("this is notification text"); //add notification text in center
+ChatBox chat = new ChatBox();
+chat.addRightBubble("this is right side text"); //add bubble text in right side
+chat.addLeftBubble("this is left side text"); //add bubble text in left side
+chat.addNotifiBox("this is notification text"); //add notification text in center
 ```
 See more / Xem thêm [ExampleChatBox](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleChatBox.java)
+
+---
 
 ### 3.6.3 ComboBox
 - Lớp ComboBox hỗ trợ tạo comboBox đẹp mắt với chế độ sáng và tối.
 - The ComboBox class supports to create a beautiful comboBox with light and dark mode.
 
 ``` java
-	import com.AnLa.UI.ComboBox;
+import com.AnLa.UI.ComboBox;
 
-	ComboBox comboBox = new ComboBox();
-	comboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "item 1", "item2" })); //use as normal combobox
+ComboBox comboBox = new ComboBox();
+comboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "item 1", "item2" })); //use as normal combobox
 ```
 See more / Xem thêm [ExampleComboBox](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleComboBox.java)
+
+---
 
 ### 3.6.4 ImagePanel
 - Lớp ImagePanel hỗ trợ hiển thị hình ảnh có thể thay đổi kích thước.
 - The ImagePanel class supports displaying resizable images.
 ``` java
-	import com.AnLa.UI.ImagePanel;
+import com.AnLa.UI.ImagePanel;
 
-	ImagePanel image = new ImagePanel();
-	image.setPic("myImage.png"); //set picture for panel from file
+ImagePanel image = new ImagePanel();
+image.setPic("myImage.png"); //set picture for panel from file
 ```
 See more / Xem thêm [ExampleImagePanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleImagePanel.java)
-	
+
+---
+
 ### 3.6.5 LiquidProgress
 - Lớp LiquidProgress hỗ trợ xuất thanh tiến trình dạng chất lỏng hiện đại.
 - The LiquidProgress supports to export modern liquid progress.
 
 ``` java
-	import com.AnLa.UI.LiquidProgress;
+import com.AnLa.UI.LiquidProgress;
 
-	LiquidProgress liquidProgress = new LiquidProgress();
-	liquidProgress1.setValue(50);
+LiquidProgress liquidProgress = new LiquidProgress();
+liquidProgress1.setValue(50);
 ```
 See more / Xem thêm [ExampleLiquidProgress](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleLiquidProgress.java)
+
+---
 
 ### 3.6.6 Mode
 - Lớp Mode hỗ trợ thay đổi chế độ từ sáng sang tối, component từ nimbus sang giao diện windows.
 - The Mode class supports change mode from light to dark, component from nimbus to windows look and feel.
 
 ``` java
-	import com.AnLa.UI.Mode;
+import com.AnLa.UI.Mode;
 	
-	Mode.setMode(true); //set true is dark mode, false is light
-	Mode.setModeComponent(yourComponent); //set the component will apply mode change
+Mode.setMode(true); //set true is dark mode, false is light
+Mode.setModeComponent(yourComponent); //set the component will apply mode change
 ```
 See more / Xem thêm [ExampleMode](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleMode.java)
+
+---
 
 ### 3.6.7 Notification
 - Lớp Notification hỗ trợ tạo thông báo popup.
 - The Notification class supports to create a animation popup notification.
 ``` java
-	import com.AnLa.UI.Notification;
+import com.AnLa.UI.Notification;
 	
-	//setup the notification will popup
-	Notification noti = new Notification(this, Notification.Type.WARNING, Notification.Location.TOP_CENTER, "Notification");
-	noti.showNotification(); //show popup Notification
+//setup the notification will popup
+Notification noti = new Notification(this, Notification.Type.WARNING, Notification.Location.TOP_CENTER, "Notification");
+noti.showNotification(); //show popup Notification
 ```
 See more / Xem thêm [ExampleNotification](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleNotification.java)
-	
+
+---
+
 ### 3.6.8 ProgressBar
 - Lớp ProgressBar hỗ trợ xuất thanh tiến trình hiện đại.
 - The ProgressBar supports to export modern progress bar.
 
 ``` java
-	import com.AnLa.UI.ProgressBar;
+import com.AnLa.UI.ProgressBar;
 	
-	ProgressBar progressBar1 = new ProgressBar();
-	progressBar1.setValue(50);
+ProgressBar progressBar1 = new ProgressBar();
+progressBar1.setValue(50);
 ```
 See more / Xem thêm [ExampleProgressBar](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleProgressBar.java)
+
+---
 
 ### 3.6.9 ScrollBar
 - Lớp ScrollBar hỗ trợ xuất thanh cuộn hiện đại.
 - The ScrollBar class supports export modern scroll bar.
 
 ``` java
-	import com.AnLa.UI.ScrollBar;
+import com.AnLa.UI.ScrollBar;
 
-	yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
+yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 ```
 See more / Xem thêm [ExampleScrollBar](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleScrollBar.java)
+
+---
 
 ### 3.6.10 DateChooser.DateChooser
 - Lớp DateChooser hỗ trợ hiển thị bộ chọn ngày ở dạng hiện đại.
 - The DateChooser class supports to show modern form date chooser.
 
 ``` java
-	import com.AnLa.UI.DateChooser.DateChooser;
+import com.AnLa.UI.DateChooser.DateChooser;
 
-	DateChooser dateChooser = new DateChooser();
-	dateChooser.setReferenceLabel(yourLabel); //set JLabel where will display day was choose
-	dateChooser.showPopup();  //show day chooser as popup
+DateChooser dateChooser = new DateChooser();
+dateChooser.setReferenceLabel(yourLabel); //set JLabel where will display day was choose
+dateChooser.showPopup();  //show day chooser as popup
 ```
 See more / Xem thêm [ExampleDateChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleDateChooser.java)
+
+---
 
 ### 3.6.11 TimePicker.TimePicker
 - Lớp TimePicker hỗ trợ hiển thị bộ chọn thời gian hiện đại.
 - The TimePicker class supports to show modern time picker.
 
 ``` java
-	import com.AnLa.UI.TimePicker.TimePicker;
+import com.AnLa.UI.TimePicker.TimePicker;
 
-	TimePicker timePicker = new TimePicker();
-	timePicker.setDisplayTextLabel(yourLabel); //set JLabel where will display day was choose
-	//show time picker as popup as position
-	timePicker.showPopup(this,
-		(getWidth() - timePicker.getPreferredSize().width) / 2,
-		(getHeight() - timePicker.getPreferredSize().height) / 2);
+TimePicker timePicker = new TimePicker();
+timePicker.setDisplayTextLabel(yourLabel); //set JLabel where will display day was choose
+//show time picker as popup as position
+timePicker.showPopup(this,
+	(getWidth() - timePicker.getPreferredSize().width) / 2,
+	(getHeight() - timePicker.getPreferredSize().height) / 2);
 ```
 See more / Xem thêm [ExampleTimePicker](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleTimePicker.java)
+
+---
 
 ### 3.6.12 WinFileChooser.JnaFileChooser
 - JnaFileChooser là một trình bao bọc xung quanh trình chọn tệp và trình duyệt thư mục gốc của Windows nằm trong Swing JFileChooser
 - JnaFileChooser is a wrapper around the native Windows file chooser and folder browser that falls back to the Swing JFileChooser.
 
 ``` java
-	import com.AnLa.UI.WinFileChooser.JnaFileChooser;
+import com.AnLa.UI.WinFileChooser.JnaFileChooser;
 	
-	JnaFileChooser SelectPic = new JnaFileChooser();
-	SelectPic.addFilter("Image", "jpeg", "jpg", "png"); //add file filter for file chooser
-	if(SelectPic.showOpenDialog(this)){ //if choose file
-		System.out.println(SelectPic.getSelectedFile().getAbsolutePath());	//get absolute path of choose file
-	}
+JnaFileChooser SelectPic = new JnaFileChooser();
+SelectPic.addFilter("Image", "jpeg", "jpg", "png"); //add file filter for file chooser
+if(SelectPic.showOpenDialog(this)){ //if choose file
+	System.out.println(SelectPic.getSelectedFile().getAbsolutePath());	//get absolute path of choose file
+}
 ```
 See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleJnaFileChooser.java)
 
@@ -630,20 +712,20 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 
 - AL-Library Vietnamses Version
 ```xml
-	<dependency>
-		<groupId>io.github.AnLaVN</groupId>
-		<artifactId>AL-Library_VN</artifactId>
-		<version>3.68.11</version>
-	</dependency>
+<dependency>
+	<groupId>io.github.AnLaVN</groupId>
+	<artifactId>AL-Library_VN</artifactId>
+	<version>3.68.11</version>
+</dependency>
 ```
 
 - AL-Library English Version
 ```xml
-	<dependency>
-		<groupId>io.github.AnLaVN</groupId>
-		<artifactId>AL-Library_EN</artifactId>
-		<version>3.68.11</version>
-	</dependency>
+<dependency>
+	<groupId>io.github.AnLaVN</groupId>
+	<artifactId>AL-Library_EN</artifactId>
+	<version>3.68.11</version>
+</dependency>
 ```
 
 - [mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN)
