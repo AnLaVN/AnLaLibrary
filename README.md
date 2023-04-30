@@ -424,19 +424,19 @@ while(rs.next()){
 
 The sql file
 ``` sql
-	USE MASTER
-	DROP DATABASE  IF EXISTS myDatabase 
-	CREATE DATABASE myDatabase
-	USE myDatabase
+USE MASTER
+DROP DATABASE  IF EXISTS myDatabase 
+CREATE DATABASE myDatabase
+USE myDatabase
 
-	CREATE TABLE myTable(
-		ID int PRIMARY KEY NOT NULL,
-		NAME NVARCHAR(50)
-	);
+CREATE TABLE myTable(
+	ID int PRIMARY KEY NOT NULL,
+	NAME NVARCHAR(50)
+);
 
-	INSERT INTO myTable VALUES
-		(1, 'AnLaVN'),
-		(2, N'Bình An')
+INSERT INTO myTable VALUES
+	(1, 'AnLaVN'),
+	(2, N'Bình An')
 ```
 See more / Xem thêm [ExampleSQL](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/NET/ExampleSQL.java)
 
