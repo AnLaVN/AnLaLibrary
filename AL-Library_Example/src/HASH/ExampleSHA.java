@@ -4,7 +4,7 @@ package HASH;
 import com.anlavn.hash.SHA;
 import com.anlavn.hash.SHA.Types;
 
-public class ExampleSHA256 {
+public class ExampleSHA {
 
     public static void main(String[] args) {
         String orgStr = "This is original string.", //declare original string need to hash
