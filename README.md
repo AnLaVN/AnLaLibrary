@@ -308,12 +308,13 @@ See more / Xem thêm [ExampleMD5](https://github.com/AnLaVN/AL-Library/blob/Rele
 
 ``` java
 import com.anlavn.hash.SHA256;
+import com.anlavn.hash.SHA.Types;
 	
-String 	orgStr = "This is original string.", //declare original string need to hash
-	hashStr= SHA256.Encrypt(orgStr); 	//hash original string, only supports encryption, decryption it is impossible.
+String orgStr = "This is original string.", //declare original string need to hash
+       hashStr= SHA.Encrypt(Types.SHA_256, orgStr); //hash original string, only supports encryption, decryption it is impossible.
 System.out.println("Hash SHA256 of orgStr: " + hashStr);   //print hash string
 ```
-See more / Xem thêm [ExampleSHA256](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/HASH/ExampleSHA256.java)
+See more / Xem thêm [ExampleSHA](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/HASH/ExampleSHA.java)
 
 ---
 
