@@ -696,41 +696,24 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 	<img src="https://img.shields.io/maven-central/v/io.github.AnLaVN/AL-Library_VN"><br><br>
 </p>
 
-- AL-Library Vietnamses Version (default JDK 18)
+- AL-Library Vietnamses Version
 ```xml
 <dependency>
 	<groupId>io.github.AnLaVN</groupId>
 	<artifactId>AL-Library_VN</artifactId>
-	<version>3.69.11</version>
+	<version>4.68.11</version>
 </dependency>
 ```
 
-- AL-Library English Version (default JDK 18)
+- AL-Library English Version 
 ```xml
 <dependency>
 	<groupId>io.github.AnLaVN</groupId>
 	<artifactId>AL-Library_EN</artifactId>
-	<version>3.69.11</version>
+	<version>4.68.11</version>
 </dependency>
 ```
 
-- AL-Library Vietnamses Version (JDK 17)
-```xml
-<dependency>
-	<groupId>io.github.AnLaVN</groupId>
-	<artifactId>AL-Library_VN</artifactId>
-	<version>3.69.11.17</version>
-</dependency>
-```
-
-- AL-Library English Version (JDK 17)
-```xml
-<dependency>
-	<groupId>io.github.AnLaVN</groupId>
-	<artifactId>AL-Library_EN</artifactId>
-	<version>3.69.11.17</version>
-</dependency>
-```
 
 - [mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN)
   - [AL-Library_EN / mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN/AL-Library_EN)
