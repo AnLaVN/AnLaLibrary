@@ -1,7 +1,7 @@
 package FILE;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.FILE.Zip;
+import com.anlavn.file.Zip;
 
 public class ExampleZip {
 

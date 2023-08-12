@@ -1,8 +1,8 @@
 package OpenAI;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.OpenAI.ChatGPT;
-import com.AnLa.UI.ScrollBar;
+import com.anlavn.openai.ChatGPT;
+import com.anlavn.ui.ScrollBar;
 
 public class ExampleChatGPT2 extends javax.swing.JFrame {
 

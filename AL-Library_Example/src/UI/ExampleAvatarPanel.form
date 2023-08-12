@@ -41,7 +41,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="com.AnLa.UI.AvatarPanel" name="avatar">
+    <Container class="com.anlavn.ui.AvatarPanel" name="avatar">
 
       <Layout>
         <DimensionLayout dim="0">

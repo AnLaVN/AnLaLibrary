@@ -14,7 +14,7 @@ public class ExampleChatBox extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        chat = new com.AnLa.UI.ChatBox();
+        chat = new com.anlavn.ui.ChatBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -128,7 +128,7 @@ public class ExampleChatBox extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.AnLa.UI.ChatBox chat;
+    private com.anlavn.ui.ChatBox chat;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;

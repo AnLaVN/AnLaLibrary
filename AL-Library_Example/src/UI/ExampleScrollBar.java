@@ -1,8 +1,8 @@
 package UI;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.UI.Mode;
-import com.AnLa.UI.ScrollBar;
+import com.anlavn.ui.Mode;
+import com.anlavn.ui.ScrollBar;
 
 public class ExampleScrollBar extends javax.swing.JFrame {
 

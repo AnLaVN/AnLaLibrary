@@ -1,12 +1,12 @@
 package OpenCV;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.OpenCV.FaceRecognition;
+import com.anlavn.opencv.FaceRecognition;
 
 public class ExampleFaceRecognition {
 
     public static void main(String[] args) throws java.io.IOException {
-        FaceRecognition.checkModule();  //check module for recognition, download automatically if you don't have one
+        FaceRecognition.loadModule();//check module for recognition, download automatically if you don't have one
         //set image for original face and test face using URL.
         //network connection is required to use the module regardless if you have set image from URL or not
         FaceRecognition.setImageOrginal("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNU14t4OtvdSZf-rTJAQWI6LdTIw5nYCYT1V3SfHgWja6cYMbG");

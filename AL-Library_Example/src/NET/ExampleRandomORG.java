@@ -1,7 +1,7 @@
 package NET;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.NET.RandomORG;
+import com.anlavn.net.RandomORG;
 import java.io.IOException;
 
 public class ExampleRandomORG {

@@ -1,7 +1,7 @@
 package FILE;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.FILE.NativeLibrary;
+import com.anlavn.file.NativeLibrary;
 
 public class ExampleNativeLibrary {
 

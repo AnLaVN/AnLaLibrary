@@ -11,7 +11,7 @@ public class ExampleLiquidProgress extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        liquidProgress1 = new com.AnLa.UI.LiquidProgress();
+        liquidProgress1 = new com.anlavn.ui.LiquidProgress();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -71,6 +71,6 @@ public class ExampleLiquidProgress extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.AnLa.UI.LiquidProgress liquidProgress1;
+    private com.anlavn.ui.LiquidProgress liquidProgress1;
     // End of variables declaration//GEN-END:variables
 }

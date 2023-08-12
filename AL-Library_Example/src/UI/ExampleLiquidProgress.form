@@ -41,7 +41,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="com.AnLa.UI.LiquidProgress" name="liquidProgress1">
+    <Component class="com.anlavn.ui.LiquidProgress" name="liquidProgress1">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>

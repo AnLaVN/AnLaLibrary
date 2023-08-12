@@ -1,8 +1,8 @@
 package NET;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.NET.Network;
-import static com.AnLa.NET.Network.Key.*;
+import com.anlavn.net.Network;
+import static com.anlavn.net.Network.Key.SSID;
 import java.io.IOException;
 
 public class ExampleNetwork {

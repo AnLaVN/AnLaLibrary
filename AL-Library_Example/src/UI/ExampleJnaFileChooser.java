@@ -1,7 +1,7 @@
 package UI;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.UI.WinFileChooser.JnaFileChooser;
+import com.anlavn.ui.filechooser.JnaFileChooser;
 
 public class ExampleJnaFileChooser extends javax.swing.JFrame {
 

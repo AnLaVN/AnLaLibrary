@@ -1,7 +1,7 @@
 package FILE;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.FILE.Raw;
+import com.anlavn.file.Raw;
 
 public class ExampleRaw {
 

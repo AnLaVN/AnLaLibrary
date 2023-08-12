@@ -1,7 +1,7 @@
 package UI;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.UI.Notification;
+import com.anlavn.ui.Notification;
 
 public class ExampleNotification extends javax.swing.JFrame {
 

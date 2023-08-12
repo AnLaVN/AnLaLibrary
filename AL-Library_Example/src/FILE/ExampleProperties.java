@@ -1,7 +1,7 @@
 package FILE;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.FILE.Properties;
+import com.anlavn.file.Properties;
 
 public class ExampleProperties {
 

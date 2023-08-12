@@ -11,7 +11,7 @@ public class ExampleProgressBar extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        progressBar1 = new com.AnLa.UI.ProgressBar();
+        progressBar1 = new com.anlavn.ui.ProgressBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,6 +70,6 @@ public class ExampleProgressBar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.AnLa.UI.ProgressBar progressBar1;
+    private com.anlavn.ui.ProgressBar progressBar1;
     // End of variables declaration//GEN-END:variables
 }

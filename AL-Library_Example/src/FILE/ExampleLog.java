@@ -1,7 +1,7 @@
 package FILE;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.FILE.Log;
+import com.anlavn.file.Log;
 
 public class ExampleLog {
 

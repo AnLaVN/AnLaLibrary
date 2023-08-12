@@ -1,7 +1,7 @@
 package UI;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.UI.TimePicker.TimePicker;
+import com.anlavn.ui.timechooser.TimePicker;
 
 public class ExampleTimePicker extends javax.swing.JFrame {
 

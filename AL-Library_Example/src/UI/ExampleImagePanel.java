@@ -12,7 +12,7 @@ public class ExampleImagePanel extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        image = new com.AnLa.UI.ImagePanel();
+        image = new com.anlavn.ui.ImagePanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,6 +67,6 @@ public class ExampleImagePanel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.AnLa.UI.ImagePanel image;
+    private com.anlavn.ui.ImagePanel image;
     // End of variables declaration//GEN-END:variables
 }

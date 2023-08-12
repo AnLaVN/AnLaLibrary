@@ -1,7 +1,7 @@
 package FILE;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.FILE.ObjectData;
+import com.anlavn.file.ObjectData;
 
 public class ExampleObjectData {
 

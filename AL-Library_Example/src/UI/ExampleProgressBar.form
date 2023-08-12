@@ -41,7 +41,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="com.AnLa.UI.ProgressBar" name="progressBar1">
+    <Component class="com.anlavn.ui.ProgressBar" name="progressBar1">
       <Properties>
         <Property name="value" type="int" value="50"/>
       </Properties>

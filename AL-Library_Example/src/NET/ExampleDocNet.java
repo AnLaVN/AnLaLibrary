@@ -1,7 +1,7 @@
 package NET;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.NET.DocNet;
+import com.anlavn.net.DocNet;
 import java.io.IOException;
 
 public class ExampleDocNet {

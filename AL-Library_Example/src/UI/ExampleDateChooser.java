@@ -1,7 +1,7 @@
 package UI;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.UI.DateChooser.DateChooser;
+import com.anlavn.ui.datechooser.DateChooser;
 
 public class ExampleDateChooser extends javax.swing.JFrame {
 

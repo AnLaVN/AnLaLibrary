@@ -41,7 +41,7 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="com.AnLa.UI.ImagePanel" name="image">
+    <Container class="com.anlavn.ui.ImagePanel" name="image">
 
       <Layout>
         <DimensionLayout dim="0">

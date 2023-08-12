@@ -1,7 +1,7 @@
 package NET;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.NET.SQL;
+import com.anlavn.net.SQL;
 import java.sql.*;
 
 public class ExampleSQL {

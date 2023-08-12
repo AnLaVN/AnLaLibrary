@@ -1,7 +1,7 @@
 package FILE;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.AnLa.FILE.Excel;
+import com.anlavn.file.Excel;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -11,8 +11,8 @@ public class ExampleExcel {
     public static void main(String[] args) throws IOException {
         //Write
         ArrayList<Object[]> myData = new ArrayList<>();         //declare array to store data to write to Excel file
-        myData.add(new Object[]{3, 69.11, "AnLaVN", true});     //add data
-        myData.add(new Object[]{3, 68.11, "AnLaVN", false});    //add data
+        myData.add(new Object[]{4, 68.11, "AnLaVN", true});     //add data
+        myData.add(new Object[]{3, 69.11, "AnLaVN", false});    //add data
         Excel.WriteExcel("myExcel.xlsx", "mySheet", myData.iterator()); //convert to Iterator and write to Excel file
         
         //Read

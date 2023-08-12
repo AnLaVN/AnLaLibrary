@@ -13,7 +13,7 @@ public class ExampleAvatarPanel extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        avatar = new com.AnLa.UI.AvatarPanel();
+        avatar = new com.anlavn.ui.AvatarPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -68,6 +68,6 @@ public class ExampleAvatarPanel extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.AnLa.UI.AvatarPanel avatar;
+    private com.anlavn.ui.AvatarPanel avatar;
     // End of variables declaration//GEN-END:variables
 }

@@ -10,7 +10,7 @@ public class ExampleComboBox extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        comboBox = new com.AnLa.UI.ComboBox();
+        comboBox = new com.anlavn.ui.ComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,6 +56,6 @@ public class ExampleComboBox extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.AnLa.UI.ComboBox comboBox;
+    private com.anlavn.ui.ComboBox comboBox;
     // End of variables declaration//GEN-END:variables
 }
