@@ -1,5 +1,3 @@
-package NET;
-// Make By Bình An || AnLaVN || KatoVN
 
 import com.anlavn.net.Email;
 import java.util.Arrays;
