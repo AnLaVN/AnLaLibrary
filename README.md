@@ -675,7 +675,7 @@ if(SelectPic.showOpenDialog(this)){ //if choose file
 	System.out.println(SelectPic.getSelectedFile().getAbsolutePath());	//get absolute path of choose file
 }
 ```
-See more / Xem thêm [ExampleFileChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleJnaFileChooser.java)
+See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleJnaFileChooser.java)
 
 
 
