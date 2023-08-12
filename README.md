@@ -67,12 +67,11 @@
 <details>
 	<summary><a href="#33-net---provide-internet-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-internet">NET</a></summary>
 	<ol>
-		<li><a href="#331-cloud">Cloud</a></li>
-		<li><a href="#332-docnet">DocNet</a></li>
-		<li><a href="#333-email">Email</a></li>
-		<li><a href="#334-network">Network</a></li>
-		<li><a href="#335-randomorg">RandomORG</a></li>
-		<li><a href="#336-sql">SQL</a></li>
+		<li><a href="#331-docnet">DocNet</a></li>
+		<li><a href="#332-email">Email</a></li>
+		<li><a href="#333-network">Network</a></li>
+		<li><a href="#334-randomorg">RandomORG</a></li>
+		<li><a href="#335-sql">SQL</a></li>
 	</ol>
 </details>
 <details>
@@ -321,23 +320,7 @@ See more / Xem thêm [ExampleSHA256](https://github.com/AnLaVN/AL-Library/blob/R
 
 ## 3.3 NET - Provide Internet related libraries / Cung cấp các thư viện liên quan đến Internet
 
-### 3.3.1 Cloud
-- Lớp Cloud hỗ trợ kết nối tới Cloudinary của bạn.
-- The Cloud class supports connected to your Cloudinary.
-
-``` java
-import com.AnLa.NET.Cloud;
-	
-Cloud cloud = new Cloud("cloudinary://yoururlapi");	//setup your cloudinary api
-String url = cloud.FileUpload("myImage.png");   	//get url after upload image file
-System.out.println("Link of my file: " + url); 		//print url
-//cloud.FileDeleteByURL(url);                   	//delete file using url
-```
-See more / Xem thêm [ExampleCloud](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/NET/ExampleCloud.java)
-
----
-
-### 3.3.2 DocNet
+### 3.3.1 DocNet
 - Lớp DocNet hỗ trợ đọc tài liệu trực tuyến từ URL.
 - The DocNet class supports to read an online document from URL.
 
@@ -352,7 +335,7 @@ See more / Xem thêm [ExampleDocNet](https://github.com/AnLaVN/AL-Library/blob/R
 
 ---
 
-### 3.3.3 Email
+### 3.3.2 Email
 - Lớp Email hỗ trợ tạo một SMTP để gửi email.
 - The Email class supports create a SMTP to send email.
 
@@ -368,7 +351,7 @@ See more / Xem thêm [ExampleEmail](https://github.com/AnLaVN/AL-Library/blob/Re
 
 ---
 
-### 3.3.4 Network
+### 3.3.3 Network
 - Lớp Network hỗ trợ lấy thông tin mạng: Thông tin WLAN, địa chỉ IPv4.
 - The Network class supports get network information: WLAN information, address IPv4.
 
@@ -383,7 +366,7 @@ See more / Xem thêm [ExampleNetwork](https://github.com/AnLaVN/AL-Library/blob/
 
 ---
 
-### 3.3.5 RandomORG
+### 3.3.4 RandomORG
 - Lớp RandomORG hỗ trợ tạo số thực sự ngẫu nhiên từ random.org
 - The RandomORG class supports to create true random numbers from random.org
 
@@ -399,7 +382,7 @@ See more / Xem thêm [ExampleRandomORG](https://github.com/AnLaVN/AL-Library/blo
 
 ---
 
-### 3.3.6 SQL
+### 3.3.5 SQL
 - Lớp SQL hỗ trợ kết nối, thực thi mySQL và SQL Server.
 - The SQL class supports to connect, execute mySQL and SQL server.
 	
