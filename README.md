@@ -99,9 +99,9 @@
 		<li><a href="#367-notification">Notification</a></li>
 		<li><a href="#368-progressbar">ProgressBar</a> (Add to Palette from JAR)</li>
 		<li><a href="#369-scrollbar">ScrollBar</a></li>
-		<li><a href="#3610-datechooserdatechooser">DateChooser.DateChooser</a></li>
-		<li><a href="#3611-timepickertimepicker">TimePicker.TimePicker</a></li>
-		<li><a href="#3612-winfilechooserjnafilechooser">WinFileChooser.JnaFileChooser</a></li>
+		<li><a href="#3610-datechooser">DateChooser</a></li>
+		<li><a href="#3611-timepicker">TimePicker</a></li>
+		<li><a href="#3612-jnafilechooser">JnaFileChooser</a></li>
 	</ol>
 </details>
 <details>
@@ -629,12 +629,12 @@ See more / Xem thêm [ExampleScrollBar](https://github.com/AnLaVN/AL-Library/blo
 
 ---
 
-### 3.6.10 DateChooser.DateChooser
+### 3.6.10 DateChooser
 - Lớp DateChooser hỗ trợ hiển thị bộ chọn ngày ở dạng hiện đại.
 - The DateChooser class supports to show modern form date chooser.
 
 ``` java
-import com.anlavn.ui.DateChooser.DateChooser;
+import com.anlavn.ui.datechooser.DateChooser;
 
 DateChooser dateChooser = new DateChooser();
 dateChooser.setReferenceLabel(yourLabel); //set JLabel where will display day was choose
@@ -644,12 +644,12 @@ See more / Xem thêm [ExampleDateChooser](https://github.com/AnLaVN/AL-Library/b
 
 ---
 
-### 3.6.11 TimePicker.TimePicker
+### 3.6.11 TimePicker
 - Lớp TimePicker hỗ trợ hiển thị bộ chọn thời gian hiện đại.
 - The TimePicker class supports to show modern time picker.
 
 ``` java
-import com.anlavn.ui.TimePicker.TimePicker;
+import com.anlavn.ui.timechooser.TimePicker;
 
 TimePicker timePicker = new TimePicker();
 timePicker.setDisplayTextLabel(yourLabel); //set JLabel where will display day was choose
@@ -662,12 +662,12 @@ See more / Xem thêm [ExampleTimePicker](https://github.com/AnLaVN/AL-Library/bl
 
 ---
 
-### 3.6.12 WinFileChooser.JnaFileChooser
+### 3.6.12 JnaFileChooser
 - JnaFileChooser là một trình bao bọc xung quanh trình chọn tệp và trình duyệt thư mục gốc của Windows nằm trong Swing JFileChooser
 - JnaFileChooser is a wrapper around the native Windows file chooser and folder browser that falls back to the Swing JFileChooser.
 
 ``` java
-import com.anlavn.ui.WinFileChooser.JnaFileChooser;
+import com.anlavn.ui.filechooser.JnaFileChooser;
 	
 JnaFileChooser SelectPic = new JnaFileChooser();
 SelectPic.addFilter("Image", "jpeg", "jpg", "png"); //add file filter for file chooser
@@ -675,7 +675,7 @@ if(SelectPic.showOpenDialog(this)){ //if choose file
 	System.out.println(SelectPic.getSelectedFile().getAbsolutePath());	//get absolute path of choose file
 }
 ```
-See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleJnaFileChooser.java)
+See more / Xem thêm [ExampleFileChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleJnaFileChooser.java)
 
 
 
