@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.anlavn.file"},{"l":"com.anlavn.hash"},{"l":"com.anlavn.net"},{"l":"com.anlavn.openai"},{"l":"com.anlavn.opencv"},{"l":"com.anlavn.ui"},{"l":"com.anlavn.ui.datechooser"},{"l":"com.anlavn.ui.filechooser"},{"l":"com.anlavn.ui.timechooser"}];updateSearchResults();
