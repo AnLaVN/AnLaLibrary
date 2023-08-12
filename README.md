@@ -127,8 +127,8 @@ import com.anlavn.file.Excel;
 		
 //Write
 ArrayList<Object[]> myData = new ArrayList<>();         //declare array to store data to write to Excel file
-myData.add(new Object[]{3, 69.11, "AnLaVN", true});     //add data
-myData.add(new Object[]{3, 68.11, "AnLaVN", false});    //add data
+myData.add(new Object[]{4, 68.11, "AnLaVN", true});     //add data
+myData.add(new Object[]{3, 69.11, "AnLaVN", false});    //add data
 Excel.WriteExcel("myExcel.xlsx", "mySheet", myData.iterator()); //convert to Iterator and write to Excel file
 		
 //Read
