@@ -116,6 +116,13 @@
 # 3. Quick Guide / Hướng dẫn nhanh
 [See details in project example / Xem chi tiết trong dự án mẫu](https://github.com/AnLaVN/AL-Library/tree/Releases/AL-Library_Example)
 
+### PayOS
+- Tích hợp thư viện cổng thanh toán điện tử [PayOS](https://payos.vn)
+
+⚠️ ***Tính năng này chỉ dành cho phiên bản Tiếng Việt / This feature is only for Vietnamese version*** ⚠️
+
+---
+
 ## 3.1 FILE - Provides file related libraries / Cung cấp các thư viện liên quan đến tập tin
 
 ### 3.1.1 Excel
@@ -676,7 +683,7 @@ if(SelectPic.showOpenDialog(this)){ //if choose file
 ```
 See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleJnaFileChooser.java)
 
-
+---
 
 # 4. Download / Tải xuống
 ### Tiếng Việt
@@ -705,7 +712,7 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 <dependency>
 	<groupId>io.github.AnLaVN</groupId>
 	<artifactId>AL-Library_VN</artifactId>
-	<version>4.68.11</version>
+	<version>4.68.12</version>
 </dependency>
 ```
 
