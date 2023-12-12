@@ -731,7 +731,7 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 <dependency>
 	<groupId>io.github.AnLaVN</groupId>
 	<artifactId>AL-Library_VN</artifactId>
-	<version>4.68.12</version>
+	<version>4.69.11</version>
 </dependency>
 ```
 
@@ -740,7 +740,7 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 <dependency>
 	<groupId>io.github.AnLaVN</groupId>
 	<artifactId>AL-Library_EN</artifactId>
-	<version>4.68.11</version>
+	<version>4.69.11</version>
 </dependency>
 ```
 
