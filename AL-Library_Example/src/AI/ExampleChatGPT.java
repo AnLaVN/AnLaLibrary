@@ -1,8 +1,8 @@
-package OpenAI;
+package AI;
 // Make By Bình An || AnLaVN || KatoVN
 
-import com.anlavn.openai.ChatGPT;
-import com.anlavn.openai.ChatGPT.Model;
+import com.anlavn.ai.ChatGPT;
+import com.anlavn.ai.ChatGPT.Model;
 
 public class ExampleChatGPT {
 

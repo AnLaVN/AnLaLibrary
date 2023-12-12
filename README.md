@@ -43,40 +43,41 @@
 
 # 2. Features / Tính năng
 <details>
-	<summary><a href="#31-file---provides-file-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-tập-tin">FILE</a></summary>
+	<summary><a href="#31-ai---provide-ai-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-ai">AI</a></summary>
 	<ol>
-		<li><a href="#311-excel">Excel</a></li>
-		<li><a href="#312-log">Log</a></li>
-		<li><a href="#313-nativelibrary">NativeLibrary</a></li>
-		<li><a href="#314-objectdata">ObjectData</a></li>
-		<li><a href="#315-properties">Properties</a></li>
-		<li><a href="#316-raw">Raw</a></li>
-		<li><a href="#317-zip">Zip</a></li>
+		<li><a href="#311-chatgpt">ChatGPT</a></li>
+		<li><a href="#312-yourgpt">YourGPT</a></li>
 	</ol>
 </details>
 <details>
-	<summary><a href="#32-hash---provides-cryptographic-hash-function-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-hàm-băm-mật-mã-học">HASH</a></summary>
+	<summary><a href="#32-file---provides-file-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-tập-tin">FILE</a></summary>
 	<ol>
-		<li><a href="#321-aes">AES</a></li>
-		<li><a href="#322-bcrypt">BCrypt</a></li>
-		<li><a href="#323-md5">MD5</a></li>
-		<li><a href="#324-sha256">SHA256</a></li>
+		<li><a href="#321-excel">Excel</a></li>
+		<li><a href="#322-log">Log</a></li>
+		<li><a href="#323-nativelibrary">NativeLibrary</a></li>
+		<li><a href="#324-objectdata">ObjectData</a></li>
+		<li><a href="#325-properties">Properties</a></li>
+		<li><a href="#326-raw">Raw</a></li>
+		<li><a href="#327-zip">Zip</a></li>
 	</ol>
 </details>
 <details>
-	<summary><a href="#33-net---provide-internet-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-internet">NET</a></summary>
+	<summary><a href="#33-hash---provides-cryptographic-hash-function-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-hàm-băm-mật-mã-học">HASH</a></summary>
 	<ol>
-		<li><a href="#331-docnet">DocNet</a></li>
-		<li><a href="#332-email">Email</a></li>
-		<li><a href="#333-network">Network</a></li>
-		<li><a href="#334-randomorg">RandomORG</a></li>
-		<li><a href="#335-sql">SQL</a></li>
+		<li><a href="#331-aes">AES</a></li>
+		<li><a href="#332-bcrypt">BCrypt</a></li>
+		<li><a href="#333-md5">MD5</a></li>
+		<li><a href="#334-sha256">SHA256</a></li>
 	</ol>
 </details>
 <details>
-	<summary><a href="#34-openai---provide-openai-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-openai">OpenAI</a></summary>
+	<summary><a href="#34-net---provide-internet-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-internet">NET</a></summary>
 	<ol>
-		<li><a href="#341-chatgpt">ChatGPT</a></li>
+		<li><a href="#341-docnet">DocNet</a></li>
+		<li><a href="#342-email">Email</a></li>
+		<li><a href="#343-network">Network</a></li>
+		<li><a href="#344-randomorg">RandomORG</a></li>
+		<li><a href="#345-sql">SQL</a></li>
 	</ol>
 </details>
 <details>
@@ -123,9 +124,46 @@
 
 ---
 
-## 3.1 FILE - Provides file related libraries / Cung cấp các thư viện liên quan đến tập tin
+## 3.1 AI - Provide AI related libraries / Cung cấp các thư viện liên quan đến AI
 
-### 3.1.1 Excel
+### 3.1.1 ChatGPT
+- Lớp ChatGPT hỗ trợ kết nối với OpenAI bằng khoá API.
+- The ChatGPT class supports to connect to OpenAI using API key.
+
+``` java
+import com.anlavn.ai.ChatGPT;
+
+ChatGPT cgpt = new ChatGPT("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");  //connect to OpenAI service using API key
+String Result = cgpt.Chat("Who is mr bean?", ChatGPT.Model.Davinci, 128); //get result from request, calling model Davinci with max 128 token
+System.out.println(Result); //print result
+```
+See more / Xem thêm [ExampleChatGPT](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/AI/ExampleChatGPT.java)
+
+---
+
+### 3.1.2 YourGPT
+- Lớp YourGPT hỗ trợ chạy mô hình ngôn ngữ lớn bằng cách sử dụng các tệp nhị phân dựng sẵn của llama.cpp.
+- The YourGPT class supports to run the Large language model using prebuilt binaries of llama.cpp.
+
+``` java
+import com.anlavn.ai.YourGPT;
+
+YourGPT.loadModule();       // Load module default.
+YourGPT.params.put("--host", "localhost");
+YourGPT.params.put("--port", "3000");
+YourGPT.params.put("-ngl", "25");
+YourGPT.params.put("-c", "2048");
+YourGPT.start();            // Start YGPT process with previous parameters.
+Thread.sleep(60000);        // Wait 60s.
+YourGPT.destroy();          // Forcibly destroy YGPT process.
+```
+See more / Xem thêm [ExampleYourGPT](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/AI/ExampleYourGPT.java)
+
+---
+
+## 3.2 FILE - Provides file related libraries / Cung cấp các thư viện liên quan đến tập tin
+
+### 3.2.1 Excel
 - Lớp Excel hỗ trợ đọc/ghi dữ liệu từ/vào tệp excel.
 - The Excel class support to read/write data from/to excel file.
 
@@ -149,7 +187,7 @@ See more / Xem thêm [ExampleExcel](https://github.com/AnLaVN/AL-Library/blob/Re
 
 ---
 
-### 3.1.2 Log
+### 3.2.2 Log
 - Lớp Log hỗ trợ xuất thông tin ra tệp nhật ký và màn hình console.
 - The Log class supports to print to console and output log file.
 
@@ -164,7 +202,7 @@ See more / Xem thêm [ExampleLog](https://github.com/AnLaVN/AL-Library/blob/Rele
 
 ---
 
-### 3.1.3 NativeLibrary
+### 3.2.3 NativeLibrary
 - Lớp NativeLibrary hỗ trợ tải các thư viện động. 
 - The NativeLibrary class supports to loading dynamic libraries. 
 
@@ -177,7 +215,7 @@ See more / Xem thêm [ExampleNativeLibrary](https://github.com/AnLaVN/AL-Library
 
 ---
 
-### 3.1.4 ObjectData
+### 3.2.4 ObjectData
 - Lớp ObjectData hỗ trợ ghi và đọc dữ liệu của đối tượng vào tệp tại vị trí được chỉ định.
 - The ObjectData class supports write and read object data to file at specific location.
 
@@ -211,7 +249,7 @@ See more / Xem thêm [ExampleObjectData](https://github.com/AnLaVN/AL-Library/bl
 
 ---
 
-### 3.1.5 Properties
+### 3.2.5 Properties
 - Lớp Properties hỗ trợ để lấy giá trị của các thuộc tính tại vị trí được chỉ định.
 - The Properties class supports to get value of properties at specific location.
 
@@ -228,7 +266,7 @@ See more / Xem thêm [ExampleProperties](https://github.com/AnLaVN/AL-Library/bl
 
 ---
 
-### 3.1.6 Raw
+### 3.2.6 Raw
 - Lớp Raw hỗ trợ ghi và đọc chuỗi dữ liệu Thô vào tệp tại vị trí được chỉ định.
 - The Raw class supports write and read string data to file at specific location.
 
@@ -244,7 +282,7 @@ See more / Xem thêm [ExampleRaw](https://github.com/AnLaVN/AL-Library/blob/Rele
 
 ---
 
-### 3.1.7 Zip
+### 3.2.7 Zip
 - Lớp Zip hỗ trợ giải nén tệp zip vào thư mục của bạn.
 - The Zip class supports to extract a zip file to your directories.
 
@@ -258,9 +296,9 @@ See more / Xem thêm [ExampleZip](https://github.com/AnLaVN/AL-Library/blob/Rele
 ---
 
 
-## 3.2 HASH - Provides cryptographic hash function related libraries / Cung cấp các thư viện liên quan đến hàm băm mật mã học
+## 3.3 HASH - Provides cryptographic hash function related libraries / Cung cấp các thư viện liên quan đến hàm băm mật mã học
 
-### 3.2.1 AES
+### 3.3.2 AES
 - Lớp AES hỗ trợ mã hóa và giải mã một Chuỗi, sử dụng khóa bảo mật. 
 - The AES class supports encryption and decryption a String, using a security key.
 
@@ -277,7 +315,7 @@ See more / Xem thêm [ExampleAES](https://github.com/AnLaVN/AL-Library/blob/Rele
 
 ---
 
-### 3.2.2 BCrypt
+### 3.3.2 BCrypt
 - Lớp BCrypt hỗ trợ băm mật khẩu Blowfish kiểu OpenBSD cho Java.
 - The BCrypt class supports to OpenBSD-style Blowfish password hashing for Java.
 
@@ -293,7 +331,7 @@ See more / Xem thêm [ExampleBCrypt](https://github.com/AnLaVN/AL-Library/blob/R
 
 ---
 
-### 3.2.3 MD5
+### 3.3.3 MD5
 - Lớp MD5 chỉ hỗ trợ mã hóa đối tượng, giải mã nó là bất khả thi.
 - The MD5 class only supports object encryption, decryption it is impossible.
 
@@ -308,7 +346,7 @@ See more / Xem thêm [ExampleMD5](https://github.com/AnLaVN/AL-Library/blob/Rele
 
 ---
 
-### 3.2.4 SHA256
+### 3.3.4 SHA256
 - Lớp SHA256 chỉ hỗ trợ mã hóa đối tượng, giải mã nó là bất khả thi.
 - The SHA256 class only supports object encryption, decryption it is impossible.
 
@@ -325,9 +363,9 @@ See more / Xem thêm [ExampleSHA](https://github.com/AnLaVN/AL-Library/blob/Rele
 ---
 
 
-## 3.3 NET - Provide Internet related libraries / Cung cấp các thư viện liên quan đến Internet
+## 3.4 NET - Provide Internet related libraries / Cung cấp các thư viện liên quan đến Internet
 
-### 3.3.1 DocNet
+### 3.4.1 DocNet
 - Lớp DocNet hỗ trợ đọc tài liệu trực tuyến từ URL.
 - The DocNet class supports to read an online document from URL.
 
@@ -342,7 +380,7 @@ See more / Xem thêm [ExampleDocNet](https://github.com/AnLaVN/AL-Library/blob/R
 
 ---
 
-### 3.3.2 Email
+### 3.4.2 Email
 - Lớp Email hỗ trợ tạo một SMTP để gửi email.
 - The Email class supports create a SMTP to send email.
 
@@ -362,7 +400,7 @@ See more / Xem thêm [ExampleEmail](https://github.com/AnLaVN/AL-Library/blob/Re
 
 ---
 
-### 3.3.3 Network
+### 3.4.3 Network
 - Lớp Network hỗ trợ lấy thông tin mạng: Thông tin WLAN, địa chỉ IPv4.
 - The Network class supports get network information: WLAN information, address IPv4.
 
@@ -377,7 +415,7 @@ See more / Xem thêm [ExampleNetwork](https://github.com/AnLaVN/AL-Library/blob/
 
 ---
 
-### 3.3.4 RandomORG
+### 3.4.4 RandomORG
 - Lớp RandomORG hỗ trợ tạo số thực sự ngẫu nhiên từ random.org
 - The RandomORG class supports to create true random numbers from random.org
 
@@ -393,7 +431,7 @@ See more / Xem thêm [ExampleRandomORG](https://github.com/AnLaVN/AL-Library/blo
 
 ---
 
-### 3.3.5 SQL
+### 3.4.5 SQL
 - Lớp SQL hỗ trợ kết nối, thực thi mySQL và SQL Server.
 - The SQL class supports to connect, execute mySQL and SQL server.
 	
@@ -438,25 +476,6 @@ INSERT INTO myTable VALUES
 See more / Xem thêm [ExampleSQL](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/NET/ExampleSQL.java)
 
 ---
-
-
-## 3.4 OpenAI - Provide OpenAI related libraries / Cung cấp các thư viện liên quan đến OpenAI
-
-### 3.4.1 ChatGPT
-- Lớp ChatGPT hỗ trợ kết nối với OpenAI bằng khoá API.
-- The ChatGPT class supports to connect to OpenAI using API key.
-
-``` java
-import com.anlavn.openai.ChatGPT;
-
-ChatGPT cgpt = new ChatGPT("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");  //connect to OpenAI service using API key
-String Result = cgpt.Chat("Who is mr bean?", ChatGPT.Model.Davinci, 128); //get result from request, calling model Davinci with max 128 token
-System.out.println(Result); //print result
-```
-See more / Xem thêm [ExampleChatGPT](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/OpenAI/ExampleChatGPT.java)
-
----
-
 
 ## 3.5 OpenCV - Provide OpenCV related libraries / Cung cấp các thư viện liên quan đến OpenCV
 
