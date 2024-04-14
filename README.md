@@ -75,9 +75,10 @@
 	<ol>
 		<li><a href="#341-docnet">DocNet</a></li>
 		<li><a href="#342-email">Email</a></li>
-		<li><a href="#343-network">Network</a></li>
-		<li><a href="#344-randomorg">RandomORG</a></li>
-		<li><a href="#345-sql">SQL</a></li>
+		<li><a href="#343-license">License</a></li>
+		<li><a href="#344-network">Network</a></li>
+		<li><a href="#345-randomorg">RandomORG</a></li>
+		<li><a href="#346-sql">SQL</a></li>
 	</ol>
 </details>
 <details>
@@ -400,7 +401,22 @@ See more / Xem thêm [ExampleEmail](https://github.com/AnLaVN/AL-Library/blob/Re
 
 ---
 
-### 3.4.3 Network
+### 3.4.3 License
+- Lớp License hỗ trợ đánh dấu bản quyền cho dự án.
+- The License class supports marks the copyright for the project.
+
+``` java
+import anlavn.net.License;
+
+static { // Check the license authority before run code. Rhe program will continue if enough permissions. Else stop/delete the program.
+	License.check("https://github.com/AnLaVN/LICENSE/raw/Releases/AL-Library_License.properties");
+}
+```
+See more / Xem thêm [ExampleEmail](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/net/ExampleEmail.java)
+
+---
+
+### 3.4.4 Network
 - Lớp Network hỗ trợ lấy thông tin mạng: Thông tin WLAN, địa chỉ IPv4.
 - The Network class supports get network information: WLAN information, address IPv4.
 
@@ -415,7 +431,7 @@ See more / Xem thêm [ExampleNetwork](https://github.com/AnLaVN/AL-Library/blob/
 
 ---
 
-### 3.4.4 RandomORG
+### 3.4.5 RandomORG
 - Lớp RandomORG hỗ trợ tạo số thực sự ngẫu nhiên từ random.org
 - The RandomORG class supports to create true random numbers from random.org
 
@@ -431,7 +447,7 @@ See more / Xem thêm [ExampleRandomORG](https://github.com/AnLaVN/AL-Library/blo
 
 ---
 
-### 3.4.5 SQL
+### 3.4.6 SQL
 - Lớp SQL hỗ trợ kết nối, thực thi mySQL và SQL Server.
 - The SQL class supports to connect, execute mySQL and SQL server.
 	
