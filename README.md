@@ -137,7 +137,7 @@ ChatGPT cgpt = new ChatGPT("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"
 String Result = cgpt.Chat("Who is mr bean?", ChatGPT.Model.Davinci, 128); //get result from request, calling model Davinci with max 128 token
 System.out.println(Result); //print result
 ```
-See more / Xem thêm [ExampleChatGPT](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/AI/ExampleChatGPT.java)
+See more / Xem thêm [ExampleChatGPT](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ai/ExampleChatGPT.java)
 
 ---
 
@@ -157,7 +157,7 @@ YourGPT.start();            // Start YGPT process with previous parameters.
 Thread.sleep(60000);        // Wait 60s.
 YourGPT.destroy();          // Forcibly destroy YGPT process.
 ```
-See more / Xem thêm [ExampleYourGPT](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/AI/ExampleYourGPT.java)
+See more / Xem thêm [ExampleYourGPT](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ai/ExampleYourGPT.java)
 
 ---
 
@@ -183,7 +183,7 @@ while (myExcel.hasNext()) { //loop to take every row from Iterator
 	System.out.println(row[0]+" | "+row[1]+" | "+row[2]+" | "+row[3]);  //print it
 }
 ```
-See more / Xem thêm [ExampleExcel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleExcel.java)
+See more / Xem thêm [ExampleExcel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/file/ExampleExcel.java)
 
 ---
 
@@ -198,7 +198,7 @@ Log.add("Your text");   //write text to log file, will auto create as Logs folde
 System.out.println("File path: " + Log.getFilePath());  //print path of log file.
 Log.closeFile();    //close file if your dont use anymore.
 ```
-See more / Xem thêm [ExampleLog](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleLog.java)
+See more / Xem thêm [ExampleLog](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/file/ExampleLog.java)
 
 ---
 
@@ -211,7 +211,7 @@ import com.anlavn.file.NativeLibrary;
 
 NativeLibrary.load("path/YourLib.dll");
 ```
-See more / Xem thêm [ExampleNativeLibrary](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleNativeLibrary.java)
+See more / Xem thêm [ExampleNativeLibrary](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/file/ExampleNativeLibrary.java)
 
 ---
 
@@ -245,7 +245,7 @@ public class myObject implements Serializable{
 	public int getAge()     {   return age;     }
 }
 ```
-See more / Xem thêm [ExampleObjectData](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleObjectData.java)
+See more / Xem thêm [ExampleObjectData](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/file/ExampleObjectData.java)
 
 ---
 
@@ -262,7 +262,7 @@ System.out.println("Properties of hello key: " + proper.getString("hello"));    
 ```
 The myProperties_VN.properties file ![image](https://user-images.githubusercontent.com/90229487/209496791-a1abfc66-77e0-48e5-94ce-2b83cb68c703.png)  
 The myProperties_EN.properties file ![image](https://user-images.githubusercontent.com/90229487/209496563-fbad72f0-ecdf-4edd-bf37-238f63a2f94b.png)  
-See more / Xem thêm [ExampleProperties](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleProperties.java)
+See more / Xem thêm [ExampleProperties](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/file/ExampleProperties.java)
 
 ---
 
@@ -278,7 +278,7 @@ raw.writeData("your text"); //write data to file
 System.out.println(raw.readData()); //read data from file
 raw.closeFile();    //close file if you dont use anymore
 ```
-See more / Xem thêm [ExampleRaw](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleRaw.java)
+See more / Xem thêm [ExampleRaw](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/file/ExampleRaw.java)
 
 ---
 
@@ -291,7 +291,7 @@ import com.anlavn.file.Zip;
 
 Zip.Extract("myFileZip.zip", "ZipFolder");  //Extract myFileZip.zip to ZipFolder directory
 ```
-See more / Xem thêm [ExampleZip](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/FILE/ExampleZip.java)
+See more / Xem thêm [ExampleZip](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/file/ExampleZip.java)
 
 ---
 
@@ -311,7 +311,7 @@ String 	orgStr = "This is original string.", //declare original string need to h
 System.out.println("Hash AES of orgStr: " + hashStr);   //print hash string
 System.out.println("My original string: " + AES.Decrypt(hashStr, myKey));   //decrypt hash string and print it
 ```
-See more / Xem thêm [ExampleAES](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/HASH/ExampleAES.java)
+See more / Xem thêm [ExampleAES](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/hash/ExampleAES.java)
 
 ---
 
@@ -327,7 +327,7 @@ String 	pass = "This is original string.",               //declare original stri
 System.out.println("Hash BCrypt of orgStr: " + hashStr);//print hash string
 System.out.println("is orgStr match: " + BCrypt.Check(pass, hashStr));  //check if original string is match with hash string
 ```
-See more / Xem thêm [ExampleBCrypt](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/HASH/ExampleBCrypt.java)
+See more / Xem thêm [ExampleBCrypt](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/hash/ExampleBCrypt.java)
 
 ---
 
@@ -342,7 +342,7 @@ String	orgStr = "This is original string.", //declare original string need to ha
 	hashStr= MD5.Encrypt(orgStr); 		//hash original string, only supports encryption, decryption it is impossible.
 System.out.println("Hash MD5 of orgStr: " + hashStr);   //print hash string
 ```
-See more / Xem thêm [ExampleMD5](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/HASH/ExampleMD5.java)
+See more / Xem thêm [ExampleMD5](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/hash/ExampleMD5.java)
 
 ---
 
@@ -358,7 +358,7 @@ String orgStr = "This is original string.", //declare original string need to ha
        hashStr= SHA.Encrypt(Types.SHA_256, orgStr); //hash original string, only supports encryption, decryption it is impossible.
 System.out.println("Hash SHA256 of orgStr: " + hashStr);   //print hash string
 ```
-See more / Xem thêm [ExampleSHA](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/HASH/ExampleSHA.java)
+See more / Xem thêm [ExampleSHA](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/hash/ExampleSHA.java)
 
 ---
 
@@ -376,7 +376,7 @@ DocNet docnet = new DocNet("https://raw.githubusercontent.com/AnLaVN/AL-Library/
 System.out.println(docnet.readAllLine());   //read all line in network document
 docnet.saveAs("LICENSE.md");    //save document to file in local
 ```
-See more / Xem thêm [ExampleDocNet](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/NET/ExampleDocNet.java)
+See more / Xem thêm [ExampleDocNet](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/net/ExampleDocNet.java)
 
 ---
 
@@ -396,7 +396,7 @@ mail.addSetCC("yourfriend13@fpt.edu.vn");
 mail.addSetAttachments("C:/path/to/your/file.png", "C:/path/to/your/meme.gif");
 mail.sendEmail();
 ```
-See more / Xem thêm [ExampleEmail](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/NET/ExampleEmail.java)
+See more / Xem thêm [ExampleEmail](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/net/ExampleEmail.java)
 
 ---
 
@@ -411,7 +411,7 @@ import static com.anlavn.net.Network.Key.*;
 System.out.println("My IPv4: " + Network.myIPv4());             //print my public ip, not local ip
 System.out.println("My Wlan: " + Network.myWLAN().get(SSID));   //print wlan ssid name
 ```
-See more / Xem thêm [ExampleNetwork](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/NET/ExampleNetwork.java)
+See more / Xem thêm [ExampleNetwork](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/net/ExampleNetwork.java)
 
 ---
 
@@ -427,7 +427,7 @@ System.out.println(RandomORG.getSequence(0, 10));               //get truly rand
 System.out.println(RandomORG.getString(10, true, true, true));  //get a truly random string with digit, upper, lower case and length equal 10
 System.out.println(RandomORG.getQuota());                       //get number quota bits remaining of your IP address.
 ```
-See more / Xem thêm [ExampleRandomORG](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/NET/ExampleRandomORG.java)
+See more / Xem thêm [ExampleRandomORG](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/net/ExampleRandomORG.java)
 
 ---
 
@@ -473,7 +473,7 @@ INSERT INTO myTable VALUES
 	(1, 'AnLaVN'),
 	(2, N'Bình An')
 ```
-See more / Xem thêm [ExampleSQL](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/NET/ExampleSQL.java)
+See more / Xem thêm [ExampleSQL](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/net/ExampleSQL.java)
 
 ---
 
@@ -496,7 +496,7 @@ FaceDetection.setDetectFace(true, Color.GREEN, 2);  //this line mean will detect
 FaceDetection.startDetection(0);  //start capture video from camera 0 and detect face, if you was setDetectFace(true, ..., ...)
 //FaceDetection.endDetection();   //end capture video
 ```
-See more / Xem thêm [ExampleFaceDetection](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/OpenCV/ExampleFaceDetection.java)
+See more / Xem thêm [ExampleFaceDetection](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/opencv/ExampleFaceDetection.java)
 
 ---
 
@@ -520,7 +520,7 @@ System.out.println(FaceRecognition.Recognition());//recognition face and get res
 System.out.println(FaceRecognition.getPercent());//get percent was recognition
 System.out.println(FaceRecognition.isMatch());//get value if match, true if percent was recognition higher or equal with percentage requirement
 ```
-See more / Xem thêm [ExampleFaceRecognition](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/OpenCV/ExampleFaceRecognition.java)
+See more / Xem thêm [ExampleFaceRecognition](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/opencv/ExampleFaceRecognition.java)
 
 ---
 
@@ -538,7 +538,7 @@ AvatarPanel avatar = new AvatarPanel();
 avatar.setPic("myImage.png"); //set picture for panel from file
 avatar.setPic("https://i.pinimg.com/564x/b7/d2/62/b7d262d9ab6397f959a2030f65947b4f.jpg"); //set picture for panel from url
 ```
-See more / Xem thêm [ExampleAvatarPanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleAvatarPanel.java)
+See more / Xem thêm [ExampleAvatarPanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ui/ExampleAvatarPanel.java)
 
 ---
 
@@ -554,7 +554,7 @@ chat.addRightBubble("this is right side text"); //add bubble text in right side
 chat.addLeftBubble("this is left side text"); //add bubble text in left side
 chat.addNotifiBox("this is notification text"); //add notification text in center
 ```
-See more / Xem thêm [ExampleChatBox](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleChatBox.java)
+See more / Xem thêm [ExampleChatBox](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ui/ExampleChatBox.java)
 
 ---
 
@@ -568,7 +568,7 @@ import com.anlavn.ui.ComboBox;
 ComboBox comboBox = new ComboBox();
 comboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "item 1", "item2" })); //use as normal combobox
 ```
-See more / Xem thêm [ExampleComboBox](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleComboBox.java)
+See more / Xem thêm [ExampleComboBox](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ui/ExampleComboBox.java)
 
 ---
 
@@ -581,7 +581,7 @@ import com.anlavn.ui.ImagePanel;
 ImagePanel image = new ImagePanel();
 image.setPic("myImage.png"); //set picture for panel from file
 ```
-See more / Xem thêm [ExampleImagePanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleImagePanel.java)
+See more / Xem thêm [ExampleImagePanel](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ui/ExampleImagePanel.java)
 
 ---
 
@@ -595,7 +595,7 @@ import com.anlavn.ui.LiquidProgress;
 LiquidProgress liquidProgress = new LiquidProgress();
 liquidProgress1.setValue(50);
 ```
-See more / Xem thêm [ExampleLiquidProgress](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleLiquidProgress.java)
+See more / Xem thêm [ExampleLiquidProgress](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ui/ExampleLiquidProgress.java)
 
 ---
 
@@ -609,7 +609,7 @@ import com.anlavn.ui.Mode;
 Mode.setMode(true); //set true is dark mode, false is light
 Mode.setModeComponent(yourComponent); //set the component will apply mode change
 ```
-See more / Xem thêm [ExampleMode](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleMode.java)
+See more / Xem thêm [ExampleMode](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ui/ExampleMode.java)
 
 ---
 
@@ -623,7 +623,7 @@ import com.anlavn.ui.Notification;
 Notification noti = new Notification(this, Notification.Type.WARNING, Notification.Location.TOP_CENTER, "Notification");
 noti.showNotification(); //show popup Notification
 ```
-See more / Xem thêm [ExampleNotification](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleNotification.java)
+See more / Xem thêm [ExampleNotification](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ui/ExampleNotification.java)
 
 ---
 
@@ -637,7 +637,7 @@ import com.anlavn.ui.ProgressBar;
 ProgressBar progressBar1 = new ProgressBar();
 progressBar1.setValue(50);
 ```
-See more / Xem thêm [ExampleProgressBar](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleProgressBar.java)
+See more / Xem thêm [ExampleProgressBar](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ui/ExampleProgressBar.java)
 
 ---
 
@@ -650,7 +650,7 @@ import com.anlavn.ui.ScrollBar;
 
 yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 ```
-See more / Xem thêm [ExampleScrollBar](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleScrollBar.java)
+See more / Xem thêm [ExampleScrollBar](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ui/ExampleScrollBar.java)
 
 ---
 
@@ -665,7 +665,7 @@ DateChooser dateChooser = new DateChooser();
 dateChooser.setReferenceLabel(yourLabel); //set JLabel where will display day was choose
 dateChooser.showPopup();  //show day chooser as popup
 ```
-See more / Xem thêm [ExampleDateChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleDateChooser.java)
+See more / Xem thêm [ExampleDateChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ui/ExampleDateChooser.java)
 
 ---
 
@@ -683,7 +683,7 @@ timePicker.showPopup(this,
 	(getWidth() - timePicker.getPreferredSize().width) / 2,
 	(getHeight() - timePicker.getPreferredSize().height) / 2);
 ```
-See more / Xem thêm [ExampleTimePicker](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleTimePicker.java)
+See more / Xem thêm [ExampleTimePicker](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ui/ExampleTimePicker.java)
 
 ---
 
@@ -700,7 +700,7 @@ if(SelectPic.showOpenDialog(this)){ //if choose file
 	System.out.println(SelectPic.getSelectedFile().getAbsolutePath());	//get absolute path of choose file
 }
 ```
-See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/UI/ExampleJnaFileChooser.java)
+See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ui/ExampleJnaFileChooser.java)
 
 ---
 
