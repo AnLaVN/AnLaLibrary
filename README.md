@@ -131,7 +131,7 @@
 - The ChatGPT class supports to connect to OpenAI using API key.
 
 ``` java
-import com.anlavn.ai.ChatGPT;
+import anlavn.ai.ChatGPT;
 
 ChatGPT cgpt = new ChatGPT("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");  //connect to OpenAI service using API key
 String Result = cgpt.Chat("Who is mr bean?", ChatGPT.Model.Davinci, 128); //get result from request, calling model Davinci with max 128 token
@@ -146,7 +146,7 @@ See more / Xem thêm [ExampleChatGPT](https://github.com/AnLaVN/AL-Library/blob/
 - The YourGPT class supports to run the Large language model using prebuilt binaries of llama.cpp.
 
 ``` java
-import com.anlavn.ai.YourGPT;
+import anlavn.ai.YourGPT;
 
 YourGPT.loadModule();       // Load module default.
 YourGPT.params.put("--host", "localhost");
@@ -168,7 +168,7 @@ See more / Xem thêm [ExampleYourGPT](https://github.com/AnLaVN/AL-Library/blob/
 - The Excel class support to read/write data from/to excel file.
 
 ``` java
-import com.anlavn.file.Excel;
+import anlavn.file.Excel;
 		
 //Write
 ArrayList<Object[]> myData = new ArrayList<>();         //declare array to store data to write to Excel file
@@ -192,7 +192,7 @@ See more / Xem thêm [ExampleExcel](https://github.com/AnLaVN/AL-Library/blob/Re
 - The Log class supports to print to console and output log file.
 
 ``` java
-import com.anlavn.file.Log;
+import anlavn.file.Log;
 
 Log.add("Your text");   //write text to log file, will auto create as Logs folder.
 System.out.println("File path: " + Log.getFilePath());  //print path of log file.
@@ -207,7 +207,7 @@ See more / Xem thêm [ExampleLog](https://github.com/AnLaVN/AL-Library/blob/Rele
 - The NativeLibrary class supports to loading dynamic libraries. 
 
 ``` java
-import com.anlavn.file.NativeLibrary;
+import anlavn.file.NativeLibrary;
 
 NativeLibrary.load("path/YourLib.dll");
 ```
@@ -220,7 +220,7 @@ See more / Xem thêm [ExampleNativeLibrary](https://github.com/AnLaVN/AL-Library
 - The ObjectData class supports write and read object data to file at specific location.
 
 ``` java
-import com.anlavn.file.ObjectData;
+import anlavn.file.ObjectData;
 
 ObjectData.writeData("myFile.dat", new myObject("AnLaVN", 19)); //write new object to myFile.dat
 myObject myobj = (myObject) ObjectData.readData("myFile.dat");  //read object from myFile.dat, store in myobj variable
@@ -254,10 +254,10 @@ See more / Xem thêm [ExampleObjectData](https://github.com/AnLaVN/AL-Library/bl
 - The Properties class supports to get value of properties at specific location.
 
 ``` java
-import com.anlavn.file.Properties;
+import anlavn.file.Properties;
 
 String lang = "EN"; //"VN" if you want using vietnamese languages, "EN" if you want english
-Properties proper = new Properties("src/FILE/myProperties_" + lang + ".properties");    //load properties file
+Properties proper = new Properties("src/example/anlavn/file/myProperties_" + lang + ".properties");    //load properties file
 System.out.println("Properties of hello key: " + proper.getString("hello"));    //print value of key in file
 ```
 The myProperties_VN.properties file ![image](https://user-images.githubusercontent.com/90229487/209496791-a1abfc66-77e0-48e5-94ce-2b83cb68c703.png)  
@@ -271,9 +271,9 @@ See more / Xem thêm [ExampleProperties](https://github.com/AnLaVN/AL-Library/bl
 - The Raw class supports write and read string data to file at specific location.
 
 ``` java
-import com.anlavn.file.Raw;
+import anlavn.file.Raw;
 
-Raw raw = new Raw("src/FILE/myFile.txt");    //create myFile.txt in src/FILE/ folder
+Raw raw = new Raw("myFile.txt");    //create myFile.txt
 raw.writeData("your text"); //write data to file
 System.out.println(raw.readData()); //read data from file
 raw.closeFile();    //close file if you dont use anymore
@@ -287,7 +287,7 @@ See more / Xem thêm [ExampleRaw](https://github.com/AnLaVN/AL-Library/blob/Rele
 - The Zip class supports to extract a zip file to your directories.
 
 ``` java
-import com.anlavn.file.Zip;
+import anlavn.file.Zip;
 
 Zip.Extract("myFileZip.zip", "ZipFolder");  //Extract myFileZip.zip to ZipFolder directory
 ```
@@ -303,7 +303,7 @@ See more / Xem thêm [ExampleZip](https://github.com/AnLaVN/AL-Library/blob/Rele
 - The AES class supports encryption and decryption a String, using a security key.
 
 ``` java
-import com.anlavn.hash.AES;
+import anlavn.hash.AES;
 
 String 	orgStr = "This is original string.", //declare original string need to hash
 	myKey  = "This is key to hash ",     //declare my security key to hash string
@@ -320,12 +320,12 @@ See more / Xem thêm [ExampleAES](https://github.com/AnLaVN/AL-Library/blob/Rele
 - The BCrypt class supports to OpenBSD-style Blowfish password hashing for Java.
 
 ``` java
-import com.anlavn.hash.BCrypt;
+import anlavn.hash.BCrypt;
 
-String 	pass = "This is original string.",               //declare original string need to hash
-     hashStr = BCrypt.Encrypt(pass, BCrypt.genSalt());   //hash original string, only supports encryption.
-System.out.println("Hash BCrypt of orgStr: " + hashStr);//print hash string
-System.out.println("is orgStr match: " + BCrypt.Check(pass, hashStr));  //check if original string is match with hash string
+String orgStr = "This is original string.",               	//declare original string need to hash
+      hashStr = BCrypt.Encrypt(orgStr, BCrypt.genSalt());   //hash original string, only supports encryption.
+System.out.println("Hash BCrypt of orgStr: " + hashStr);	//print hash string
+System.out.println("is orgStr match: " + BCrypt.Check(orgStr, hashStr));  //check if original string is match with hash string
 ```
 See more / Xem thêm [ExampleBCrypt](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/hash/ExampleBCrypt.java)
 
@@ -336,7 +336,7 @@ See more / Xem thêm [ExampleBCrypt](https://github.com/AnLaVN/AL-Library/blob/R
 - The MD5 class only supports object encryption, decryption it is impossible.
 
 ``` java
-import com.anlavn.hash.MD5;
+import anlavn.hash.MD5;
 	
 String	orgStr = "This is original string.", //declare original string need to hash
 	hashStr= MD5.Encrypt(orgStr); 		//hash original string, only supports encryption, decryption it is impossible.
@@ -351,11 +351,11 @@ See more / Xem thêm [ExampleMD5](https://github.com/AnLaVN/AL-Library/blob/Rele
 - The SHA256 class only supports object encryption, decryption it is impossible.
 
 ``` java
-import com.anlavn.hash.SHA256;
-import com.anlavn.hash.SHA.Types;
+import anlavn.hash.SHA;
+import anlavn.hash.SHA.Types;
 	
 String orgStr = "This is original string.", //declare original string need to hash
-       hashStr= SHA.Encrypt(Types.SHA_256, orgStr); //hash original string, only supports encryption, decryption it is impossible.
+      hashStr = SHA.Encrypt(Types.SHA_256, orgStr); //hash original string, only supports encryption, decryption it is impossible.
 System.out.println("Hash SHA256 of orgStr: " + hashStr);   //print hash string
 ```
 See more / Xem thêm [ExampleSHA](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/hash/ExampleSHA.java)
@@ -370,7 +370,7 @@ See more / Xem thêm [ExampleSHA](https://github.com/AnLaVN/AL-Library/blob/Rele
 - The DocNet class supports to read an online document from URL.
 
 ``` java
-import com.anlavn.net.DocNet;
+import anlavn.net.DocNet;
 
 DocNet docnet = new DocNet("https://raw.githubusercontent.com/AnLaVN/AL-Library/Releases/LICENSE.md"); //set address of network document
 System.out.println(docnet.readAllLine());   //read all line in network document
@@ -385,7 +385,7 @@ See more / Xem thêm [ExampleDocNet](https://github.com/AnLaVN/AL-Library/blob/R
 - The Email class supports create a SMTP to send email.
 
 ``` java
-import com.anlavn.net.Email;
+import anlavn.net.Email;
 
 Email mail = new Email("youremail@domain.com", "yourpass");  //setup your SMTP service
         
@@ -405,8 +405,8 @@ See more / Xem thêm [ExampleEmail](https://github.com/AnLaVN/AL-Library/blob/Re
 - The Network class supports get network information: WLAN information, address IPv4.
 
 ``` java
-import com.anlavn.net.Network;
-import static com.anlavn.net.Network.Key.*;
+import anlavn.net.Network;
+import static anlavn.net.Network.Key.*;
 	
 System.out.println("My IPv4: " + Network.myIPv4());             //print my public ip, not local ip
 System.out.println("My Wlan: " + Network.myWLAN().get(SSID));   //print wlan ssid name
@@ -420,7 +420,7 @@ See more / Xem thêm [ExampleNetwork](https://github.com/AnLaVN/AL-Library/blob/
 - The RandomORG class supports to create true random numbers from random.org
 
 ``` java
-import com.anlavn.net.RandomORG;
+import anlavn.net.RandomORG;
 	
 System.out.println(RandomORG.getInteger(0, 10, 10));            //get a truly random integer from 0 to 10 in decimal
 System.out.println(RandomORG.getSequence(0, 10));               //get truly random order integer from 0 to 10
@@ -436,7 +436,7 @@ See more / Xem thêm [ExampleRandomORG](https://github.com/AnLaVN/AL-Library/blo
 - The SQL class supports to connect, execute mySQL and SQL server.
 	
 ``` java
-import com.anlavn.net.SQL;
+import anlavn.net.SQL;
 import java.sql.*;
 
 SQL sql = new SQL(DB_url, DB_username, DB_password);    //setup to your database information
@@ -484,7 +484,7 @@ See more / Xem thêm [ExampleSQL](https://github.com/AnLaVN/AL-Library/blob/Rele
 - The FaceDetection class supports to face detection using the world’s largest computer vision library - OpenCV.
 
 ``` java
-import com.anlavn.opencv.FaceDetection;
+import anlavn.opencv.FaceDetection;
 	
 FaceDetection.loadModule(); //load module to detect
 FaceDetection.setDetectPanel(myPanel, 20);  //set JPanel where will display video capture from camera with rounded corners
@@ -507,7 +507,7 @@ See more / Xem thêm [ExampleFaceDetection](https://github.com/AnLaVN/AL-Library
 ⚠️ ***Tính năng này chỉ dành cho hệ điều hành Windows / This feature is only for Windows operating system*** ⚠️
 
 ``` java
-import com.anlavn.opencv.FaceRecognition;
+import anlavn.opencv.FaceRecognition;
 
 FaceRecognition.loadModule();  //check module for recognition, download automatically if you don't have one
 //set image for original face and test face using URL.
@@ -532,7 +532,7 @@ See more / Xem thêm [ExampleFaceRecognition](https://github.com/AnLaVN/AL-Libra
 - The AvatarPanel class supports display a cropped avatar picture.
 
 ``` java
-import com.anlavn.ui.AvatarPanel;
+import anlavn.ui.AvatarPanel;
 
 AvatarPanel avatar = new AvatarPanel();
 avatar.setPic("myImage.png"); //set picture for panel from file
@@ -547,7 +547,7 @@ See more / Xem thêm [ExampleAvatarPanel](https://github.com/AnLaVN/AL-Library/b
 - The ChatBox class supports display a message box like messenger.
 
 ``` java
-import com.anlavn.ui.ChatBox;
+import anlavn.ui.ChatBox;
 	
 ChatBox chat = new ChatBox();
 chat.addRightBubble("this is right side text"); //add bubble text in right side
@@ -563,7 +563,7 @@ See more / Xem thêm [ExampleChatBox](https://github.com/AnLaVN/AL-Library/blob/
 - The ComboBox class supports to create a beautiful comboBox with light and dark mode.
 
 ``` java
-import com.anlavn.ui.ComboBox;
+import anlavn.ui.ComboBox;
 
 ComboBox comboBox = new ComboBox();
 comboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "item 1", "item2" })); //use as normal combobox
@@ -576,7 +576,7 @@ See more / Xem thêm [ExampleComboBox](https://github.com/AnLaVN/AL-Library/blob
 - Lớp ImagePanel hỗ trợ hiển thị hình ảnh có thể thay đổi kích thước.
 - The ImagePanel class supports displaying resizable images.
 ``` java
-import com.anlavn.ui.ImagePanel;
+import anlavn.ui.ImagePanel;
 
 ImagePanel image = new ImagePanel();
 image.setPic("myImage.png"); //set picture for panel from file
@@ -590,7 +590,7 @@ See more / Xem thêm [ExampleImagePanel](https://github.com/AnLaVN/AL-Library/bl
 - The LiquidProgress supports to export modern liquid progress.
 
 ``` java
-import com.anlavn.ui.LiquidProgress;
+import anlavn.ui.LiquidProgress;
 
 LiquidProgress liquidProgress = new LiquidProgress();
 liquidProgress1.setValue(50);
@@ -604,7 +604,7 @@ See more / Xem thêm [ExampleLiquidProgress](https://github.com/AnLaVN/AL-Librar
 - The Mode class supports change mode from light to dark, component from nimbus to windows look and feel.
 
 ``` java
-import com.anlavn.ui.Mode;
+import anlavn.ui.Mode;
 	
 Mode.setMode(true); //set true is dark mode, false is light
 Mode.setModeComponent(yourComponent); //set the component will apply mode change
@@ -617,7 +617,7 @@ See more / Xem thêm [ExampleMode](https://github.com/AnLaVN/AL-Library/blob/Rel
 - Lớp Notification hỗ trợ tạo thông báo popup.
 - The Notification class supports to create a animation popup notification.
 ``` java
-import com.anlavn.ui.Notification;
+import anlavn.ui.Notification;
 	
 //setup the notification will popup
 Notification noti = new Notification(this, Notification.Type.WARNING, Notification.Location.TOP_CENTER, "Notification");
@@ -632,7 +632,7 @@ See more / Xem thêm [ExampleNotification](https://github.com/AnLaVN/AL-Library/
 - The ProgressBar supports to export modern progress bar.
 
 ``` java
-import com.anlavn.ui.ProgressBar;
+import anlavn.ui.ProgressBar;
 	
 ProgressBar progressBar1 = new ProgressBar();
 progressBar1.setValue(50);
@@ -646,7 +646,7 @@ See more / Xem thêm [ExampleProgressBar](https://github.com/AnLaVN/AL-Library/b
 - The ScrollBar class supports export modern scroll bar.
 
 ``` java
-import com.anlavn.ui.ScrollBar;
+import anlavn.ui.ScrollBar;
 
 yourJScrollPanel.setVerticalScrollBar(new ScrollBar());
 ```
@@ -659,7 +659,7 @@ See more / Xem thêm [ExampleScrollBar](https://github.com/AnLaVN/AL-Library/blo
 - The DateChooser class supports to show modern form date chooser.
 
 ``` java
-import com.anlavn.ui.datechooser.DateChooser;
+import anlavn.ui.datechooser.DateChooser;
 
 DateChooser dateChooser = new DateChooser();
 dateChooser.setReferenceLabel(yourLabel); //set JLabel where will display day was choose
@@ -674,7 +674,7 @@ See more / Xem thêm [ExampleDateChooser](https://github.com/AnLaVN/AL-Library/b
 - The TimePicker class supports to show modern time picker.
 
 ``` java
-import com.anlavn.ui.timechooser.TimePicker;
+import anlavn.ui.timechooser.TimePicker;
 
 TimePicker timePicker = new TimePicker();
 timePicker.setDisplayTextLabel(yourLabel); //set JLabel where will display day was choose
@@ -692,7 +692,7 @@ See more / Xem thêm [ExampleTimePicker](https://github.com/AnLaVN/AL-Library/bl
 - JnaFileChooser is a wrapper around the native Windows file chooser and folder browser that falls back to the Swing JFileChooser.
 
 ``` java
-import com.anlavn.ui.filechooser.JnaFileChooser;
+import anlavn.ui.filechooser.JnaFileChooser;
 	
 JnaFileChooser SelectPic = new JnaFileChooser();
 SelectPic.addFilter("Image", "jpeg", "jpg", "png"); //add file filter for file chooser
@@ -731,7 +731,7 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 <dependency>
 	<groupId>io.github.AnLaVN</groupId>
 	<artifactId>AL-Library_VN</artifactId>
-	<version>4.69.11</version>
+	<version>4.70.10</version>
 </dependency>
 ```
 
@@ -740,7 +740,7 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 <dependency>
 	<groupId>io.github.AnLaVN</groupId>
 	<artifactId>AL-Library_EN</artifactId>
-	<version>4.69.11</version>
+	<version>4.70.10</version>
 </dependency>
 ```
 
