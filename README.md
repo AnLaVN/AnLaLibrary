@@ -412,7 +412,7 @@ static { // Check the license authority before run code. Rhe program will contin
 	License.check("https://github.com/AnLaVN/LICENSE/raw/Releases/AL-Library_License.properties");
 }
 ```
-See more / Xem thêm [ExampleEmail](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/net/ExampleEmail.java)
+See more / Xem thêm [ExampleLicense](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/net/ExampleLicense.java)
 
 ---
 
