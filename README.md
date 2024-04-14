@@ -412,6 +412,30 @@ static { // Check the license authority before run code. Rhe program will contin
 	License.check("https://github.com/AnLaVN/LICENSE/raw/Releases/AL-Library_License.properties");
 }
 ```
+
+The License file
+``` properties
+//BCrypt hash of link
+license=$2a$05$j6rX.TFfltNTDpYwsSdvZevW5gtr9RNUsZAeKvPbo3bhAnaRjZpnW
+
+//Format of day expired
+format=dd/MM/yyyy HH:mm:ss
+
+//Value of day expired follow format
+expired=29/12/2025 20:00:00
+
+//Contact method when the license is invalid
+contact=https://github.com/AnLaVN
+
+//Content will display when the license is invalid
+content=Bạn không có quyền để sử dụng phần mềm này, vui lòng mua bản quyền từ tôi.\n\tYou do not have the right to use this software, please purchase the license from me
+
+//Allows the program to run or not
+runnable=true
+
+//Allow self-destruction when run the program or not
+destruct=false
+```
 See more / Xem thêm [ExampleLicense](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/net/ExampleLicense.java)
 
 ---
