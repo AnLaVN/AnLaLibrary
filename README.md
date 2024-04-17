@@ -408,34 +408,14 @@ See more / Xem thêm [ExampleEmail](https://github.com/AnLaVN/AL-Library/blob/Re
 ``` java
 import anlavn.net.License;
 
-static { // Check the license authority before run code. Rhe program will continue if enough permissions. Else stop/delete the program.
-	License.check("https://github.com/AnLaVN/LICENSE/raw/Releases/AL-Library_License.properties");
+static { 
+	// Check the license authority before run code. The program will continue if enough permissions. Else stop/delete the program.
+        License.check("&glwyD16e6JTgk6XuNYEj&D9WzOfqTMaJsmRNZ4+LNGIfSXH6QBbiYKVh/9a+SqDk=");
 }
 ```
 
-The License file
-``` properties
-#BCrypt hash of link
-license=$2a$05$j6rX.TFfltNTDpYwsSdvZevW5gtr9RNUsZAeKvPbo3bhAnaRjZpnW
+Using [License Creator](https://github.com/AnLaVN/AL-Library/blob/Releases/License_Creator.jar) tool to generate LicenseKey and [LicenseFile](https://github.com/AnLaVN/LICENSE/blob/Releases/AL-Library_License.properties)
 
-#Format of day expired
-format=dd/MM/yyyy HH:mm:ss
-
-#Value of day expired follow format
-expired=29/12/2025 20:00:00
-
-#Contact method when the license is invalid
-contact=https://github.com/AnLaVN
-
-#Content will display when the license is invalid
-content=Bạn không có quyền để sử dụng phần mềm này, vui lòng mua bản quyền từ tôi.\n\tYou do not have the right to use this software, please purchase the license from me
-
-#Allows the program to run or not
-runnable=true
-
-#Allow self-destruction when run the program or not
-destruct=false
-```
 See more / Xem thêm [ExampleLicense](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/net/ExampleLicense.java)
 
 ---
