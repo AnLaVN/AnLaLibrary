@@ -29,13 +29,13 @@
 ### Tiếng Việt
 > AL-Library là một dự án cá nhân và miễn phí. Về cơ bản, nó là một thư viện bao hàm nhiều thư viện khác giúp việc sử dụng dễ dàng hơn.
 >
-> Thư viện cung cấp các phương thức để bạn có thể làm việc cơ bản trong Java như: Kết nối Database, hỗ trợ các Thành phần Swing, Băm mật mã học, dịch vụ gửi email SMTP, trò chuyện với ChatGPT bot, nhận diện khuôn mặt, nhận dạng khuôn mặt... và hơn thế nữa... Dành lời cảm ơn to lớn đến với [Raven](https://github.com/DJ-Raven), người đàn ông tuyệt vời cùng các dự án Java Swing UI của anh ấy.
+> Thư viện cung cấp các phương thức để bạn có thể làm việc cơ bản trong Java như: hỗ trợ các Thành phần Swing, Băm mật mã học, dịch vụ gửi email SMTP, trò chuyện với ChatGPT bot, nhận diện khuôn mặt, nhận dạng khuôn mặt... và hơn thế nữa... Dành lời cảm ơn to lớn đến với [Raven](https://github.com/DJ-Raven), người đàn ông tuyệt vời cùng các dự án Java Swing UI của anh ấy.
 >
 > Mã nguồn được công khai nhằm mục đích học tập và phát triển. Nếu bạn gặp bất kì vấn đề gì hoặc có mong muốn gì, đừng ngần ngại mà hãy [liên hệ tôi](https://github.com/AnLaVN), tôi sẽ phản hồi sớm nhất có thể.
 ### English
 > AL-Library is a personal and free project. It's basically a library that includes many other libraries that make it easier to use.
 >
-> The library provides methods for you to do basic work in Java such as: Database Connection, Swing Components support, Cryptographic Hashing, SMTP email service, chat with ChatGPT bot, face detection, face recognition... and more... Big thanks to [Raven](https://github.com/DJ-Raven) who great man with his Java Swing UI projects.
+> The library provides methods for you to do basic work in Java such as: Swing Components support, Cryptographic Hashing, SMTP email service, chat with ChatGPT bot, face detection, face recognition... and more... Big thanks to [Raven](https://github.com/DJ-Raven) who great man with his Java Swing UI projects.
 > 
 > The source code is public for learning and development purposes. If you have any problems or have any wishes, do not hesitate to [contact me](https://github.com/AnLaVN), I will respond as soon as possible.
 
@@ -43,14 +43,13 @@
 
 # 2. Features / Tính năng
 <details>
-	<summary><a href="#31-ai---provide-ai-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-ai">AI</a></summary>
+	<summary>anlavn.ai - Provide AI related libraries / Cung cấp các thư viện liên quan đến AI</summary>
 	<ol>
-		<li><a href="#311-chatgpt">ChatGPT</a></li>
-		<li><a href="#312-yourgpt">YourGPT</a></li>
+		<li><a href="#311-yourgpt">YourGPT</a></li>
 	</ol>
 </details>
 <details>
-	<summary><a href="#32-file---provides-file-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-tập-tin">FILE</a></summary>
+	<summary>anlavn.file - Provides file related libraries / Cung cấp các thư viện liên quan đến tập tin</summary>
 	<ol>
 		<li><a href="#321-excel">Excel</a></li>
 		<li><a href="#322-log">Log</a></li>
@@ -62,7 +61,7 @@
 	</ol>
 </details>
 <details>
-	<summary><a href="#33-hash---provides-cryptographic-hash-function-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-hàm-băm-mật-mã-học">HASH</a></summary>
+	<summary>anlavn.hash - Provides cryptographic hash function related libraries / Cung cấp các thư viện liên quan đến hàm băm mật mã học</summary>
 	<ol>
 		<li><a href="#331-aes">AES</a></li>
 		<li><a href="#332-bcrypt">BCrypt</a></li>
@@ -71,25 +70,24 @@
 	</ol>
 </details>
 <details>
-	<summary><a href="#34-net---provide-internet-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-internet">NET</a></summary>
+	<summary>anlavn.net - Provide Internet related libraries / Cung cấp các thư viện liên quan đến Internet</summary>
 	<ol>
 		<li><a href="#341-docnet">DocNet</a></li>
 		<li><a href="#342-email">Email</a></li>
 		<li><a href="#343-license">License</a></li>
 		<li><a href="#344-network">Network</a></li>
 		<li><a href="#345-randomorg">RandomORG</a></li>
-		<li><a href="#346-sql">SQL</a></li>
 	</ol>
 </details>
 <details>
-	<summary><a href="#35-opencv---provide-opencv-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-opencv">OpenCV</a></summary>
+	<summary>anlavn.opencv - Provide OpenCV related libraries / Cung cấp các thư viện liên quan đến OpenCV</summary>
 	<ol>
 		<li><a href="#351-facedetection">FaceDetection</a></li>
 		<li><a href="#352-facerecognition">FaceRecognition</a></li>
 	</ol>
 </details>
 <details>
-	<summary><a href="#36-ui---provide-ui-related-libraries--cung-cấp-các-thư-viện-liên-quan-đến-ui">UI</a></summary>
+	<summary>anlavn.ui - Provide UI related libraries / Cung cấp các thư viện liên quan đến UI</summary>
 	<ol>
 		<li><a href="#361-avatarpanel">AvatarPanel</a> (Add to Palette from JAR)</li>
 		<li><a href="#362-chatbox">ChatBox</a> (Add to Palette from JAR)</li>
@@ -106,7 +104,7 @@
 	</ol>
 </details>
 <details>
-	<summary><a href="#super-ultra-ultimate-library-java-">Java Doc</a></summary>
+	<summary>Java Doc</summary>
 	<ol>
 		<li><a href="https://anlavn.github.io/AL-Library/AL-Library_JavaDoc/English/">English</a></li>
 		<li><a href="https://anlavn.github.io/AL-Library/AL-Library_JavaDoc/Vietnamese/">Tiếng Việt</a></li>
@@ -127,22 +125,7 @@
 
 ## 3.1 AI - Provide AI related libraries / Cung cấp các thư viện liên quan đến AI
 
-### 3.1.1 ChatGPT
-- Lớp ChatGPT hỗ trợ kết nối với OpenAI bằng khoá API.
-- The ChatGPT class supports to connect to OpenAI using API key.
-
-``` java
-import anlavn.ai.ChatGPT;
-
-ChatGPT cgpt = new ChatGPT("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");  //connect to OpenAI service using API key
-String Result = cgpt.Chat("Who is mr bean?", ChatGPT.Model.Davinci, 128); //get result from request, calling model Davinci with max 128 token
-System.out.println(Result); //print result
-```
-See more / Xem thêm [ExampleChatGPT](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ai/ExampleChatGPT.java)
-
----
-
-### 3.1.2 YourGPT
+### 3.1.1 YourGPT
 - Lớp YourGPT hỗ trợ chạy mô hình ngôn ngữ lớn bằng cách sử dụng các tệp nhị phân dựng sẵn của llama.cpp.
 - The YourGPT class supports to run the Large language model using prebuilt binaries of llama.cpp.
 
@@ -290,7 +273,7 @@ See more / Xem thêm [ExampleRaw](https://github.com/AnLaVN/AL-Library/blob/Rele
 ``` java
 import anlavn.file.Zip;
 
-Zip.Extract("myFileZip.zip", "ZipFolder");  //Extract myFileZip.zip to ZipFolder directory
+Zip.extract("myFileZip.zip", "ZipFolder");  //Extract myFileZip.zip to ZipFolder directory
 ```
 See more / Xem thêm [ExampleZip](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/file/ExampleZip.java)
 
@@ -375,7 +358,7 @@ import anlavn.net.DocNet;
 
 DocNet docnet = new DocNet("https://raw.githubusercontent.com/AnLaVN/AL-Library/Releases/LICENSE.md"); //set address of network document
 System.out.println(docnet.readAllLine());   //read all line in network document
-docnet.saveAs("LICENSE.md");    //save document to file in local
+docnet.saveAs();    //save document to file in local
 ```
 See more / Xem thêm [ExampleDocNet](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/net/ExampleDocNet.java)
 
@@ -410,7 +393,7 @@ import anlavn.net.License;
 
 static { 
 	// Check the license authority before run code. The program will continue if enough permissions. Else stop/delete the program.
-        License.check("&glwyD16e6JTgk6XuNYEj&D9WzOfqTMaJsmRNZ4+LNGIfSXH6QBbiYKVh/9a+SqDk=");
+    License.check("&glwyD16e6JTgk6XuNYEj&D9WzOfqTMaJsmRNZ4+LNGIfSXH6QBbiYKVh/9a+SqDk=");
 }
 ```
 
@@ -451,51 +434,6 @@ See more / Xem thêm [ExampleRandomORG](https://github.com/AnLaVN/AL-Library/blo
 
 ---
 
-### 3.4.6 SQL
-- Lớp SQL hỗ trợ kết nối, thực thi mySQL và SQL Server.
-- The SQL class supports to connect, execute mySQL and SQL server.
-	
-``` java
-import anlavn.net.SQL;
-import java.sql.*;
-
-SQL sql = new SQL(DB_url, DB_username, DB_password);    //setup to your database information
-sql.Connect();  //connect to your database (if exists)
-			
-ResultSet rs = sql.Query("select * from myTable");      //query all from table
-while(rs.next()){
-	System.out.println("ID: " + rs.getString("ID") + " - " + rs.getString("Name"));//get value
-}
-			
-System.out.println("-------------------------------------------------------------------------");
-
-int ID = 1;
-sql.Update("delete from myTable where ID = ?", ID); //query delete from table with parameters ID
-rs = sql.Query("select * from myTable");            //query all from table
-while(rs.next()){
-	System.out.println("ID: " + rs.getString("ID") + " - " + rs.getString("Name"));//get value
-}
-```
-
-The sql file
-``` sql
-USE MASTER
-DROP DATABASE  IF EXISTS myDatabase 
-CREATE DATABASE myDatabase
-USE myDatabase
-
-CREATE TABLE myTable(
-	ID int PRIMARY KEY NOT NULL,
-	NAME NVARCHAR(50)
-);
-
-INSERT INTO myTable VALUES
-	(1, 'AnLaVN'),
-	(2, N'Bình An')
-```
-See more / Xem thêm [ExampleSQL](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/net/ExampleSQL.java)
-
----
 
 ## 3.5 OpenCV - Provide OpenCV related libraries / Cung cấp các thư viện liên quan đến OpenCV
 
@@ -725,15 +663,6 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 ---
 
 # 4. Download / Tải xuống
-### Tiếng Việt
-> Tôi đã phát hành AL-Library của mình dưới dạng file .jar đơn nhất, bao gồm tất cả các thư viện liên quan và javadoc trong cùng một file jar. Điều này giúp cho người dùng dễ dàng tiếp cận sản phẩm của tôi bằng cách tải xuống và sử dụng trực tiếp trong các dự án phát triển phần mềm.
->
-> Ngoài ra, tôi đã đăng tải AL-Library lên Maven Central. Giúp cho việc sử dụng thư viện của tôi trở nên tiện lợi và đơn giản hơn bao giờ hết, thông qua việc cập nhật các phiên bản mới nhất một cách tự động. Điều này đánh dấu một bước ngoặt lớn trong quá trình phát triển ứng dụng của tôi và cho phép người dùng trên toàn thế giới dễ dàng truy cập và sử dụng thư viện của tôi. Tôi rất vui mừng và tự hào vì đã đạt được mục tiêu này.
-### English
-> I have released my AL-Library as a single .jar file, including all related libraries and javadoc in one jar file. This makes my product easy for users to download and use directly in software development projects.
->
-> Also, I have uploaded AL-Library to Maven Central. Make using my library more convenient and simple than ever, by automatically updating to the latest versions. This marks a major turning point in the development of my application and allows users around the world to easily access and use my library. I am very pleased and proud to have achieved this goal.
-
 
 ## 4.1 External JAR
 <p align="center">
@@ -751,7 +680,7 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 <dependency>
 	<groupId>io.github.AnLaVN</groupId>
 	<artifactId>AL-Library_VN</artifactId>
-	<version>4.70.10</version>
+	<version>5.70.10</version>
 </dependency>
 ```
 
@@ -760,11 +689,11 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 <dependency>
 	<groupId>io.github.AnLaVN</groupId>
 	<artifactId>AL-Library_EN</artifactId>
-	<version>4.70.10</version>
+	<version>5.70.10</version>
 </dependency>
 ```
 
-
+## 4.3 Repository Link
 - [mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN)
   - [AL-Library_EN / mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN/AL-Library_EN)
   - [AL-Library_VN / mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN/AL-Library_VN)
