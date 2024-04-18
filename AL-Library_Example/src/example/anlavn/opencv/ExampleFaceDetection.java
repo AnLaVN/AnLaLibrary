@@ -28,11 +28,11 @@ public class ExampleFaceDetection extends javax.swing.JFrame {
         pan.setLayout(panLayout);
         panLayout.setHorizontalGroup(
             panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 420, Short.MAX_VALUE)
+            .addGap(0, 738, Short.MAX_VALUE)
         );
         panLayout.setVerticalGroup(
             panLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 270, Short.MAX_VALUE)
+            .addGap(0, 460, Short.MAX_VALUE)
         );
 
         btn.setText("run");
@@ -61,7 +61,7 @@ public class ExampleFaceDetection extends javax.swing.JFrame {
                         .addComponent(chk, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(62, 62, 62)
                         .addComponent(btn)
-                        .addGap(0, 201, Short.MAX_VALUE)))
+                        .addGap(0, 519, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -69,7 +69,7 @@ public class ExampleFaceDetection extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(pan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn)
                     .addComponent(chk))
