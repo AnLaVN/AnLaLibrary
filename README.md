@@ -30,13 +30,13 @@
 >
 > Thư viện cung cấp các phương thức để bạn có thể làm việc cơ bản trong Java như: hỗ trợ các Thành phần Swing, Băm mật mã học, dịch vụ gửi email SMTP, trò chuyện với ChatGPT bot, nhận diện khuôn mặt, nhận dạng khuôn mặt... và hơn thế nữa... Dành lời cảm ơn to lớn đến với [Raven](https://github.com/DJ-Raven), người đàn ông tuyệt vời cùng các dự án Java Swing UI của anh ấy.
 >
-> Mã nguồn được công khai nhằm mục đích học tập và phát triển. Nếu bạn gặp bất kì vấn đề gì hoặc có mong muốn gì, đừng ngần ngại mà hãy [liên hệ tôi](https://github.com/AnLaVN), tôi sẽ phản hồi sớm nhất có thể.
+> Nếu bạn gặp bất kì vấn đề gì hoặc có mong muốn gì, đừng ngần ngại mà hãy [liên hệ tôi](https://github.com/AnLaVN), tôi sẽ phản hồi sớm nhất có thể.
 ### English
 > AL-Library is a personal and free project. It's basically a library that includes many other libraries that make it easier to use.
 >
 > The library provides methods for you to do basic work in Java such as: Swing Components support, Cryptographic Hashing, SMTP email service, chat with ChatGPT bot, face detection, face recognition... and more... Big thanks to [Raven](https://github.com/DJ-Raven) who great man with his Java Swing UI projects.
 > 
-> The source code is public for learning and development purposes. If you have any problems or have any wishes, do not hesitate to [contact me](https://github.com/AnLaVN), I will respond as soon as possible.
+> If you have any problems or have any wishes, do not hesitate to [contact me](https://github.com/AnLaVN), I will respond as soon as possible.
 
 
 
