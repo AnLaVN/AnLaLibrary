@@ -1,3 +1,1 @@
-# YGPT Client Demo
-
-[Demo web](https://ygpt.onrender.com)
+# [YGPT Client Demo](https://ygpt.onrender.com)
