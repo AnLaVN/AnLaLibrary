@@ -142,7 +142,8 @@ YourGPT.start();            // Start YGPT process with previous parameters.
 Thread.sleep(60000);        // Wait 60s.
 YourGPT.destroy();          // Forcibly destroy YGPT process.
 ```
-See more / Xem thêm [ExampleYourGPT](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ai/ExampleYourGPT.java)
+See more / Xem thêm [ExampleYourGPT](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/ai/ExampleYourGPT.java), [YGPT Client Demo](https://anlavn.github.io/AL-Library/YGPT/), [YGPT Client Code](https://github.com/AnLaVN/AL-Library/blob/Releases/YGPT/index.html)
+
 
 ---
 
