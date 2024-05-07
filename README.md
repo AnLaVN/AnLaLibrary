@@ -6,11 +6,13 @@
 	&nbsp;<b>·</b>&nbsp;
 	<a href="https://anlavn.github.io/AL-Library/AL-Library_JavaDoc/Vietnamese/"><strong>Java Doc Tiếng Việt</strong></a>
 	<br><br>
-	<a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/github/license/exadel-inc/CompreFace" alt="GitHub license"/></a>
-	<a href="https://pypi.org/project/face-recognition/"><img src="https://img.shields.io/badge/Python-Face%20Recognition-blue" alt="Face Recognition"></a>
-	<a href="https://opencv.org/releases/"><img src="https://img.shields.io/badge/OpenCV-Face%20Detection-brightgreen" alt="Face Detection"></a>
+	<a href="https://github.com/AnLaVN/AL-Library/blob/Releases/LICENSE.md"><img src="https://img.shields.io/github/license/AnLaVN/AL-Library" alt="GitHub license"/></a>
 	<a href="https://www.oracle.com/java/technologies/javase/jdk18-archive-downloads.html"><img src="https://img.shields.io/badge/JDK-17+-orange" alt="JDK"></a>
 	<a href="#42-maven-central-repository"><img src="https://img.shields.io/maven-central/v/io.github.AnLaVN/AL-Library_VN"></a>
+	<br>
+	<a href="https://opencv.org/releases/"><img src="https://img.shields.io/badge/OpenCV-Face%20Detection-brightgreen" alt="Face Detection"></a>
+	<a href="https://pypi.org/project/face-recognition/"><img src="https://img.shields.io/badge/Python-Face%20Recognition-blue" alt="Face Recognition"></a>
+	<a href="https://github.com/ggerganov/llama.cpp"><img src="https://img.shields.io/badge/llama.cpp-YourGPT-red" alt="YourGPT"></a>
 	<br><br>
 	<img src="https://img.shields.io/github/repo-size/AnLaVN/AL-Library">
 	<img src="https://img.shields.io/github/languages/code-size/AnLaVN/AL-Library">
