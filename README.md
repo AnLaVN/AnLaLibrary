@@ -130,7 +130,7 @@
 - Lớp YourGPT hỗ trợ chạy mô hình ngôn ngữ lớn bằng cách sử dụng các tệp nhị phân dựng sẵn của llama.cpp.
 - The YourGPT class supports to run the Large language model using prebuilt binaries of llama.cpp.
 
-⚠️ Để dùng tính năng này trên hệ điều hành Linux, vui lòng [build thủ công](https://colab.research.google.com/drive/1rRTo_VOmjpDG5ndoj4vaAzkO3yx-nGyi?usp=sharing) / To use this feature on Linux operating system, please [build manually](https://colab.research.google.com/drive/1rRTo_VOmjpDG5ndoj4vaAzkO3yx-nGyi?usp=sharing) ⚠️
+⚠️ Để sử dụng phiên bản tuỳ chỉnh của LlaMa, vui lòng [build thủ công](https://colab.research.google.com/drive/1rRTo_VOmjpDG5ndoj4vaAzkO3yx-nGyi?usp=sharing) / To use a custom version of LlaMa, please [build manually](https://colab.research.google.com/drive/1rRTo_VOmjpDG5ndoj4vaAzkO3yx-nGyi?usp=sharing) ⚠️
 
 ``` java
 import anlavn.ai.YourGPT;
