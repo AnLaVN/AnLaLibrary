@@ -402,7 +402,7 @@ static {
 }
 ```
 
-Using [License Creator](https://github.com/AnLaVN/AL-Library/tree/Releases/License_Creator) tool to generate LicenseKey and [LicenseFile](https://github.com/AnLaVN/LICENSE/blob/Releases/AL-Library_License.properties)
+Using [License Creator](https://anlavn.github.io/AL-Library/License_Creator) tool to generate LicenseKey
 
 See more / Xem thêm [ExampleLicense](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/net/ExampleLicense.java)
 

@@ -1,0 +1,1 @@
+# [License Creator](https://anlavn.github.io/AL-Library/License_Creator/)

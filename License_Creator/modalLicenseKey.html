@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+
+
+    <div class="modal fade" id="modalCLK">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5">Create License Key</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                    <label for="txtLFile" class="form-label">Step 1: Copy Your License File content</label>
+                    <div class="mb-3 position-relative">
+                        <textarea class="form-control" id="txtLFile" rows="5" placeholder="Your License File" ng-model="LicenseFile" disabled></textarea>
+                        <button class="btn btn-outline-primary position-absolute top-0 end-0" type="button" ng-disabled="!LicenseFile" ng-click="copyToClipboard(LicenseFile)"><i class="bi bi-clipboard"></i></button>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Step 2: Paste License File content into your Github file bellow. Customize whenever you want.</label>
+                        <a href="{{getWebLink()}}" target="_blank">{{getWebLink()}}<i class="bi bi-box-arrow-up-right ms-2"></i></a>
+                    </div>
+
+                    <label for="txtLKey" class="form-label">Step 3: Using Your License Key bellow in your code.</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="txtLKey" placeholder="Your License Key" ng-model="gLicenseKey" disabled>
+                        <button class="btn btn-outline-primary" type="button" ng-disabled="!gLicenseKey" ng-click="copyToClipboard(gLicenseKey)"><i class="bi bi-clipboard"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

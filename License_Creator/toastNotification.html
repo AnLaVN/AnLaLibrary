@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+
+
+    <div class="toast-container position-fixed top-0 end-0 p-3" aria-live="assertive" aria-atomic="true">
+		<div class="toast border border-{{noti.color}}" data-bs-delay="10000" ng-repeat="noti in Notifis" id="Notifi{{noti.time.getTime()}}">
+			<div class="toast-header">
+				<strong class="me-auto"><i class="bi bi-bell-fill me-2"></i>License Creator - Notification</strong>
+				<small>{{noti.time | date:'HH:mm:ss'}}</small>
+				<button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+			</div>
+			<div class="toast-body">{{noti.content}}</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
