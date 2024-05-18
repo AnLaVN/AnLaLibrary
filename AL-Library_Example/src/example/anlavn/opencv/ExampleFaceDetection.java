@@ -10,9 +10,8 @@ public class ExampleFaceDetection extends javax.swing.JFrame {
     public ExampleFaceDetection() {
         initComponents();
         
-        FaceDetection.setDetectPanel(pan, 20);  //set JPanel where will display video capture from camera with rounded corners
-        //set how the rectangle display when detect a face,
-        FaceDetection.setDetectFace(true, Color.GREEN, 2);  //this line mean will detect face and display with green rectangle and thickness 2px
+        FaceDetection.setDisplayPanel(pan, 20); //set JPanel where will display video capture from camera with rounded corners
+        FaceDetection.setDetector(true);        //this line mean will detect face and display with green rectangle and thickness 2px
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -81,13 +80,13 @@ public class ExampleFaceDetection extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActionPerformed
-        if(!FaceDetection.isDetection()) FaceDetection.startDetection(0); //start capture video from camera 0 and detect face, if you was setDetectFace(true, ..., ...)
-        else FaceDetection.endDetection(); //end capture video
+        if(!FaceDetection.isDetection()) FaceDetection.start(0); //start capture video from camera 0 and detect face, if you was setDetectFace(true, ..., ...)
+        else FaceDetection.end();//end capture video
     }//GEN-LAST:event_btnActionPerformed
 
     private void chkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkActionPerformed
-        FaceDetection.setDetectFace(chk.isSelected(), Color.YELLOW, 6);
-        System.out.println("Detect face: "+FaceDetection.isDetectFace());
+        FaceDetection.setDetector(chk.isSelected(), Color.YELLOW, 6);
+        System.out.println("Detect face: "+FaceDetection.isDetector());
     }//GEN-LAST:event_chkActionPerformed
 
     public static void main(String args[]) throws IOException {
@@ -101,12 +100,11 @@ public class ExampleFaceDetection extends javax.swing.JFrame {
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(ExampleFaceDetection.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ExampleFaceDetection().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new ExampleFaceDetection().setVisible(true);
         });
         
+        FaceDetection.API_KEY = "alk~XXX...XXX";
         FaceDetection.loadModule();//load module to detect
     }
 

@@ -135,11 +135,12 @@
 ``` java
 import anlavn.ai.YourGPT;
 
-YourGPT.loadModule();       // Load module default.
-YourGPT.params.put("--host", "localhost");
-YourGPT.params.put("--port", "3000");
-YourGPT.params.put("-ngl", "25");
-YourGPT.params.put("-c", "2048");
+YourGPT.API_KEY = "alk~XXX...XXX";          // Add api key to use
+YourGPT.loadModule();                       // Load module default.
+YourGPT.params.put("--host", "localhost");  // Run at localhost
+YourGPT.params.put("--port", "3000");       // Run at port 3000
+YourGPT.params.put("-ngl", "25");           // Number of GPU player - Allows offloading some layers to the GPU for computation
+YourGPT.params.put("-c", "2048");           // Context size - Set the size of the prompt context
 YourGPT.start();            // Start YGPT process with previous parameters.
 Thread.sleep(60000);        // Wait 60s.
 YourGPT.destroy();          // Forcibly destroy YGPT process.
@@ -286,7 +287,7 @@ See more / Xem thêm [ExampleZip](https://github.com/AnLaVN/AL-Library/blob/Rele
 
 ## 3.3 HASH - Provides cryptographic hash function related libraries / Cung cấp các thư viện liên quan đến hàm băm mật mã học
 
-### 3.3.2 AES
+### 3.3.1 AES
 - Lớp AES hỗ trợ mã hóa và giải mã một Chuỗi, sử dụng khóa bảo mật. 
 - The AES class supports encryption and decryption a String, using a security key.
 
@@ -295,7 +296,7 @@ import anlavn.hash.AES;
 
 String 	orgStr = "This is original string.", //declare original string need to hash
 	myKey  = "This is key to hash ",     //declare my security key to hash string
-	hashStr= AES.Encrypt(orgStr, myKey); //hash original string with security key
+	hashStr= AES.encrypt(orgStr, myKey); //hash original string with security key
 System.out.println("Hash AES of orgStr: " + hashStr);   //print hash string
 System.out.println("My original string: " + AES.Decrypt(hashStr, myKey));   //decrypt hash string and print it
 ```
@@ -311,9 +312,9 @@ See more / Xem thêm [ExampleAES](https://github.com/AnLaVN/AL-Library/blob/Rele
 import anlavn.hash.BCrypt;
 
 String orgStr = "This is original string.",               	//declare original string need to hash
-      hashStr = BCrypt.Encrypt(orgStr, BCrypt.genSalt());   //hash original string, only supports encryption.
+      hashStr = BCrypt.encrypt(orgStr, BCrypt.genSalt());   //hash original string, only supports encryption.
 System.out.println("Hash BCrypt of orgStr: " + hashStr);	//print hash string
-System.out.println("is orgStr match: " + BCrypt.Check(orgStr, hashStr));  //check if original string is match with hash string
+System.out.println("is orgStr match: " + BCrypt.check(orgStr, hashStr));  //check if original string is match with hash string
 ```
 See more / Xem thêm [ExampleBCrypt](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/hash/ExampleBCrypt.java)
 
@@ -327,7 +328,7 @@ See more / Xem thêm [ExampleBCrypt](https://github.com/AnLaVN/AL-Library/blob/R
 import anlavn.hash.MD5;
 	
 String	orgStr = "This is original string.", //declare original string need to hash
-	hashStr= MD5.Encrypt(orgStr); 		//hash original string, only supports encryption, decryption it is impossible.
+	hashStr= MD5.encrypt(orgStr); 		//hash original string, only supports encryption, decryption it is impossible.
 System.out.println("Hash MD5 of orgStr: " + hashStr);   //print hash string
 ```
 See more / Xem thêm [ExampleMD5](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/hash/ExampleMD5.java)
@@ -343,7 +344,7 @@ import anlavn.hash.SHA;
 import anlavn.hash.SHA.Types;
 	
 String orgStr = "This is original string.", //declare original string need to hash
-      hashStr = SHA.Encrypt(Types.SHA_256, orgStr); //hash original string, only supports encryption, decryption it is impossible.
+      hashStr = SHA.encrypt(Types.SHA_256, orgStr); //hash original string, only supports encryption, decryption it is impossible.
 System.out.println("Hash SHA256 of orgStr: " + hashStr);   //print hash string
 ```
 See more / Xem thêm [ExampleSHA](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/hash/ExampleSHA.java)
@@ -397,7 +398,7 @@ import anlavn.net.License;
 
 static { 
 	// Check the license authority before run code. The program will continue if enough permissions. Else stop/delete the program.
-    License.check("&glwyD16e6JTgk6XuNYEj&D9WzOfqTMaJsmRNZ4+LNGIfSXH6QBbiYKVh/9a+SqDk=");
+    License.check("alk~1G3oYHyo2RMU/CDNbFA9HdvTFV0GUXZOydsoHcN8S7xNE08AvtsAwn8R1KN4Q6Dz");
 }
 ```
 
@@ -447,16 +448,16 @@ See more / Xem thêm [ExampleRandomORG](https://github.com/AnLaVN/AL-Library/blo
 
 ``` java
 import anlavn.opencv.FaceDetection;
-	
-FaceDetection.loadModule(); //load module to detect
-FaceDetection.setDetectPanel(myPanel, 20);  //set JPanel where will display video capture from camera with rounded corners
 
-//set how the rectangle display when detect a face,
-FaceDetection.setDetectFace(true, Color.GREEN, 2);  //this line mean will detect face and display with green rectangle and thickness 2px
-//FaceDetection.setDetectFace(false, Color.GREEN, 2); //this line mean will not detect face and not display any rectangle no matter what color and how thick it is 
+FaceDetection.API_KEY = "alk~XXX...XXX";    // Add api key to use
+FaceDetection.loadModule();                 // Load module default
+FaceDetection.setDetectPanel(myPanel, 20);  // Set JPanel where will display video capture from camera with rounded corners
 
-FaceDetection.startDetection(0);  //start capture video from camera 0 and detect face, if you was setDetectFace(true, ..., ...)
-//FaceDetection.endDetection();   //end capture video
+FaceDetection.setDetector(true);  			// Detect face and display with green rectangle and thickness 2px
+//FaceDetection.setDetector(false, Color.GREEN, 2); // Not detect face and not display any rectangle no matter what color and how thick it is 
+
+FaceDetection.start(0);  					// Start face detection from camera 0
+//FaceDetection.end();   					// End face detection
 ```
 See more / Xem thêm [ExampleFaceDetection](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/opencv/ExampleFaceDetection.java)
 
@@ -471,16 +472,18 @@ See more / Xem thêm [ExampleFaceDetection](https://github.com/AnLaVN/AL-Library
 ``` java
 import anlavn.opencv.FaceRecognition;
 
-FaceRecognition.loadModule();  //check module for recognition, download automatically if you don't have one
+FaceRecognition.API_KEY = "alk~XXX...XXX";// Add api key to use
+FaceRecognition.loadModule();             // Load module default.
 //set image for original face and test face using URL.
-//network connection is required to use the module regardless if you have set image from URL or not
 FaceRecognition.setImageOrginal("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNU14t4OtvdSZf-rTJAQWI6LdTIw5nYCYT1V3SfHgWja6cYMbG");
 FaceRecognition.setImageTesting("https://nld.mediacdn.vn/2021/1/5/d9db633fe9c98429ec9025ca0950f241-16098228091571816318835.jpg");
-FaceRecognition.setRequirementPercent(60.0);//set a percentage requirement for face recognition, the higher the stricter
-
-System.out.println(FaceRecognition.Recognition());//recognition face and get result
-System.out.println(FaceRecognition.getPercent());//get percent was recognition
-System.out.println(FaceRecognition.isMatch());//get value if match, true if percent was recognition higher or equal with percentage requirement
+//set a RequirementPercent for face recognition, the higher the stricter
+FaceRecognition.setRequirementPercent(60.0);
+//recognition and get result
+FaceRecognition.Result result = FaceRecognition.recognition(); 
+System.out.println(result.state);        // Get result state
+System.out.println(result.percentMatch); // Fet percent match
+System.out.println(result.isMatch);      // true if percentMatch higher or equal RequirementPercent
 ```
 See more / Xem thêm [ExampleFaceRecognition](https://github.com/AnLaVN/AL-Library/blob/Releases/AL-Library_Example/src/example/anlavn/opencv/ExampleFaceRecognition.java)
 
@@ -684,7 +687,7 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 <dependency>
 	<groupId>io.github.AnLaVN</groupId>
 	<artifactId>AL-Library_VN</artifactId>
-	<version>5.70.10</version>
+	<version>6.70.10</version>
 </dependency>
 ```
 
@@ -693,7 +696,7 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 <dependency>
 	<groupId>io.github.AnLaVN</groupId>
 	<artifactId>AL-Library_EN</artifactId>
-	<version>5.70.10</version>
+	<version>6.70.10</version>
 </dependency>
 ```
 
