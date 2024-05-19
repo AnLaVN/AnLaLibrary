@@ -2,9 +2,9 @@
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/90229487/210226067-12f868ef-36cc-45b1-9cce-3c3297f13d25.png" width = "40%">
 	<br>
-	<a href="https://anlavn.github.io/AL-Library/AL-Library_JavaDoc/English/"><strong>Java Doc English</strong></a>
-	&nbsp;<b>·</b>&nbsp;
 	<a href="https://anlavn.github.io/AL-Library/AL-Library_JavaDoc/Vietnamese/"><strong>Java Doc Tiếng Việt</strong></a>
+	&nbsp;<b>·</b>&nbsp;
+	<a href="https://anlavn.github.io/AL-Library/AL-Library_JavaDoc/English/"><strong>Java Doc English</strong></a>
 	<br><br>
 	<a href="https://github.com/AnLaVN/AL-Library/blob/Releases/LICENSE.md"><img src="https://img.shields.io/github/license/AnLaVN/AL-Library" alt="GitHub license"/></a>
 	<a href="https://www.oracle.com/java/technologies/javase/jdk18-archive-downloads.html"><img src="https://img.shields.io/badge/JDK-17+-orange" alt="JDK"></a>
@@ -672,12 +672,16 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 # 4. Download / Tải xuống
 
 ## 4.1 External JAR
+- Bạn chỉ cần tải thư viện với một tệp .jar duy nhất đang được phát hành ngay bên dưới.
+- You just need to download the library with a single .jar file which is being released right below.
 <p align="center">
 	<a href="https://github.com/AnLaVN/AL-Library/releases"><img src="https://img.shields.io/github/v/release/AnLaVN/AL-Library"></a><br><br>
 </p>
 
 
 ## 4.2 Maven Central Repository
+- Bạn đang sử dụng kho lưu trữ Maven cho dự án của mình, chỉ cần copy mã ngay bên dưới.
+- You are using Maven repository for your project, just copy the code right below.
 <p align="center">
 	<img src="https://img.shields.io/maven-central/v/io.github.AnLaVN/AL-Library_VN"><br><br>
 </p>
