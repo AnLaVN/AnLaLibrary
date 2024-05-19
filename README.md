@@ -44,13 +44,13 @@
 
 # 2. Features / Tính năng
 <details>
-	<summary>anlavn.ai - Provide AI related libraries / Cung cấp các thư viện liên quan đến AI</summary>
+	<summary>anlavn.ai - Cung cấp các thư viện liên quan đến AI / Provide AI related libraries</summary>
 	<ol>
 		<li><a href="#311-yourgpt">YourGPT</a></li>
 	</ol>
 </details>
 <details>
-	<summary>anlavn.file - Provides file related libraries / Cung cấp các thư viện liên quan đến tập tin</summary>
+	<summary>anlavn.file - Cung cấp các thư viện liên quan đến tập tin / Provides file related libraries</summary>
 	<ol>
 		<li><a href="#321-excel">Excel</a></li>
 		<li><a href="#322-log">Log</a></li>
@@ -62,7 +62,7 @@
 	</ol>
 </details>
 <details>
-	<summary>anlavn.hash - Provides cryptographic hash function related libraries / Cung cấp các thư viện liên quan đến hàm băm mật mã học</summary>
+	<summary>anlavn.hash - Cung cấp các thư viện liên quan đến hàm băm mật mã học / Provides cryptographic hash function related libraries</summary>
 	<ol>
 		<li><a href="#331-aes">AES</a></li>
 		<li><a href="#332-bcrypt">BCrypt</a></li>
@@ -71,7 +71,7 @@
 	</ol>
 </details>
 <details>
-	<summary>anlavn.net - Provide Internet related libraries / Cung cấp các thư viện liên quan đến Internet</summary>
+	<summary>anlavn.net - Cung cấp các thư viện liên quan đến Internet / Provide Internet related libraries</summary>
 	<ol>
 		<li><a href="#341-docnet">DocNet</a></li>
 		<li><a href="#342-email">Email</a></li>
@@ -81,14 +81,14 @@
 	</ol>
 </details>
 <details>
-	<summary>anlavn.opencv - Provide OpenCV related libraries / Cung cấp các thư viện liên quan đến OpenCV</summary>
+	<summary>anlavn.opencv - Cung cấp các thư viện liên quan đến OpenCV / Provide OpenCV related libraries</summary>
 	<ol>
 		<li><a href="#351-facedetection">FaceDetection</a></li>
 		<li><a href="#352-facerecognition">FaceRecognition</a></li>
 	</ol>
 </details>
 <details>
-	<summary>anlavn.ui - Provide UI related libraries / Cung cấp các thư viện liên quan đến UI</summary>
+	<summary>anlavn.ui - Cung cấp các thư viện liên quan đến UI / Provide UI related libraries</summary>
 	<ol>
 		<li><a href="#361-avatarpanel">AvatarPanel</a> (Add to Palette from JAR)</li>
 		<li><a href="#362-chatbox">ChatBox</a> (Add to Palette from JAR)</li>
