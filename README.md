@@ -716,3 +716,8 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 - [repo1.maven.org](https://repo1.maven.org/maven2/io/github/AnLaVN)
   - [AL-Library_EN / repo1.maven.org](https://repo1.maven.org/maven2/io/github/AnLaVN/AL-Library_EN)
   - [AL-Library_VN / repo1.maven.org](https://repo1.maven.org/maven2/io/github/AnLaVN/AL-Library_VN)
+
+
+
+## 4.4 Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=AnLaVN/AL-Library&type=Date)](https://star-history.com/#AnLaVN/AL-Library&Date)
