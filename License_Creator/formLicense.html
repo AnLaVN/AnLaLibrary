@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+
+
+    <div class="container">
+		<div class="hstack gap-3">
+			<div class="col">
+				<div class="mb-3">
+					<label for="txtGUsername" class="form-label">Github Username</label>
+					<input type="text" class="form-control" id="txtGUsername" ng-model="LiceCrea.GUsername" placeholder="Enter your Github Username">
+				</div>
+				<div class="mb-3">
+					<label for="txtGRepository" class="form-label">Github Repository</label>
+					<input type="text" class="form-control" id="txtGRepository" ng-model="LiceCrea.GRepository" placeholder="Enter your Github Repository">
+				</div>
+				<div class="mb-3">
+					<label for="txtRBranche" class="form-label">Repository Branch</label>
+					<input type="text" class="form-control" id="txtRBranche" ng-model="LiceCrea.RBranch" placeholder="Enter your Repository Branch">
+				</div>
+				<div class="mb-3">
+					<label for="txtLName" class="form-label">License Name</label>
+					<input type="text" class="form-control" id="txtLName" ng-model="LiceCrea.LName" placeholder="Enter your License Name">
+				</div>
+		
+				<div class="d-flex justify-content-center">
+					<button type="button" class="btn btn-primary" ng-disabled="!isValid()" ng-click="createLicenseKey()">Create License Key</button>
+				</div>
+			</div>
+			<div class="vr"></div>
+			<div class="col">
+				<div class="mb-3">
+					<label for="txtLicenseKey" class="form-label">License Key</label>
+					<input type="text" class="form-control" id="txtLicenseKey" ng-model="LicenseKey" placeholder="Enter your License Key">
+				</div>
+		
+				<div class="d-flex justify-content-center">
+					<button type="button" class="btn btn-primary" ng-disabled="!LicenseKey" ng-click="checkLicenseKey(LicenseKey)">Check License Key</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
