@@ -23,6 +23,10 @@
 					<label for="txtLName" class="form-label">License Name</label>
 					<input type="text" class="form-control" id="txtLName" ng-model="LiceCrea.LName" placeholder="Enter your License Name">
 				</div>
+				<div class="mb-3">
+					<label for="txtLSecret" class="form-label">License Secret Key</label>
+					<input type="text" class="form-control" id="txtLSecret" ng-model="LiceCrea.LSecret" placeholder="Enter your License Secret Key">
+				</div>
 		
 				<div class="d-flex justify-content-center">
 					<button type="button" class="btn btn-primary" ng-disabled="!isValid()" ng-click="createLicenseKey()">Create License Key</button>

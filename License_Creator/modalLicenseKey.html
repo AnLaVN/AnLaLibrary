@@ -19,10 +19,7 @@
                         <button class="btn btn-outline-primary position-absolute top-0 end-0" type="button" ng-disabled="!LicenseFile" ng-click="copyToClipboard(LicenseFile)"><i class="bi bi-clipboard"></i></button>
                     </div>
 
-                    <div class="mb-3">
-                        <label class="form-label">Step 2: Paste License File content into your Github file bellow. Customize whenever you want.</label>
-                        <a href="{{getWebLink()}}" target="_blank">{{getWebLink()}}<i class="bi bi-box-arrow-up-right ms-2"></i></a>
-                    </div>
+                    <label class="form-label" ng-init="LicenseLink">Step 2: Paste License File content into <a href="{{LicenseLink}}" target="_blank">your Github file<i class="bi bi-box-arrow-up-right ms-2"></i></a>. Customize whenever you want.</label>
 
                     <label for="txtLKey" class="form-label">Step 3: Using Your License Key bellow in your code.</label>
                     <div class="input-group mb-3">

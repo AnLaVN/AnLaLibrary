@@ -27,6 +27,7 @@
 const licenseExample = "https://raw.githubusercontent.com/AnLaVN/LICENSE/Releases/AL-API_License.properties";
 const licenseCreate = "https://anlavn-api.vercel.app/api/license/create?github=";
 const licenseCheck = "https://anlavn-api.vercel.app/api/license/check?key=";
+const licenseSecret = "[yoursecretkey]";
 var app = angular.module("License_Creator",[]);
 app.controller("Controller", ["$scope", "$http", "$timeout", function ($scope, $http, $timeout) {
     $scope.Notifis = [];
@@ -34,7 +35,8 @@ app.controller("Controller", ["$scope", "$http", "$timeout", function ($scope, $
         GUsername: "",
         GRepository: "",
         RBranch: "",
-        LName: ""
+        LName: "",
+        LSecret: "",
     }
     
     $scope.AddNotifis = (content, color) => {
@@ -45,23 +47,27 @@ app.controller("Controller", ["$scope", "$http", "$timeout", function ($scope, $
     }
     $scope.saveToLocal = () => localStorage.setItem("License_Creator", JSON.stringify($scope.LiceCrea));
     $scope.$watch('LiceCrea', $scope.saveToLocal, true);
-    $scope.isValid = () => $scope.LiceCrea.GUsername && $scope.LiceCrea.GRepository && $scope.LiceCrea.RBranch && $scope.LiceCrea.LName;
-    $scope.getWebLink = () => $scope.isValid() ? "https://github.com/" + $scope.LiceCrea.GUsername + "/" + $scope.LiceCrea.GRepository + "/blob/" + $scope.LiceCrea.RBranch + "/" + $scope.LiceCrea.LName + ".properties" : null;
+    $scope.isValid = () => $scope.LiceCrea.GUsername && $scope.LiceCrea.GRepository && $scope.LiceCrea.RBranch && $scope.LiceCrea.LName && $scope.LiceCrea.LSecret && $scope.LiceCrea.LSecret.length >= 8;
+    $scope.getLinkRaw = () => $scope.isValid() ? `https://raw.githubusercontent.com/${$scope.LiceCrea.GUsername}/${$scope.LiceCrea.GRepository}/${$scope.LiceCrea.RBranch}/${$scope.LiceCrea.LName}.properties` : null;
+    $scope.getLinkEdit = () => $scope.isValid() ? `https://github.com/${$scope.LiceCrea.GUsername}/${$scope.LiceCrea.GRepository}/edit/${$scope.LiceCrea.RBranch}/${$scope.LiceCrea.LName}.properties` : null;
+    $scope.getLinkNew = () => $scope.isValid() ? `https://github.com/${$scope.LiceCrea.GUsername}/${$scope.LiceCrea.GRepository}/new/${$scope.LiceCrea.RBranch}?filename=${$scope.LiceCrea.LName}.properties` : null;
     $scope.getFilePath = () => $scope.isValid() ? $scope.LiceCrea.GUsername + "/" + $scope.LiceCrea.GRepository + "/" + $scope.LiceCrea.RBranch + "/" + $scope.LiceCrea.LName : null;
     $scope.getLink = link => $http.get(link).then(res => res.data).catch(err => Promise.reject(err));
-    $scope.getLicenseKey = githubPath => $scope.getLink(licenseCreate + encodeURIComponent(githubPath));
+    $scope.getLicenseKey = (githubPath, secretKey) => $scope.getLink(licenseCreate + encodeURIComponent(githubPath) + "&secret=" + secretKey);
     $scope.getLicenseContent = key => $scope.getLink(licenseCheck + encodeURIComponent(key));
     $scope.copyToClipboard = data => {
         navigator.clipboard.writeText(data);
         $scope.AddNotifis("Copy to clipboard successfully.", "success");
     }
-
+    
     $scope.createLicenseKey = () => {
         new bootstrap.Modal(document.getElementById('modalCLK')).show(); 
-        $scope.getLink(licenseExample).then(res => $scope.LicenseFile = res).catch(err => {
+        const secretKey = CryptoJS.SHA256($scope.LiceCrea.LSecret);
+        $scope.getLink(licenseExample).then(res => $scope.LicenseFile = res.replace(licenseSecret, secretKey)).catch(err => {
             $scope.AddNotifis("An error occurred while query the License file example. " + err.data, "danger");
         });
-        $scope.getLicenseKey($scope.getFilePath()).then(res => $scope.gLicenseKey = res).catch(err => {
+        $scope.getLink($scope.getLinkRaw()).then(() => $scope.LicenseLink = $scope.getLinkEdit()).catch(() => $scope.LicenseLink = $scope.getLinkNew() + "&value=" + encodeURIComponent($scope.LicenseFile));
+        $scope.getLicenseKey($scope.getFilePath(), $scope.LiceCrea.LSecret).then(res => $scope.gLicenseKey = res).catch(err => {
             $scope.AddNotifis("An error occurred while create the License Key. " + err.data.error, "danger");
         });
     }
@@ -70,7 +76,7 @@ app.controller("Controller", ["$scope", "$http", "$timeout", function ($scope, $
         $scope.LicenseFile = "";
         new bootstrap.Modal(document.getElementById('modalCLF')).show(); 
         $scope.getLicenseContent(key).then(res => $scope.LicenseFile = res).catch(err => {
-            $scope.AddNotifis("An error occurred while query your License file. " + err.data, "danger");
+            $scope.AddNotifis("An error occurred while query your License file. " + err.data.error, "danger");
         })
     }
 
