@@ -47,6 +47,7 @@ app.controller("Controller", ["$scope", "$http", "$timeout", function ($scope, $
     }
     $scope.saveToLocal = () => localStorage.setItem("License_Creator", JSON.stringify($scope.LiceCrea));
     $scope.$watch('LiceCrea', $scope.saveToLocal, true);
+    $scope.genLSecret = () => Date.now().toString(36) + Math.random().toString(36).substring(2);
     $scope.isValid = () => $scope.LiceCrea.GUsername && $scope.LiceCrea.GRepository && $scope.LiceCrea.RBranch && $scope.LiceCrea.LName && $scope.LiceCrea.LSecret && $scope.LiceCrea.LSecret.length >= 8;
     $scope.getLinkRaw = () => $scope.isValid() ? `https://raw.githubusercontent.com/${$scope.LiceCrea.GUsername}/${$scope.LiceCrea.GRepository}/${$scope.LiceCrea.RBranch}/${$scope.LiceCrea.LName}.properties` : null;
     $scope.getLinkEdit = () => $scope.isValid() ? `https://github.com/${$scope.LiceCrea.GUsername}/${$scope.LiceCrea.GRepository}/edit/${$scope.LiceCrea.RBranch}/${$scope.LiceCrea.LName}.properties` : null;

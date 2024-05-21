@@ -25,7 +25,10 @@
 				</div>
 				<div class="mb-3">
 					<label for="txtLSecret" class="form-label">License Secret Key</label>
-					<input type="text" class="form-control" id="txtLSecret" ng-model="LiceCrea.LSecret" placeholder="Enter your License Secret Key">
+					<div class="input-group">
+                        <input type="text" class="form-control" id="txtLSecret" ng-model="LiceCrea.LSecret" placeholder="Enter your License Secret Key">
+                        <button class="btn btn-outline-primary" type="button" ng-click="LiceCrea.LSecret = genLSecret()"><i class="bi bi-repeat"></i></button>
+                    </div>
 				</div>
 		
 				<div class="d-flex justify-content-center">
