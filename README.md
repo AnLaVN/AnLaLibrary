@@ -10,9 +10,9 @@
 	<a href="https://www.oracle.com/java/technologies/javase/jdk18-archive-downloads.html"><img src="https://img.shields.io/badge/JDK-17+-orange" alt="JDK"></a>
 	<a href="#42-maven-central-repository"><img src="https://img.shields.io/maven-central/v/io.github.AnLaVN/AL-Library_VN"></a>
 	<br>
+	<a href="https://github.com/ggerganov/llama.cpp"><img src="https://img.shields.io/badge/llama.cpp-YourGPT-red" alt="YourGPT"></a>
 	<a href="https://opencv.org/releases/"><img src="https://img.shields.io/badge/OpenCV-Face%20Detection-brightgreen" alt="Face Detection"></a>
 	<a href="https://pypi.org/project/face-recognition/"><img src="https://img.shields.io/badge/Python-Face%20Recognition-blue" alt="Face Recognition"></a>
-	<a href="https://github.com/ggerganov/llama.cpp"><img src="https://img.shields.io/badge/llama.cpp-YourGPT-red" alt="YourGPT"></a>
 	<br><br>
 	<img src="https://img.shields.io/github/repo-size/AnLaVN/AL-Library">
 	<img src="https://img.shields.io/github/languages/code-size/AnLaVN/AL-Library">
@@ -121,6 +121,10 @@
 - Tích hợp thư viện cổng thanh toán điện tử [PayOS](https://payos.vn)
 
 ⚠️ ***Tính năng này chỉ dành cho phiên bản Tiếng Việt / This feature is only for Vietnamese version*** ⚠️
+
+### API_KEY
+- Các tính năng như [YourGPT](#311-yourgpt), [FaceDetection](#351-facedetection), [FaceRecognition](#352-facerecognition) sẽ cần có API key để sử dụng, vui lòng liên hệ với tôi để được cấp API key.
+- Features such as [YourGPT](#311-yourgpt), [FaceDetection](#351-facedetection), [FaceRecognition](#352-facerecognition) will require an API key to use, please contact me to receive an API key.
 
 ---
 
