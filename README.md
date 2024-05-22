@@ -136,6 +136,8 @@
 
 ⚠️ Để sử dụng phiên bản tuỳ chỉnh của LlaMa, vui lòng [build thủ công](https://colab.research.google.com/drive/1rRTo_VOmjpDG5ndoj4vaAzkO3yx-nGyi?usp=sharing) / To use a custom version of LlaMa, please [build manually](https://colab.research.google.com/drive/1rRTo_VOmjpDG5ndoj4vaAzkO3yx-nGyi?usp=sharing) ⚠️
 
+![image](https://github.com/AnLaVN/AL-Library/assets/90229487/c2f95abd-c7f8-457f-8e16-69f23c4ae24c)
+
 ``` java
 import anlavn.ai.YourGPT;
 
@@ -450,6 +452,8 @@ See more / Xem thêm [ExampleRandomORG](https://github.com/AnLaVN/AL-Library/blo
 - Lớp FaceDetection hỗ trợ nhận diện khuôn mặt bằng thư viện thị giác máy tính lớn nhất thế giới - OpenCV.
 - The FaceDetection class supports to face detection using the world’s largest computer vision library - OpenCV.
 
+![image](https://github.com/AnLaVN/AL-Library/assets/90229487/abc4695b-917d-424e-ae43-a7bce34f6771)
+
 ``` java
 import anlavn.opencv.FaceDetection;
 
@@ -472,6 +476,8 @@ See more / Xem thêm [ExampleFaceDetection](https://github.com/AnLaVN/AL-Library
 - The FaceRecognition class supports to face recognition in java, using python program compiled.
 
 ⚠️ ***Tính năng này chỉ dành cho hệ điều hành Windows / This feature is only for Windows operating system*** ⚠️
+
+![image](https://github.com/AnLaVN/AL-Library/assets/90229487/5058453c-7340-4d35-80d4-cb6ab8a64b72)
 
 ``` java
 import anlavn.opencv.FaceRecognition;
