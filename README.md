@@ -42,66 +42,80 @@
 
 
 
-# 2. Features / Tính năng
+# 2 Update Policy / Chính Sách Cập Nhật
+### Tiếng Việt
+> #### Quan trọng: Dự án này tuân theo chính sách Cập Nhật Bắt Buộc. Điều này có nghĩa là:
+> - Luôn Luôn Cập Nhật: Người dùng bắt buộc phải nâng cấp lên phiên bản mới nhất khi có bản phát hành mới. Các phiên bản cũ sẽ không được hỗ trợ hoặc bảo trì.
+> - Các bản cập nhật mới sẽ chứa các bản vá lỗi, cải tiến hiệu suất và tính năng mới nhất. Việc không cập nhật có thể dẫn đến các vấn đề bảo mật và hoạt động không ổn định.
+> - Chúng tôi không chịu trách nhiệm về bất kỳ sự cố nào xảy ra nếu bạn sử dụng phiên bản cũ. Để đảm bảo trải nghiệm tốt nhất, hãy luôn cập nhật lên phiên bản mới nhất.
+### English
+> #### Important: This project follows a Mandatory Update policy. This means:
+> - Always Stay Updated: Users are required to upgrade to the latest version upon each new release. Older versions will not be supported or maintained.
+> - New updates contain critical bug fixes, performance improvements, and the latest features. Failure to update may result in security vulnerabilities and unstable operation.
+> - We do not take responsibility for any issues that arise from using outdated versions. To ensure the best experience, always update to the latest version.
+
+
+
+# 3. Features / Tính năng
 <details>
 	<summary>anlavn.ai - Cung cấp các thư viện liên quan đến AI / Provide AI related libraries</summary>
 	<ol>
-		<li><a href="#311-yourgpt">YourGPT</a></li>
+		<li><a href="#411-yourgpt">YourGPT</a></li>
 	</ol>
 </details>
 <details>
 	<summary>anlavn.file - Cung cấp các thư viện liên quan đến tập tin / Provides file related libraries</summary>
 	<ol>
-		<li><a href="#321-excel">Excel</a></li>
-		<li><a href="#322-log">Log</a></li>
-		<li><a href="#323-nativelibrary">NativeLibrary</a></li>
-		<li><a href="#324-objectdata">ObjectData</a></li>
-		<li><a href="#325-properties">Properties</a></li>
-		<li><a href="#326-raw">Raw</a></li>
-		<li><a href="#327-zip">Zip</a></li>
+		<li><a href="#421-excel">Excel</a></li>
+		<li><a href="#422-log">Log</a></li>
+		<li><a href="#423-nativelibrary">NativeLibrary</a></li>
+		<li><a href="#424-objectdata">ObjectData</a></li>
+		<li><a href="#425-properties">Properties</a></li>
+		<li><a href="#426-raw">Raw</a></li>
+		<li><a href="#427-zip">Zip</a></li>
 	</ol>
 </details>
 <details>
 	<summary>anlavn.hash - Cung cấp các thư viện liên quan đến hàm băm mật mã học / Provides cryptographic hash function related libraries</summary>
 	<ol>
-		<li><a href="#331-aes">AES</a></li>
-		<li><a href="#332-bcrypt">BCrypt</a></li>
-		<li><a href="#333-md5">MD5</a></li>
-		<li><a href="#334-sha256">SHA256</a></li>
+		<li><a href="#431-aes">AES</a></li>
+		<li><a href="#432-bcrypt">BCrypt</a></li>
+		<li><a href="#433-md5">MD5</a></li>
+		<li><a href="#434-sha256">SHA256</a></li>
 	</ol>
 </details>
 <details>
 	<summary>anlavn.net - Cung cấp các thư viện liên quan đến Internet / Provide Internet related libraries</summary>
 	<ol>
-		<li><a href="#341-docnet">DocNet</a></li>
-		<li><a href="#342-email">Email</a></li>
-		<li><a href="#343-license">License</a></li>
-		<li><a href="#344-network">Network</a></li>
-		<li><a href="#345-randomorg">RandomORG</a></li>
+		<li><a href="#441-docnet">DocNet</a></li>
+		<li><a href="#442-email">Email</a></li>
+		<li><a href="#443-license">License</a></li>
+		<li><a href="#444-network">Network</a></li>
+		<li><a href="#445-randomorg">RandomORG</a></li>
 	</ol>
 </details>
 <details>
 	<summary>anlavn.opencv - Cung cấp các thư viện liên quan đến OpenCV / Provide OpenCV related libraries</summary>
 	<ol>
-		<li><a href="#351-facedetection">FaceDetection</a></li>
-		<li><a href="#352-facerecognition">FaceRecognition</a></li>
+		<li><a href="#451-facedetection">FaceDetection</a></li>
+		<li><a href="#452-facerecognition">FaceRecognition</a></li>
 	</ol>
 </details>
 <details>
 	<summary>anlavn.ui - Cung cấp các thư viện liên quan đến UI / Provide UI related libraries</summary>
 	<ol>
-		<li><a href="#361-avatarpanel">AvatarPanel</a> (Add to Palette from JAR)</li>
-		<li><a href="#362-chatbox">ChatBox</a> (Add to Palette from JAR)</li>
-		<li><a href="#363-combobox">ComboBox</a> (Add to Palette from JAR)</li>
-		<li><a href="#364-imagepanel">ImagePanel</a> (Add to Palette from JAR)</li>
-		<li><a href="#365-liquidprogress">LiquidProgress</a> (Add to Palette from JAR)</li>
-		<li><a href="#366-mode">Mode</a></li>
-		<li><a href="#367-notification">Notification</a></li>
-		<li><a href="#368-progressbar">ProgressBar</a> (Add to Palette from JAR)</li>
-		<li><a href="#369-scrollbar">ScrollBar</a></li>
-		<li><a href="#3610-datechooser">DateChooser</a></li>
-		<li><a href="#3611-timepicker">TimePicker</a></li>
-		<li><a href="#3612-jnafilechooser">JnaFileChooser</a></li>
+		<li><a href="#461-avatarpanel">AvatarPanel</a> (Add to Palette from JAR)</li>
+		<li><a href="#462-chatbox">ChatBox</a> (Add to Palette from JAR)</li>
+		<li><a href="#463-combobox">ComboBox</a> (Add to Palette from JAR)</li>
+		<li><a href="#464-imagepanel">ImagePanel</a> (Add to Palette from JAR)</li>
+		<li><a href="#465-liquidprogress">LiquidProgress</a> (Add to Palette from JAR)</li>
+		<li><a href="#466-mode">Mode</a></li>
+		<li><a href="#467-notification">Notification</a></li>
+		<li><a href="#468-progressbar">ProgressBar</a> (Add to Palette from JAR)</li>
+		<li><a href="#469-scrollbar">ScrollBar</a></li>
+		<li><a href="#4610-datechooser">DateChooser</a></li>
+		<li><a href="#4611-timepicker">TimePicker</a></li>
+		<li><a href="#4612-jnafilechooser">JnaFileChooser</a></li>
 	</ol>
 </details>
 <details>
@@ -114,7 +128,7 @@
 
 
 
-# 3. Quick Guide / Hướng dẫn nhanh
+# 4. Quick Guide / Hướng dẫn nhanh
 [See details in project example / Xem chi tiết trong dự án mẫu](https://github.com/AnLaVN/AL-Library/tree/Releases/AL-Library_Example)
 
 ### PayOS
@@ -128,9 +142,9 @@
 
 ---
 
-## 3.1 AI - Provide AI related libraries / Cung cấp các thư viện liên quan đến AI
+## 4.1 AI - Provide AI related libraries / Cung cấp các thư viện liên quan đến AI
 
-### 3.1.1 YourGPT
+### 4.1.1 YourGPT
 - Lớp YourGPT hỗ trợ chạy mô hình ngôn ngữ lớn bằng cách sử dụng các tệp nhị phân dựng sẵn của llama.cpp.
 - The YourGPT class supports to run the Large language model using prebuilt binaries of llama.cpp.
 
@@ -156,9 +170,9 @@ See more / Xem thêm [ExampleYourGPT](https://github.com/AnLaVN/AL-Library/blob/
 
 ---
 
-## 3.2 FILE - Provides file related libraries / Cung cấp các thư viện liên quan đến tập tin
+## 4.2 FILE - Provides file related libraries / Cung cấp các thư viện liên quan đến tập tin
 
-### 3.2.1 Excel
+### 4.2.1 Excel
 - Lớp Excel hỗ trợ đọc/ghi dữ liệu từ/vào tệp excel.
 - The Excel class support to read/write data from/to excel file.
 
@@ -182,7 +196,7 @@ See more / Xem thêm [ExampleExcel](https://github.com/AnLaVN/AL-Library/blob/Re
 
 ---
 
-### 3.2.2 Log
+### 4.2.2 Log
 - Lớp Log hỗ trợ xuất thông tin ra tệp nhật ký và màn hình console.
 - The Log class supports to print to console and output log file.
 
@@ -197,7 +211,7 @@ See more / Xem thêm [ExampleLog](https://github.com/AnLaVN/AL-Library/blob/Rele
 
 ---
 
-### 3.2.3 NativeLibrary
+### 4.2.3 NativeLibrary
 - Lớp NativeLibrary hỗ trợ tải các thư viện động. 
 - The NativeLibrary class supports to loading dynamic libraries. 
 
@@ -210,7 +224,7 @@ See more / Xem thêm [ExampleNativeLibrary](https://github.com/AnLaVN/AL-Library
 
 ---
 
-### 3.2.4 ObjectData
+### 4.2.4 ObjectData
 - Lớp ObjectData hỗ trợ ghi và đọc dữ liệu của đối tượng vào tệp tại vị trí được chỉ định.
 - The ObjectData class supports write and read object data to file at specific location.
 
@@ -244,7 +258,7 @@ See more / Xem thêm [ExampleObjectData](https://github.com/AnLaVN/AL-Library/bl
 
 ---
 
-### 3.2.5 Properties
+### 4.2.5 Properties
 - Lớp Properties hỗ trợ để lấy giá trị của các thuộc tính tại vị trí được chỉ định.
 - The Properties class supports to get value of properties at specific location.
 
@@ -261,7 +275,7 @@ See more / Xem thêm [ExampleProperties](https://github.com/AnLaVN/AL-Library/bl
 
 ---
 
-### 3.2.6 Raw
+### 4.2.6 Raw
 - Lớp Raw hỗ trợ ghi và đọc chuỗi dữ liệu Thô vào tệp tại vị trí được chỉ định.
 - The Raw class supports write and read string data to file at specific location.
 
@@ -277,7 +291,7 @@ See more / Xem thêm [ExampleRaw](https://github.com/AnLaVN/AL-Library/blob/Rele
 
 ---
 
-### 3.2.7 Zip
+### 4.2.7 Zip
 - Lớp Zip hỗ trợ giải nén tệp zip vào thư mục của bạn.
 - The Zip class supports to extract a zip file to your directories.
 
@@ -291,9 +305,9 @@ See more / Xem thêm [ExampleZip](https://github.com/AnLaVN/AL-Library/blob/Rele
 ---
 
 
-## 3.3 HASH - Provides cryptographic hash function related libraries / Cung cấp các thư viện liên quan đến hàm băm mật mã học
+## 4.3 HASH - Provides cryptographic hash function related libraries / Cung cấp các thư viện liên quan đến hàm băm mật mã học
 
-### 3.3.1 AES
+### 4.3.1 AES
 - Lớp AES hỗ trợ mã hóa và giải mã một Chuỗi, sử dụng khóa bảo mật. 
 - The AES class supports encryption and decryption a String, using a security key.
 
@@ -310,7 +324,7 @@ See more / Xem thêm [ExampleAES](https://github.com/AnLaVN/AL-Library/blob/Rele
 
 ---
 
-### 3.3.2 BCrypt
+### 4.3.2 BCrypt
 - Lớp BCrypt hỗ trợ băm mật khẩu Blowfish kiểu OpenBSD cho Java.
 - The BCrypt class supports to OpenBSD-style Blowfish password hashing for Java.
 
@@ -326,7 +340,7 @@ See more / Xem thêm [ExampleBCrypt](https://github.com/AnLaVN/AL-Library/blob/R
 
 ---
 
-### 3.3.3 MD5
+### 4.3.3 MD5
 - Lớp MD5 chỉ hỗ trợ mã hóa đối tượng, giải mã nó là bất khả thi.
 - The MD5 class only supports object encryption, decryption it is impossible.
 
@@ -341,7 +355,7 @@ See more / Xem thêm [ExampleMD5](https://github.com/AnLaVN/AL-Library/blob/Rele
 
 ---
 
-### 3.3.4 SHA256
+### 4.3.4 SHA256
 - Lớp SHA256 chỉ hỗ trợ mã hóa đối tượng, giải mã nó là bất khả thi.
 - The SHA256 class only supports object encryption, decryption it is impossible.
 
@@ -358,9 +372,9 @@ See more / Xem thêm [ExampleSHA](https://github.com/AnLaVN/AL-Library/blob/Rele
 ---
 
 
-## 3.4 NET - Provide Internet related libraries / Cung cấp các thư viện liên quan đến Internet
+## 4.4 NET - Provide Internet related libraries / Cung cấp các thư viện liên quan đến Internet
 
-### 3.4.1 DocNet
+### 4.4.1 DocNet
 - Lớp DocNet hỗ trợ đọc tài liệu trực tuyến từ URL.
 - The DocNet class supports to read an online document from URL.
 
@@ -375,7 +389,7 @@ See more / Xem thêm [ExampleDocNet](https://github.com/AnLaVN/AL-Library/blob/R
 
 ---
 
-### 3.4.2 Email
+### 4.4.2 Email
 - Lớp Email hỗ trợ tạo một SMTP để gửi email.
 - The Email class supports create a SMTP to send email.
 
@@ -395,7 +409,7 @@ See more / Xem thêm [ExampleEmail](https://github.com/AnLaVN/AL-Library/blob/Re
 
 ---
 
-### 3.4.3 License
+### 4.4.3 License
 - Lớp License hỗ trợ đánh dấu bản quyền cho dự án.
 - The License class supports marks the copyright for the project.
 
@@ -414,7 +428,7 @@ See more / Xem thêm [ExampleLicense](https://github.com/AnLaVN/AL-Library/blob/
 
 ---
 
-### 3.4.4 Network
+### 4.4.4 Network
 - Lớp Network hỗ trợ lấy thông tin mạng: Thông tin WLAN, địa chỉ IPv4.
 - The Network class supports get network information: WLAN information, address IPv4.
 
@@ -429,7 +443,7 @@ See more / Xem thêm [ExampleNetwork](https://github.com/AnLaVN/AL-Library/blob/
 
 ---
 
-### 3.4.5 RandomORG
+### 4.4.5 RandomORG
 - Lớp RandomORG hỗ trợ tạo số thực sự ngẫu nhiên từ random.org
 - The RandomORG class supports to create true random numbers from random.org
 
@@ -446,9 +460,9 @@ See more / Xem thêm [ExampleRandomORG](https://github.com/AnLaVN/AL-Library/blo
 ---
 
 
-## 3.5 OpenCV - Provide OpenCV related libraries / Cung cấp các thư viện liên quan đến OpenCV
+## 4.5 OpenCV - Provide OpenCV related libraries / Cung cấp các thư viện liên quan đến OpenCV
 
-### 3.5.1 FaceDetection
+### 4.5.1 FaceDetection
 - Lớp FaceDetection hỗ trợ nhận diện khuôn mặt bằng thư viện thị giác máy tính lớn nhất thế giới - OpenCV.
 - The FaceDetection class supports to face detection using the world’s largest computer vision library - OpenCV.
 
@@ -471,7 +485,7 @@ See more / Xem thêm [ExampleFaceDetection](https://github.com/AnLaVN/AL-Library
 
 ---
 
-### 3.5.2 FaceRecognition
+### 4.5.2 FaceRecognition
 - Lớp FaceRecognition hỗ trợ nhận dạng khuôn mặt trong java, sử dụng chương trình python được biên dịch.
 - The FaceRecognition class supports to face recognition in java, using python program compiled.
 
@@ -500,9 +514,9 @@ See more / Xem thêm [ExampleFaceRecognition](https://github.com/AnLaVN/AL-Libra
 ---
 
 
-## 3.6 UI - Provide UI related libraries / Cung cấp các thư viện liên quan đến UI
+## 4.6 UI - Provide UI related libraries / Cung cấp các thư viện liên quan đến UI
 	
-### 3.6.1 AvatarPanel
+### 4.6.1 AvatarPanel
 - Lớp AvatarPanel hỗ trợ hiển thị một hình ảnh đại diện được cắt tròn.
 - The AvatarPanel class supports display a cropped avatar picture.
 
@@ -517,7 +531,7 @@ See more / Xem thêm [ExampleAvatarPanel](https://github.com/AnLaVN/AL-Library/b
 
 ---
 
-### 3.6.2 ChatBox
+### 4.6.2 ChatBox
 - Lớp ChatBox hỗ trợ hiển thị hộp tin nhắn như messenger.
 - The ChatBox class supports display a message box like messenger.
 
@@ -533,7 +547,7 @@ See more / Xem thêm [ExampleChatBox](https://github.com/AnLaVN/AL-Library/blob/
 
 ---
 
-### 3.6.3 ComboBox
+### 4.6.3 ComboBox
 - Lớp ComboBox hỗ trợ tạo comboBox đẹp mắt với chế độ sáng và tối.
 - The ComboBox class supports to create a beautiful comboBox with light and dark mode.
 
@@ -547,7 +561,7 @@ See more / Xem thêm [ExampleComboBox](https://github.com/AnLaVN/AL-Library/blob
 
 ---
 
-### 3.6.4 ImagePanel
+### 4.6.4 ImagePanel
 - Lớp ImagePanel hỗ trợ hiển thị hình ảnh có thể thay đổi kích thước.
 - The ImagePanel class supports displaying resizable images.
 ``` java
@@ -560,7 +574,7 @@ See more / Xem thêm [ExampleImagePanel](https://github.com/AnLaVN/AL-Library/bl
 
 ---
 
-### 3.6.5 LiquidProgress
+### 4.6.5 LiquidProgress
 - Lớp LiquidProgress hỗ trợ xuất thanh tiến trình dạng chất lỏng hiện đại.
 - The LiquidProgress supports to export modern liquid progress.
 
@@ -574,7 +588,7 @@ See more / Xem thêm [ExampleLiquidProgress](https://github.com/AnLaVN/AL-Librar
 
 ---
 
-### 3.6.6 Mode
+### 4.6.6 Mode
 - Lớp Mode hỗ trợ thay đổi chế độ từ sáng sang tối, component từ nimbus sang giao diện windows.
 - The Mode class supports change mode from light to dark, component from nimbus to windows look and feel.
 
@@ -588,7 +602,7 @@ See more / Xem thêm [ExampleMode](https://github.com/AnLaVN/AL-Library/blob/Rel
 
 ---
 
-### 3.6.7 Notification
+### 4.6.7 Notification
 - Lớp Notification hỗ trợ tạo thông báo popup.
 - The Notification class supports to create a animation popup notification.
 ``` java
@@ -602,7 +616,7 @@ See more / Xem thêm [ExampleNotification](https://github.com/AnLaVN/AL-Library/
 
 ---
 
-### 3.6.8 ProgressBar
+### 4.6.8 ProgressBar
 - Lớp ProgressBar hỗ trợ xuất thanh tiến trình hiện đại.
 - The ProgressBar supports to export modern progress bar.
 
@@ -616,7 +630,7 @@ See more / Xem thêm [ExampleProgressBar](https://github.com/AnLaVN/AL-Library/b
 
 ---
 
-### 3.6.9 ScrollBar
+### 4.6.9 ScrollBar
 - Lớp ScrollBar hỗ trợ xuất thanh cuộn hiện đại.
 - The ScrollBar class supports export modern scroll bar.
 
@@ -629,7 +643,7 @@ See more / Xem thêm [ExampleScrollBar](https://github.com/AnLaVN/AL-Library/blo
 
 ---
 
-### 3.6.10 DateChooser
+### 4.6.10 DateChooser
 - Lớp DateChooser hỗ trợ hiển thị bộ chọn ngày ở dạng hiện đại.
 - The DateChooser class supports to show modern form date chooser.
 
@@ -644,7 +658,7 @@ See more / Xem thêm [ExampleDateChooser](https://github.com/AnLaVN/AL-Library/b
 
 ---
 
-### 3.6.11 TimePicker
+### 4.6.11 TimePicker
 - Lớp TimePicker hỗ trợ hiển thị bộ chọn thời gian hiện đại.
 - The TimePicker class supports to show modern time picker.
 
@@ -662,7 +676,7 @@ See more / Xem thêm [ExampleTimePicker](https://github.com/AnLaVN/AL-Library/bl
 
 ---
 
-### 3.6.12 JnaFileChooser
+### 4.6.12 JnaFileChooser
 - JnaFileChooser là một trình bao bọc xung quanh trình chọn tệp và trình duyệt thư mục gốc của Windows nằm trong Swing JFileChooser
 - JnaFileChooser is a wrapper around the native Windows file chooser and folder browser that falls back to the Swing JFileChooser.
 
@@ -679,9 +693,9 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 
 ---
 
-# 4. Download / Tải xuống
+# 5. Download / Tải xuống
 
-## 4.1 External JAR
+## 5.1 External JAR
 - Bạn chỉ cần tải thư viện với một tệp .jar duy nhất đang được phát hành ngay bên dưới.
 - You just need to download the library with a single .jar file which is being released right below.
 <p align="center">
@@ -689,7 +703,7 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 </p>
 
 
-## 4.2 Maven Central Repository
+## 5.2 Maven Central Repository
 - Bạn đang sử dụng kho lưu trữ Maven cho dự án của mình, chỉ cần copy mã ngay bên dưới.
 - You are using Maven repository for your project, just copy the code right below.
 <p align="center">
@@ -714,7 +728,7 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 </dependency>
 ```
 
-## 4.3 Repository Link
+## 5.3 Repository Link
 - [mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN)
   - [AL-Library_EN / mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN/AL-Library_EN)
   - [AL-Library_VN / mvnrepository.com](https://mvnrepository.com/artifact/io.github.AnLaVN/AL-Library_VN)
@@ -729,5 +743,5 @@ See more / Xem thêm [ExampleJnaFileChooser](https://github.com/AnLaVN/AL-Librar
 
 
 
-## 4.4 Star History
+## 5.4 Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=AnLaVN/AL-Library&type=Date)](https://star-history.com/#AnLaVN/AL-Library&Date)
