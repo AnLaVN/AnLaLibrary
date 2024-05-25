@@ -137,16 +137,16 @@
 ⚠️ ***Tính năng này chỉ dành cho phiên bản Tiếng Việt / This feature is only for Vietnamese version*** ⚠️
 
 ### API_KEY
-- Các tính năng như [YourGPT](#311-yourgpt), [FaceDetection](#351-facedetection), [FaceRecognition](#352-facerecognition) sẽ cần có API key để sử dụng, vui lòng liên hệ với tôi để được cấp API key.
-- Features such as [YourGPT](#311-yourgpt), [FaceDetection](#351-facedetection), [FaceRecognition](#352-facerecognition) will require an API key to use, please contact me to receive an API key.
+- Các tính năng như [YourGPT](#411-yourgpt), [FaceDetection](#451-facedetection), [FaceRecognition](#452-facerecognition) sẽ cần có API key để sử dụng, vui lòng liên hệ với tôi để được cấp API key.
+- Features such as [YourGPT](#411-yourgpt), [FaceDetection](#451-facedetection), [FaceRecognition](#452-facerecognition) will require an API key to use, please contact me to receive an API key.
 
 ---
 
 ## 4.1 AI - Provide AI related libraries / Cung cấp các thư viện liên quan đến AI
 
 ### 4.1.1 YourGPT
-- Lớp YourGPT hỗ trợ chạy mô hình ngôn ngữ lớn bằng cách sử dụng các tệp nhị phân dựng sẵn của llama.cpp.
-- The YourGPT class supports to run the Large language model using prebuilt binaries of llama.cpp.
+- Lớp YourGPT hỗ trợ suy luận LLM (Mô hình ngôn ngữ lớn) với LLaMA.
+- The YourGPT class supports to LLM (Large Language Model) inference with LLaMA.
 
 ⚠️ Để sử dụng phiên bản tuỳ chỉnh của LlaMa, vui lòng [build thủ công](https://colab.research.google.com/drive/1rRTo_VOmjpDG5ndoj4vaAzkO3yx-nGyi?usp=sharing) / To use a custom version of LlaMa, please [build manually](https://colab.research.google.com/drive/1rRTo_VOmjpDG5ndoj4vaAzkO3yx-nGyi?usp=sharing) ⚠️
 
