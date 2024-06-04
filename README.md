@@ -8,7 +8,7 @@
 	<br><br>
 	<a href="https://github.com/AnLaVN/AL-Library/blob/Releases/LICENSE.md"><img src="https://img.shields.io/github/license/AnLaVN/AL-Library" alt="GitHub license"/></a>
 	<a href="https://www.oracle.com/java/technologies/javase/jdk18-archive-downloads.html"><img src="https://img.shields.io/badge/JDK-17+-orange" alt="JDK"></a>
-	<a href="#42-maven-central-repository"><img src="https://img.shields.io/maven-central/v/io.github.AnLaVN/AL-Library_VN"></a>
+	<a href="#52-maven-central-repository"><img src="https://img.shields.io/maven-central/v/io.github.AnLaVN/AL-Library_VN"></a>
 	<br>
 	<a href="https://github.com/ggerganov/llama.cpp"><img src="https://img.shields.io/badge/llama.cpp-YourGPT-red" alt="YourGPT"></a>
 	<a href="https://opencv.org/releases/"><img src="https://img.shields.io/badge/OpenCV-Face%20Detection-brightgreen" alt="Face Detection"></a>
