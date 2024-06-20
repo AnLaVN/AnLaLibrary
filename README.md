@@ -150,7 +150,7 @@
 
 ⚠️ Để sử dụng phiên bản tuỳ chỉnh của LlaMa, vui lòng [build thủ công](https://colab.research.google.com/drive/1rRTo_VOmjpDG5ndoj4vaAzkO3yx-nGyi?usp=sharing) / To use a custom version of LlaMa, please [build manually](https://colab.research.google.com/drive/1rRTo_VOmjpDG5ndoj4vaAzkO3yx-nGyi?usp=sharing) ⚠️
 
-🫙 Sử dụng tính năng này với [tệp Jar](https://github.com/AnLaVN/AL-Library/releases/download/v6.70.10/YourGPT_Runner.zip) / Use this feature with [Jar files](https://github.com/AnLaVN/AL-Library/releases/download/v6.70.10/YourGPT_Runner.zip) 🫙
+🫙 Sử dụng tính năng này với [tệp Jar](https://github.com/AnLaVN/AL-Library/releases/download/v6.70.10.1/YourGPT_Runner.zip) / Use this feature with [Jar files](https://github.com/AnLaVN/AL-Library/releases/download/v6.70.10.1/YourGPT_Runner.zip) 🫙
 
 ![image](https://github.com/AnLaVN/AL-Library/assets/90229487/c2f95abd-c7f8-457f-8e16-69f23c4ae24c)
 
