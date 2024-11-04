@@ -131,11 +131,6 @@
 # 4. Quick Guide / Hướng dẫn nhanh
 [See details in project example / Xem chi tiết trong dự án mẫu](https://github.com/AnLaVN/AL-Library/tree/Releases/AL-Library_Example)
 
-### PayOS
-- Tích hợp thư viện cổng thanh toán điện tử [PayOS](https://payos.vn)
-
-⚠️ ***Tính năng này chỉ dành cho phiên bản Tiếng Việt / This feature is only for Vietnamese version*** ⚠️
-
 ### API_KEY
 - Các tính năng như [YourGPT](#411-yourgpt), [FaceDetection](#451-facedetection), [FaceRecognition](#452-facerecognition) sẽ cần có API key để sử dụng, vui lòng liên hệ với tôi để được cấp API key.
 - Features such as [YourGPT](#411-yourgpt), [FaceDetection](#451-facedetection), [FaceRecognition](#452-facerecognition) will require an API key to use, please contact me to receive an API key.
